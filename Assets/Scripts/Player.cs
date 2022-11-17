@@ -15,16 +15,18 @@ public class Player : MonoBehaviour
     }
 
     // Podria cambiar el dibujo de carta a soldado cuando la carta esta en el campo de juego
+    // Podria indicarse mejor cuando se tiene seleccionada una carta con el click derecho
+    // Es necesario un doble click izquierdo para poder mover una carta si antes se ha usado click derecho
     void Update()
     {
-        if (IsCardMoving && Input.GetMouseButton(0))
+        if (IsCardMoving && Input.GetMouseButton(0)) // Left click being pressed
         {
             Vector3 pos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             pos.z = -2;
 
             selectedCard.localPosition = pos;
         }
-        else if (Input.GetMouseButtonDown(1))
+        else if (Input.GetMouseButtonDown(1)) // Rigth click down
         {
             RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
             if (hit.collider != null && hit.collider.CompareTag("Card"))
@@ -33,7 +35,7 @@ public class Player : MonoBehaviour
                 rightClickSelection = true;
             }
         }
-        else if (Input.GetMouseButtonDown(0))
+        else if (Input.GetMouseButtonDown(0)) // Left click down
         {
             if (rightClickSelection)
             {
@@ -53,7 +55,7 @@ public class Player : MonoBehaviour
             }
              
         }
-        else if (Input.GetMouseButtonUp(0) && IsCardMoving)
+        else if (Input.GetMouseButtonUp(0) && IsCardMoving) // Left click up
         {
             IsCardMoving = false;
             cardSystem.TryToPlayCard(selectedCard.GetComponent<Card>().handIndex);
