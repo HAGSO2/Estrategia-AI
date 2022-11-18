@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: ArcherAnimator
+  m_Controller: {fileID: 9100000, guid: 1818bc3a45af1ad40ae9d1c65f83a230, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 18a5195ef6c8afa40965ac0512e4f9ca, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 05860cadd4caa054ab8ddcef21d882eb, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: ee9b408e159912f499a285f4018fc8a4, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: b550a9d6a5a8efc4281b45cb610b61d3, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: a9b905ce8af1b3f48bff76465af94cdd, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: f08d53491489c2e4da71b1a8d4cf9080, type: 2}
