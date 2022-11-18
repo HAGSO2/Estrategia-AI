@@ -19,6 +19,4 @@ public class Troop : ScriptableObject
     [SerializeField] Sprite[] walkingSprites;
     [SerializeField] Sprite[] attackSprites;
     [SerializeField] Sprite[] deathSprites;
-
-
 }
