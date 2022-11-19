@@ -11,9 +11,14 @@ public class ElixirSystem : MonoBehaviour
     public float elixir = 6;
     float maxElixir = 10;
 
+    bool isAI = false;
+
     void Start()
     {
-        elixirTMP = elixirGameObject.GetComponent<TextMeshProUGUI>();
+        if (elixirGameObject == null)
+            isAI = true;
+        else
+            elixirTMP = elixirGameObject.GetComponent<TextMeshProUGUI>();
 
         StartCoroutine(IncreaseElixir());
     }
@@ -22,7 +27,8 @@ public class ElixirSystem : MonoBehaviour
     {
         while (true)
         {
-            UpdateText();
+            if (!isAI)
+                UpdateText();
             yield return new WaitForSeconds(1);
             if (elixir < maxElixir)
                 elixir++;

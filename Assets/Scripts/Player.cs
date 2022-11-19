@@ -42,7 +42,7 @@ public class Player : MonoBehaviour
                 rightClickSelection = false;
                 Card card = selectedCard.GetComponent<Card>();
                 card.rightClick = true;
-                cardSystem.TryToPlayCard(card.handIndex);
+                cardSystem.TryToPlayCard(card.handIndex, Camera.main.ScreenToWorldPoint(Input.mousePosition));
             }
             else if(!IsCardMoving)
             {
@@ -58,7 +58,7 @@ public class Player : MonoBehaviour
         else if (Input.GetMouseButtonUp(0) && IsCardMoving) // Left click up
         {
             IsCardMoving = false;
-            cardSystem.TryToPlayCard(selectedCard.GetComponent<Card>().handIndex);
+            cardSystem.TryToPlayCard(selectedCard.GetComponent<Card>().handIndex, Camera.main.ScreenToWorldPoint(Input.mousePosition));
         }
     }
 }
