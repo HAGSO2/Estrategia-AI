@@ -10,7 +10,8 @@ public class CardSystem : MonoBehaviour
     [SerializeField] Card[] initialDeck = new Card[8];
     [SerializeField] Transform deckTransform;
 
-    [SerializeField] Transform cardHeightToBePlayed;
+    //[SerializeField] Transform minCardPosToBePlayed;
+    //[SerializeField] Transform maxCardPosToBePlayed;
 
     public Card[] hand = new Card[4];
     public Queue<Card> deck = new Queue<Card>(4);
@@ -40,8 +41,12 @@ public class CardSystem : MonoBehaviour
     {
         Card playedCard = hand[playedCardIndex];
 
-        if ((playedCard.canBePlayed || playedCard.rightClick) && Camera.main.ScreenToWorldPoint(Input.mousePosition).y > cardHeightToBePlayed.position.y &&
-            deployCardSystem.CanDeploy(playedCard))
+        Vector3 pos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+
+        //if ((playedCard.canBePlayed || playedCard.rightClick) && pos.y > minCardPosToBePlayed.position.y && pos.y < maxCardPosToBePlayed.position.y &&
+        //    pos.x > minCardPosToBePlayed.position.x && pos.x < maxCardPosToBePlayed.position.x && deployCardSystem.CanDeploy(playedCard))
+
+            if ((playedCard.canBePlayed || playedCard.rightClick) && deployCardSystem.CanDeploy(playedCard))
         {
             PlayCard(playedCard);
             deployCardSystem.DeployCard(playedCard);

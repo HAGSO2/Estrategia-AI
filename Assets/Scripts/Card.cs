@@ -4,10 +4,6 @@ using UnityEngine;
 
 public class Card : MonoBehaviour
 {
-    const int MAX_X = 11;
-    const int MIN_X = -11;
-    const int MAX_Y = 5;
-    const int MIN_Y = -5;
 
     public GameObject enemy;
     public int cost;

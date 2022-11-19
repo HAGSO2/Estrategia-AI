@@ -172,7 +172,7 @@ GameObject:
   m_Component:
   - component: {fileID: 216639538}
   m_Layer: 0
-  m_Name: MinHeightToBePlayed
+  m_Name: MinPosToBePlayed
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -186,12 +186,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 216639537}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -2, z: 0}
-  m_LocalScale: {x: 22.430199, y: 6.711014, z: 1}
+  m_LocalPosition: {x: -0.453, y: -0.4142444, z: 0}
+  m_LocalScale: {x: 2.08537, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_Father: {fileID: 1148012847}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &222342343
 GameObject:
@@ -441,6 +441,37 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &634145095
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 634145096}
+  m_Layer: 0
+  m_Name: MaxPosToBePlayed
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &634145096
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 634145095}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.448, y: 0.40828407, z: 0}
+  m_LocalScale: {x: 2.08537, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1148012847}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &653327316
 GameObject:
   m_ObjectHideFlags: 0
@@ -596,7 +627,8 @@ MonoBehaviour:
   - {fileID: 4679789791335175073}
   - {fileID: 4679789790915248214}
   deckTransform: {fileID: 144151183}
-  cardHeightToBePlayed: {fileID: 216639538}
+  minCardPosToBePlayed: {fileID: 216639538}
+  maxCardPosToBePlayed: {fileID: 634145096}
   hand:
   - {fileID: 0}
   - {fileID: 0}
@@ -860,7 +892,9 @@ Transform:
   m_LocalPosition: {x: -6.13, y: 0.78, z: 0}
   m_LocalScale: {x: 10.7559805, y: 6.711014, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 216639538}
+  - {fileID: 634145096}
   m_Father: {fileID: 1585664656}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -909,7 +943,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.84112906, y: 0.78539544}
   m_EdgeRadius: 0
 --- !u!1 &1585664655
 GameObject:
