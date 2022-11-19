@@ -12,11 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad50517517c4314429fb4f6fe82425b8, type: 3}
   m_Name: Knight
   m_EditorClassIdentifier: 
-  speed: 10
+  speed: 5
   attackRange: 5
   health: 60
-  attacksPerSecond: 2
+  attacksPerSecond: 1.5
   damage: 5
   onlyAttacksBuildings: 0
   elixirCost: 3
-  spriteLibraryAsset: {fileID: 7108339969198208228, guid: ab0e86e7ae4d2234a99358a1b3206cef, type: 3}

@@ -262,6 +262,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Archer
       objectReference: {fileID: 0}
+    - target: {fileID: 1623089779330718575, guid: 4dfc9ae35737cb648b5eca72ba5a93f5, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4dfc9ae35737cb648b5eca72ba5a93f5, type: 3}
 --- !u!1001 &3253452878791036361
@@ -274,6 +278,10 @@ PrefabInstance:
     - target: {fileID: 3253452878247755613, guid: 3b0b88df8c33ecc4285dd21b50910a78, type: 3}
       propertyPath: m_Name
       value: Mini-Pekka
+      objectReference: {fileID: 0}
+    - target: {fileID: 3253452878247755613, guid: 3b0b88df8c33ecc4285dd21b50910a78, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3253452878247755614, guid: 3b0b88df8c33ecc4285dd21b50910a78, type: 3}
       propertyPath: m_RootOrder
@@ -331,6 +339,10 @@ PrefabInstance:
     - target: {fileID: 5607865938419896785, guid: 6ff7d989db0c19b47b296d131476b46f, type: 3}
       propertyPath: m_Name
       value: Knight
+      objectReference: {fileID: 0}
+    - target: {fileID: 5607865938419896785, guid: 6ff7d989db0c19b47b296d131476b46f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5607865938419896786, guid: 6ff7d989db0c19b47b296d131476b46f, type: 3}
       propertyPath: m_RootOrder
@@ -432,6 +444,14 @@ PrefabInstance:
     - target: {fileID: 7424146356389528510, guid: c8df1a49a900236468512496ebf0dce3, type: 3}
       propertyPath: m_Name
       value: Giant
+      objectReference: {fileID: 0}
+    - target: {fileID: 7424146356389528510, guid: c8df1a49a900236468512496ebf0dce3, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7424146356389528511, guid: c8df1a49a900236468512496ebf0dce3, type: 3}
+      propertyPath: m_SortingOrder
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8df1a49a900236468512496ebf0dce3, type: 3}

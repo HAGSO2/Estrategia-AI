@@ -12,43 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad50517517c4314429fb4f6fe82425b8, type: 3}
   m_Name: Archer
   m_EditorClassIdentifier: 
-  speed: 8
+  speed: 4
   attackRange: 15
   health: 25
-  attacksPerSecond: 1.5
+  attacksPerSecond: 1.8
   damage: 4
   onlyAttacksBuildings: 0
   elixirCost: 2
-  walkingSprites:
-  - {fileID: -1517419829, guid: 61a83ac0243ad3d4ca4503a775467a49, type: 3}
-  - {fileID: -395453798, guid: 61a83ac0243ad3d4ca4503a775467a49, type: 3}
-  - {fileID: 853089246, guid: 61a83ac0243ad3d4ca4503a775467a49, type: 3}
-  - {fileID: -38121523, guid: 61a83ac0243ad3d4ca4503a775467a49, type: 3}
-  - {fileID: 43910914, guid: 61a83ac0243ad3d4ca4503a775467a49, type: 3}
-  - {fileID: -1929672737, guid: 61a83ac0243ad3d4ca4503a775467a49, type: 3}
-  - {fileID: -1990399988, guid: 61a83ac0243ad3d4ca4503a775467a49, type: 3}
-  - {fileID: -611997806, guid: 61a83ac0243ad3d4ca4503a775467a49, type: 3}
-  attackSprites:
-  - {fileID: -1641363710, guid: 0f9f7d9fc8c8e9844afaca3370efd90e, type: 3}
-  - {fileID: -644827155, guid: 0f9f7d9fc8c8e9844afaca3370efd90e, type: 3}
-  - {fileID: -693934267, guid: 0f9f7d9fc8c8e9844afaca3370efd90e, type: 3}
-  - {fileID: -1065146364, guid: 0f9f7d9fc8c8e9844afaca3370efd90e, type: 3}
-  - {fileID: -1651286238, guid: 0f9f7d9fc8c8e9844afaca3370efd90e, type: 3}
-  - {fileID: 166973350, guid: 0f9f7d9fc8c8e9844afaca3370efd90e, type: 3}
-  - {fileID: -2012447293, guid: 0f9f7d9fc8c8e9844afaca3370efd90e, type: 3}
-  - {fileID: -1443839002, guid: 0f9f7d9fc8c8e9844afaca3370efd90e, type: 3}
-  - {fileID: -538627374, guid: 0f9f7d9fc8c8e9844afaca3370efd90e, type: 3}
-  - {fileID: -915983653, guid: 0f9f7d9fc8c8e9844afaca3370efd90e, type: 3}
-  - {fileID: 891731242, guid: 0f9f7d9fc8c8e9844afaca3370efd90e, type: 3}
-  - {fileID: 19744095, guid: 0f9f7d9fc8c8e9844afaca3370efd90e, type: 3}
-  deathSprites:
-  - {fileID: 2104294648, guid: 71665d3163a417f428c46948fb68790f, type: 3}
-  - {fileID: 870459045, guid: 71665d3163a417f428c46948fb68790f, type: 3}
-  - {fileID: 924432518, guid: 71665d3163a417f428c46948fb68790f, type: 3}
-  - {fileID: 1071863757, guid: 71665d3163a417f428c46948fb68790f, type: 3}
-  - {fileID: 1965333598, guid: 71665d3163a417f428c46948fb68790f, type: 3}
-  - {fileID: -1815888818, guid: 71665d3163a417f428c46948fb68790f, type: 3}
-  - {fileID: 1352481382, guid: 71665d3163a417f428c46948fb68790f, type: 3}
-  - {fileID: 682272076, guid: 71665d3163a417f428c46948fb68790f, type: 3}
-  - {fileID: 2139508860, guid: 71665d3163a417f428c46948fb68790f, type: 3}
-  - {fileID: 1519475540, guid: 71665d3163a417f428c46948fb68790f, type: 3}

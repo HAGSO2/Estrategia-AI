@@ -12,25 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad50517517c4314429fb4f6fe82425b8, type: 3}
   m_Name: Mini-pekka
   m_EditorClassIdentifier: 
-  speed: 10
+  speed: 4
   attackRange: 5
   health: 50
   attacksPerSecond: 1
-  damage: 7
+  damage: 8
   onlyAttacksBuildings: 0
   elixirCost: 4
-  walkingSprites:
-  - {fileID: 2101828518, guid: c24d3e0b9876d314eb247cedaacf8bc5, type: 3}
-  - {fileID: -10033027, guid: c24d3e0b9876d314eb247cedaacf8bc5, type: 3}
-  - {fileID: -161575297, guid: c24d3e0b9876d314eb247cedaacf8bc5, type: 3}
-  - {fileID: -25593021, guid: c24d3e0b9876d314eb247cedaacf8bc5, type: 3}
-  attackSprites:
-  - {fileID: -390620896, guid: c24d3e0b9876d314eb247cedaacf8bc5, type: 3}
-  - {fileID: 1256110456, guid: c24d3e0b9876d314eb247cedaacf8bc5, type: 3}
-  - {fileID: 364829132, guid: c24d3e0b9876d314eb247cedaacf8bc5, type: 3}
-  - {fileID: 1152979554, guid: c24d3e0b9876d314eb247cedaacf8bc5, type: 3}
-  deathSprites:
-  - {fileID: -726099594, guid: c24d3e0b9876d314eb247cedaacf8bc5, type: 3}
-  - {fileID: 1129228476, guid: c24d3e0b9876d314eb247cedaacf8bc5, type: 3}
-  - {fileID: 931850054, guid: c24d3e0b9876d314eb247cedaacf8bc5, type: 3}
-  - {fileID: 1622545208, guid: c24d3e0b9876d314eb247cedaacf8bc5, type: 3}
