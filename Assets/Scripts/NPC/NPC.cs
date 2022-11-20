@@ -7,6 +7,7 @@ public class NPC : MonoBehaviour
 {
     public Transform t;
     [SerializeField] private Troop Atributes;
+    private BinTree _Behaviour;
     private Rigidbody2D _body;
     private Animator _controller;
     private float _health;
@@ -21,6 +22,13 @@ public class NPC : MonoBehaviour
         transform.GetChild(0).localScale = new Vector3(Atributes.attackRange / 2,Atributes.attackRange / 2);
         _attackMutex = true;
         _eInRange = false;
+        MakeBehaviour();
+    }
+
+    void MakeBehaviour()
+    {
+        _Behaviour = new BinTree("Top",() => _eInRange, () => 1, true, true);
+        Debug.Log(_Behaviour.ToString());
     }
     
     private void FixedUpdate()
