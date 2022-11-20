@@ -7,11 +7,10 @@ public class Grid : MonoBehaviour
 {
 
     public Tilemap obstaclesTileMap;
-    public Tilemap debugTileMap;
     public TileBase obstacleTileDebug;
     public TileBase navegableTileDebug;
     Node[,]grid;
-    public List<List<Node>> paths = new List<List<Node>>();
+    Dictionary<Vector3Int, Node> gridDistionary = new Dictionary<Vector3Int, Node>();
 
 
     private void Start(){
@@ -40,48 +39,16 @@ public class Grid : MonoBehaviour
                 }
 
                 grid[x,y] = new Node(isPath, obstaclesTileMap.CellToWorld(new Vector3Int(xt, yt, 0)), x,y, new Vector3Int(xt,yt,0));
+                gridDistionary.Add(new Vector3Int(xt, yt, 0), grid[x, y]);
                 yt++;
             }
             xt++;
-        }
-
-        DrawDebugTiles();
-    }
-
-    void DrawDebugTiles()
-    {
-        for (int x = 0; x < grid.GetLength(0); x++)
-        {
-            for (int y = 0; y < grid.GetLength(1); y++)
-            {
-                if (grid[x, y].isPath == true)
-                {
-                    debugTileMap.SetTile(grid[x, y].tilePos, navegableTileDebug);
-                }
-                else
-                {
-                    debugTileMap.SetTile(grid[x, y].tilePos, obstacleTileDebug);
-                }
-            }
         }
     }
 
     public Node NodeFromWorldPosition(Vector3 WorldPos){
         Vector3Int pt = obstaclesTileMap.WorldToCell(WorldPos);
-
-        for (int x = 0; x < grid.GetLength(0); x++)
-        {
-            for (int y = 0; y < grid.GetLength(1); y++)
-            {
-                if (grid[x, y].tilePos.Equals(pt))
-                {
-                    
-                    return grid[x, y];
-                }
-            }
-        }
-
-        return null;
+        return gridDistionary[pt];
     }
 
     public List<Node> GetNeighborNodes(Node n){
@@ -89,43 +56,37 @@ public class Grid : MonoBehaviour
                 int xCheck;
                 int yCheck;
 
-                xCheck  = n.gridX;
+                xCheck  = n.gridX+1;
                 yCheck = n.gridY;
-                if(xCheck >= 0 && xCheck < grid.GetLength(0) && yCheck >= 0 && yCheck < grid.GetLength(1))
-        {
+                if(xCheck >= 0 && xCheck < grid.GetLength(0) && yCheck >= 0 && yCheck < grid.GetLength(1)){
                     neighborList.Add(grid[xCheck,yCheck]);
                 }
 
 
                 xCheck  = n.gridX - 1;
                 yCheck = n.gridY;
-                if(xCheck >= 0 && xCheck < grid.GetLength(0) && yCheck >= 0 && yCheck < grid.GetLength(1))
-        {
+                if(xCheck >= 0 && xCheck < grid.GetLength(0) && yCheck >= 0 && yCheck < grid.GetLength(1)){
                     neighborList.Add(grid[xCheck,yCheck]);
                 }
 
 
                 xCheck  = n.gridX;
                 yCheck = n.gridY + 1;
-                if(xCheck >= 0 && xCheck < grid.GetLength(0) && yCheck >= 0 && yCheck < grid.GetLength(1))
-        {
+                if(xCheck >= 0 && xCheck < grid.GetLength(0) && yCheck >= 0 && yCheck < grid.GetLength(1)){
                     neighborList.Add(grid[xCheck,yCheck]);
                 }
 
 
                 xCheck  = n.gridX;
                 yCheck = n.gridY - 1;
-                if(xCheck >= 0 && xCheck < grid.GetLength(0) && yCheck >= 0 && yCheck < grid.GetLength(1))
-        {
-                    grid[xCheck,yCheck].secondDiagonal = Mathf.Sqrt(2); // Its a diagonal child so for the heuristic use the Chebyshev distance
+                if(xCheck >= 0 && xCheck < grid.GetLength(0) && yCheck >= 0 && yCheck < grid.GetLength(1)){
                     neighborList.Add(grid[xCheck,yCheck]);
                 }
 
 
                 xCheck  = n.gridX-1;
                 yCheck = n.gridY - 1;
-                if(xCheck >= 0 && xCheck < grid.GetLength(0) && yCheck >= 0 && yCheck < grid.GetLength(1))
-        {
+                if(xCheck >= 0 && xCheck < grid.GetLength(0) && yCheck >= 0 && yCheck < grid.GetLength(1)){
                     grid[xCheck,yCheck].secondDiagonal = Mathf.Sqrt(2); // Its a diagonal child so for the heuristic use the octile distance
                     neighborList.Add(grid[xCheck,yCheck]);
                 }
@@ -133,8 +94,7 @@ public class Grid : MonoBehaviour
 
                 xCheck  = n.gridX+1;
                 yCheck = n.gridY - 1;
-                if(xCheck >= 0 && xCheck < grid.GetLength(0) && yCheck >= 0 && yCheck < grid.GetLength(1))
-        {
+                if(xCheck >= 0 && xCheck < grid.GetLength(0) && yCheck >= 0 && yCheck < grid.GetLength(1)){
                     grid[xCheck,yCheck].secondDiagonal = Mathf.Sqrt(2); // Its a diagonal child so for the heuristic use the octile distance
                     neighborList.Add(grid[xCheck,yCheck]);
                 }
@@ -142,8 +102,7 @@ public class Grid : MonoBehaviour
 
                 xCheck  = n.gridX+1;
                 yCheck = n.gridY + 1;
-                if(xCheck >= 0 && xCheck < grid.GetLength(0) && yCheck >= 0 && yCheck < grid.GetLength(1))
-        {
+                if(xCheck >= 0 && xCheck < grid.GetLength(0) && yCheck >= 0 && yCheck < grid.GetLength(1)){
                     grid[xCheck,yCheck].secondDiagonal = Mathf.Sqrt(2); // Its a diagonal child so for the heuristic use the octile distance
                     neighborList.Add(grid[xCheck,yCheck]);
                 }
@@ -151,8 +110,7 @@ public class Grid : MonoBehaviour
 
                 xCheck  = n.gridX -1;
                 yCheck = n.gridY + 1;
-                if(xCheck >= 0 && xCheck < grid.GetLength(0) && yCheck >= 0 && yCheck < grid.GetLength(1))
-        {
+                if(xCheck >= 0 && xCheck < grid.GetLength(0) && yCheck >= 0 && yCheck < grid.GetLength(1)){
                     grid[xCheck,yCheck].secondDiagonal = Mathf.Sqrt(2); // Its a diagonal child so for the heuristic use the octile distance
                     neighborList.Add(grid[xCheck,yCheck]);
                 }

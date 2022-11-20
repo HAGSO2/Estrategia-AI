@@ -14,8 +14,6 @@ public class Pathfinding : MonoBehaviour
 
     private void Awake(){
         grid = (FindObjectsOfType<Grid>())[0];
-
-
     }
 
     private void Update(){
@@ -87,7 +85,6 @@ public class Pathfinding : MonoBehaviour
         FinalPathPositions.Reverse();
 
         finalPath = FinalPath;
-        grid.paths.Insert(0,FinalPath);
         
         return FinalPathPositions;
     }
