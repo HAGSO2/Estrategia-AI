@@ -8,12 +8,23 @@ using UnityEngine;
 public class BinTree
 {
     private State top;
-    private State actual;
 
     public BinTree(string name,Func<bool> cond, Func<int> funcItsf, bool n, bool p)
     {
         top = new State(name, cond, funcItsf, n, p);
-        actual = top;
+    }
+
+    public void DoStep()
+    {
+        State actual = top;
+        while (actual != null)
+        {
+            actual.stateFunc.Invoke();
+            if (actual.condition.Invoke())
+                actual = actual.positive;
+            else
+                actual = actual.negative;
+        }
     }
 
     public void InsertState(string name,Func<bool> cond, Func<int> funcItsf, bool n, bool p)
@@ -45,49 +56,21 @@ public class BinTree
         return false;
     }
 
-    /*private bool Insert(ref State s,State toI)
-    {
-        if (s.negative == null || s.positive == null)
-        {
-            if (s.negative == null && s.hasNeg)
-            {
-                s.negative = toI;
-                s.hasNeg = toI.hasNeg || toI.hasPos;
-                return toI.hasNeg || toI.hasPos;
-            }
-
-            if (s.positive == null && s.hasPos)
-            {
-                s.positive = toI;
-                s.hasPos = toI.hasNeg || toI.hasPos;
-                return toI.hasNeg || toI.hasPos;
-            }
-
-            return false;
-        }
-
-        bool inNeg = Insert(ref s.negative, toI);
-        bool inPos = false;
-        if (!inNeg) inPos = Insert(ref s.positive, toI);
-
-        return false;
-    }*/
-    
     private class State
     {
         private string name;
         public State negative;
         public State positive;
-        private Func<bool> _condition;
-        private Func<int> _stateFunc;
+        public Func<bool> condition;
+        public Func<int> stateFunc;
         public bool hasNeg;
         public bool hasPos;
 
         public State(string name,Func<bool> cond, Func<int> funcItsf, bool n, bool p)
         {
             this.name = name;
-            _condition = cond;
-            _stateFunc = funcItsf;
+            condition = cond;
+            stateFunc = funcItsf;
             hasNeg = n;
             hasPos = p;
             negative = null;
@@ -96,7 +79,7 @@ public class BinTree
 
         public override string ToString()
         {
-            return name;
+            return name + ":" + hasNeg + ":" + hasPos;
         }
     }
 

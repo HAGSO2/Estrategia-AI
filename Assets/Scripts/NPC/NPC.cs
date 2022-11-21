@@ -13,6 +13,7 @@ public class NPC : MonoBehaviour
     private float _health;
     private bool _attackMutex;
     private bool _eInRange;
+    private NPC _attacking;
 
     private void Start()
     {
@@ -27,14 +28,25 @@ public class NPC : MonoBehaviour
 
     void MakeBehaviour()
     {
-        _Behaviour = new BinTree("Top",() => _eInRange, () => 1, true, true);
+        _Behaviour = new BinTree("Top", () => _eInRange, () => 1, true, true);
+        Debug.Log(_Behaviour.ToString());
+        _Behaviour.InsertState("Move to",()=> true,()=>MoveTo(t.position),false,false);
+        _Behaviour.InsertState("In range",()=> true, () =>
+        {
+            if (!_attackMutex)
+            {
+                _attackMutex = true;
+                StartCoroutine(Attack(_attacking));
+            }
+
+            return 1;
+        },false,false);
         Debug.Log(_Behaviour.ToString());
     }
     
     private void FixedUpdate()
     {
-        if(_attackMutex)
-            MoveTo(t.position);
+        _Behaviour.DoStep();
     }
 
     private Vector2 ToV2(Vector3 xyz)
@@ -53,9 +65,10 @@ public class NPC : MonoBehaviour
         {
             _attackMutex = false;
             _eInRange = true;
-            Debug.Log("Attack");
+            _attacking = col.GetComponent<NPC>();
+            /*Debug.Log("Attack");
             _controller.SetBool("Attacking",true);
-            StartCoroutine(Attack(col.GetComponent<NPC>()));
+            //StartCoroutine(Attack(col.GetComponent<NPC>()));*/
         }
     }
 
@@ -70,7 +83,7 @@ public class NPC : MonoBehaviour
         }
     }
 
-    public void MoveTo(Vector3 target,bool seek = true)
+    public int MoveTo(Vector3 target,bool seek = true)
     {
         Vector3 desired = target - transform.position;
         if (desired.magnitude > 0.5f)
@@ -78,6 +91,8 @@ public class NPC : MonoBehaviour
             desired = desired.normalized * Atributes.speed * Time.deltaTime;
             _body.MovePosition(transform.position + desired);
         }
+
+        return 1;
     }
 
     public IEnumerator Attack(NPC other)
@@ -97,6 +112,8 @@ public class NPC : MonoBehaviour
         {
             _attackMutex = true;
             _controller.SetBool("Attacking",false);
+            transform.GetChild(0).gameObject.SetActive(false);
+            transform.GetChild(0).gameObject.SetActive(true);
             yield break;
         }
         StartCoroutine(Attack(other));
