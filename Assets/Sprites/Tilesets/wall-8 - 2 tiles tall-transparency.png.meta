@@ -147,7 +147,7 @@ TextureImporter:
       213: 3602497084470484197
     second: wall-8 - 2 tiles tall-transparency_47
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -168,6 +168,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -206,6 +207,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -233,6 +235,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -1264,6 +1278,55 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      wall-8 - 2 tiles tall-transparency_10: -2494038880838002184
+      wall-8 - 2 tiles tall-transparency_16: 6861492772400535958
+      wall-8 - 2 tiles tall-transparency_7: -3303251995931665361
+      wall-8 - 2 tiles tall-transparency_40: 1521725849371016241
+      wall-8 - 2 tiles tall-transparency_1: -3070055227276682360
+      wall-8 - 2 tiles tall-transparency_28: 2417585101856378478
+      wall-8 - 2 tiles tall-transparency_43: 4501782849170236069
+      wall-8 - 2 tiles tall-transparency_3: 2629892034527970896
+      wall-8 - 2 tiles tall-transparency_47: 3602497084470484197
+      wall-8 - 2 tiles tall-transparency_21: 5997359649814605438
+      wall-8 - 2 tiles tall-transparency_27: 3862403996732922711
+      wall-8 - 2 tiles tall-transparency_2: 6558428621813583221
+      wall-8 - 2 tiles tall-transparency_26: 7464083286778644355
+      wall-8 - 2 tiles tall-transparency_41: -4721801328716614644
+      wall-8 - 2 tiles tall-transparency_20: 5460211579920440348
+      wall-8 - 2 tiles tall-transparency_35: -7649427771732223125
+      wall-8 - 2 tiles tall-transparency_37: 1791456834822610733
+      wall-8 - 2 tiles tall-transparency_4: 3138658684152810726
+      wall-8 - 2 tiles tall-transparency_13: 8901628563154517912
+      wall-8 - 2 tiles tall-transparency_31: -987738417304688135
+      wall-8 - 2 tiles tall-transparency_17: -1939228809081413152
+      wall-8 - 2 tiles tall-transparency_0: 7435217617827650440
+      wall-8 - 2 tiles tall-transparency_45: -984130744176635126
+      wall-8 - 2 tiles tall-transparency_22: 1153818551923956278
+      wall-8 - 2 tiles tall-transparency_38: 876868281618655788
+      wall-8 - 2 tiles tall-transparency_25: -4025028615475751398
+      wall-8 - 2 tiles tall-transparency_30: 6788831799863199713
+      wall-8 - 2 tiles tall-transparency_33: 6425115080329997642
+      wall-8 - 2 tiles tall-transparency_18: -237399373035404829
+      wall-8 - 2 tiles tall-transparency_29: 3030312794311093419
+      wall-8 - 2 tiles tall-transparency_23: -6348916822047342840
+      wall-8 - 2 tiles tall-transparency_32: 5690062716557035907
+      wall-8 - 2 tiles tall-transparency_46: 1814595926101344826
+      wall-8 - 2 tiles tall-transparency_9: 9181443416335874529
+      wall-8 - 2 tiles tall-transparency_14: -4166628799720499360
+      wall-8 - 2 tiles tall-transparency_6: 686903439566912362
+      wall-8 - 2 tiles tall-transparency_42: 3129235306509924691
+      wall-8 - 2 tiles tall-transparency_19: -4562237229349747136
+      wall-8 - 2 tiles tall-transparency_11: 5022495044942131527
+      wall-8 - 2 tiles tall-transparency_44: -1162932473013880399
+      wall-8 - 2 tiles tall-transparency_5: 4428588640767943980
+      wall-8 - 2 tiles tall-transparency_34: -121878366767442070
+      wall-8 - 2 tiles tall-transparency_39: 7193621931163972581
+      wall-8 - 2 tiles tall-transparency_24: 3505278380759974169
+      wall-8 - 2 tiles tall-transparency_12: -9002767212985934664
+      wall-8 - 2 tiles tall-transparency_36: -7387922983304267899
+      wall-8 - 2 tiles tall-transparency_8: -4098190842476695402
+      wall-8 - 2 tiles tall-transparency_15: -2418911576935062642
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

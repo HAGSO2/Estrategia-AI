@@ -10,7 +10,6 @@ public class Card : MonoBehaviour
     public int handIndex;
 
     public bool canBePlayed;
-    public bool rightClick = false;
 
     Vector3 scaleUp;
     Vector3 scaleDown;

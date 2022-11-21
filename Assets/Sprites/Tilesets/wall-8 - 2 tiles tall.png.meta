@@ -162,7 +162,7 @@ TextureImporter:
       213: -5626206178204684224
     second: wall-8 - 2 tiles tall_52
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -183,6 +183,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -221,6 +222,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -248,6 +250,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -1384,6 +1398,60 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      wall-8 - 2 tiles tall_40: 8037803177598164941
+      wall-8 - 2 tiles tall_19: -508626446506310126
+      wall-8 - 2 tiles tall_42: 3960514326366670633
+      wall-8 - 2 tiles tall_1: -768896522788874416
+      wall-8 - 2 tiles tall_24: -5278614937713458709
+      wall-8 - 2 tiles tall_33: 6561923995331211500
+      wall-8 - 2 tiles tall_28: 1919268990920309157
+      wall-8 - 2 tiles tall_9: -8657586634953545321
+      wall-8 - 2 tiles tall_51: 4601964571737862836
+      wall-8 - 2 tiles tall_13: 500804249185454303
+      wall-8 - 2 tiles tall_5: -1128933490396513139
+      wall-8 - 2 tiles tall_11: 9097370089685683320
+      wall-8 - 2 tiles tall_30: -812176394733837674
+      wall-8 - 2 tiles tall_8: -4648724286043637818
+      wall-8 - 2 tiles tall_21: 3157770759248945493
+      wall-8 - 2 tiles tall_22: -3199232400042828640
+      wall-8 - 2 tiles tall_25: 3730336678713859800
+      wall-8 - 2 tiles tall_43: -7743015732887108090
+      wall-8 - 2 tiles tall_36: -8285002898242483263
+      wall-8 - 2 tiles tall_23: -4820848243198296483
+      wall-8 - 2 tiles tall_38: -9177930222775889913
+      wall-8 - 2 tiles tall_4: 6205891006604703951
+      wall-8 - 2 tiles tall_17: 2429542381695059147
+      wall-8 - 2 tiles tall_20: 59108417472286468
+      wall-8 - 2 tiles tall_14: 6349567290777072779
+      wall-8 - 2 tiles tall_2: -1568634289165873314
+      wall-8 - 2 tiles tall_3: 997377269718598172
+      wall-8 - 2 tiles tall_6: 99128148584584807
+      wall-8 - 2 tiles tall_27: -5327888578906715503
+      wall-8 - 2 tiles tall_47: -5214162849852677274
+      wall-8 - 2 tiles tall_49: -5560350957880490798
+      wall-8 - 2 tiles tall_48: 6483599778192058761
+      wall-8 - 2 tiles tall_7: -812967357642361024
+      wall-8 - 2 tiles tall_35: 3214141262258975657
+      wall-8 - 2 tiles tall_18: -8104007491639981423
+      wall-8 - 2 tiles tall_50: -8768603205039737223
+      wall-8 - 2 tiles tall_29: -9176290126818115613
+      wall-8 - 2 tiles tall_12: 672570316350910821
+      wall-8 - 2 tiles tall_52: -5626206178204684224
+      wall-8 - 2 tiles tall_26: -7142093732270993412
+      wall-8 - 2 tiles tall_0: -4997552324107393378
+      wall-8 - 2 tiles tall_37: -1354825470097598015
+      wall-8 - 2 tiles tall_41: 1959258018010420570
+      wall-8 - 2 tiles tall_32: 1629665048704676325
+      wall-8 - 2 tiles tall_46: -4732884931611081448
+      wall-8 - 2 tiles tall_16: -474406617424741944
+      wall-8 - 2 tiles tall_34: 3205786045909518788
+      wall-8 - 2 tiles tall_39: -8389258184719113947
+      wall-8 - 2 tiles tall_15: -678867802169984770
+      wall-8 - 2 tiles tall_44: 3962740398518112918
+      wall-8 - 2 tiles tall_31: 6901960905913164386
+      wall-8 - 2 tiles tall_10: 5109811614126092116
+      wall-8 - 2 tiles tall_45: 1855018854696680537
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
