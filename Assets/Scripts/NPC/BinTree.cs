@@ -91,10 +91,13 @@ public class BinTree
     private string SearchChilds(State actual)
     {
         string msg = actual.ToString();
+        msg += "\t";
         if(actual.negative != null)
             msg += "Negative: " + SearchChilds(actual.negative);
+        msg += "\t";
         if(actual.positive != null)
             msg += "Positive: " + SearchChilds(actual.positive);
+        msg += "\n";
 
         return msg;
     }

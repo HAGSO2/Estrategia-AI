@@ -2,11 +2,12 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class NPC : MonoBehaviour
 {
     public Transform t;
-    [SerializeField] private Troop Atributes;
+    [SerializeField] private Troop atributes;
     private BinTree _Behaviour;
     private Rigidbody2D _body;
     private Animator _controller;
@@ -19,8 +20,8 @@ public class NPC : MonoBehaviour
     {
         _body = GetComponent<Rigidbody2D>();
         _controller = GetComponent<Animator>();
-        _health = Atributes.health;
-        transform.GetChild(0).localScale = new Vector3(Atributes.attackRange / 2,Atributes.attackRange / 2);
+        _health = atributes.health;
+        transform.GetChild(0).localScale = new Vector3(atributes.attackRange / 2,atributes.attackRange / 2);
         _attackMutex = true;
         _eInRange = false;
         MakeBehaviour();
@@ -29,10 +30,12 @@ public class NPC : MonoBehaviour
     void MakeBehaviour()
     {
         _Behaviour = new BinTree("Top", () => _eInRange, () => 1, true, true);
-        Debug.Log(_Behaviour.ToString());
         _Behaviour.InsertState("Move to",()=> true,()=>MoveTo(t.position),false,false);
-        _Behaviour.InsertState("In range",()=> true, () =>
-        {
+        _Behaviour.InsertState("In range", () => false, () => 1, true, true);
+        _Behaviour.InsertState("Fleeee!",()=> true,()=>MoveTo(_attacking.transform.position,false),false,false);
+        _Behaviour.InsertState("Position",()=> Vector3.Distance(transform.position,_attacking.transform.position) <= atributes.attackRange,
+            ()=>MoveTo(_attacking.transform.position),false,true);
+        _Behaviour.InsertState("Fireee!",()=> true,()=>{
             if (!_attackMutex)
             {
                 _attackMutex = true;
@@ -41,7 +44,6 @@ public class NPC : MonoBehaviour
 
             return 1;
         },false,false);
-        Debug.Log(_Behaviour.ToString());
     }
     
     private void FixedUpdate()
@@ -78,7 +80,6 @@ public class NPC : MonoBehaviour
         if (other.CompareTag("Destructible"))
         {
             _eInRange = false;
-            Debug.Log("Stop");
             _controller.SetBool("Attacking",false);
         }
     }
@@ -88,7 +89,8 @@ public class NPC : MonoBehaviour
         Vector3 desired = target - transform.position;
         if (desired.magnitude > 0.5f)
         {
-            desired = desired.normalized * Atributes.speed * Time.deltaTime;
+            desired = desired.normalized * atributes.speed * Time.deltaTime;
+            desired = seek ? desired : -desired;
             _body.MovePosition(transform.position + desired);
         }
 
@@ -97,7 +99,7 @@ public class NPC : MonoBehaviour
 
     public IEnumerator Attack(NPC other)
     {
-        yield return new WaitForSeconds(1 / Atributes.attacksPerSecond);
+        yield return new WaitForSeconds(1 / atributes.attacksPerSecond);
         if (!_eInRange)
         {
             yield return new WaitForSeconds(1);
@@ -106,7 +108,7 @@ public class NPC : MonoBehaviour
         }
         try
         {
-            other.Hurt(Atributes.damage);
+            other.Hurt(atributes.damage);
         }
         catch
         {
@@ -121,7 +123,6 @@ public class NPC : MonoBehaviour
 
     public void Hurt(float dmg)
     {
-        Debug.Log(gameObject.name + ": " + _health);
         _health -= dmg;
         if (_health <= 0)
         {
