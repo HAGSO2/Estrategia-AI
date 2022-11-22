@@ -306,6 +306,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Knight
       objectReference: {fileID: 0}
+    - target: {fileID: 5607865938419896785, guid: 6ff7d989db0c19b47b296d131476b46f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5607865938419896786, guid: 6ff7d989db0c19b47b296d131476b46f, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -473,6 +477,10 @@ PrefabInstance:
     - target: {fileID: 3253452878247755613, guid: 3b0b88df8c33ecc4285dd21b50910a78, type: 3}
       propertyPath: m_Name
       value: Mini-Pekka
+      objectReference: {fileID: 0}
+    - target: {fileID: 3253452878247755613, guid: 3b0b88df8c33ecc4285dd21b50910a78, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3253452878247755614, guid: 3b0b88df8c33ecc4285dd21b50910a78, type: 3}
       propertyPath: m_RootOrder
