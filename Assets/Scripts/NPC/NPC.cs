@@ -6,15 +6,16 @@ using UnityEngine.Serialization;
 
 public class NPC : MonoBehaviour
 {
-    public Transform t;
+    [SerializeField] private EnemiesManager _manager;
+    private Transform _target = null;
     [SerializeField] private Troop atributes;
-    private BinTree _Behaviour;
+    private BinTree _behaviour;
     private Rigidbody2D _body;
     private Animator _controller;
     private float _health;
-    private bool _attackMutex;
-    private bool _eInRange;
-    private NPC _attacking;
+    private bool _attackMutex = true;
+    private bool _eInRange = false;
+    public bool Team;
 
     private void Start()
     {
@@ -24,78 +25,20 @@ public class NPC : MonoBehaviour
         transform.GetChild(0).localScale = new Vector3(atributes.attackRange / 2,atributes.attackRange / 2);
         _attackMutex = true;
         _eInRange = false;
+        _manager.AddTroop(transform,Team);
         MakeBehaviour();
     }
 
     void MakeBehaviour()
     {
-        _Behaviour = new BinTree("Top", () => _eInRange, () => 1, true, true);
-        _Behaviour.InsertState("Move to",()=> true,()=>MoveTo(t.position),false,false);
-        _Behaviour.InsertState("In range", () => false, () => 1, true, true);
-        _Behaviour.InsertState("Fleeee!",()=> true,()=>MoveTo(_attacking.transform.position,false),false,false);
-        _Behaviour.InsertState("Position",()=> Vector3.Distance(transform.position,_attacking.transform.position) <= atributes.attackRange,
-            ()=>MoveTo(_attacking.transform.position),false,true);
-        _Behaviour.InsertState("Fireee!",()=> true,()=>{
-            if (!_attackMutex)
-            {
-                _attackMutex = true;
-                StartCoroutine(Attack(_attacking));
-            }
-
-            return 1;
-        },false,false);
     }
-    
+
     private void FixedUpdate()
     {
-        _Behaviour.DoStep();
+        _behaviour.DoStep();
     }
 
-    private Vector2 ToV2(Vector3 xyz)
-    {
-        return new Vector2(xyz.x, xyz.y);
-    }
-
-    private Vector3 ToV3(Vector2 xy)
-    {
-        return new Vector3(xy.x, xy.y, 0);
-    }
-
-    private void OnTriggerEnter2D(Collider2D col)
-    {
-        if (col.CompareTag("Destructible") && _attackMutex)
-        {
-            _attackMutex = false;
-            _eInRange = true;
-            _attacking = col.GetComponent<NPC>();
-            /*Debug.Log("Attack");
-            _controller.SetBool("Attacking",true);
-            //StartCoroutine(Attack(col.GetComponent<NPC>()));*/
-        }
-    }
-
-    private void OnTriggerExit2D(Collider2D other)
-    {
-        Debug.Log(other.gameObject.name);
-        if (other.CompareTag("Destructible"))
-        {
-            _eInRange = false;
-            _controller.SetBool("Attacking",false);
-        }
-    }
-
-    public int MoveTo(Vector3 target,bool seek = true)
-    {
-        Vector3 desired = target - transform.position;
-        if (desired.magnitude > 0.5f)
-        {
-            desired = desired.normalized * atributes.speed * Time.deltaTime;
-            desired = seek ? desired : -desired;
-            _body.MovePosition(transform.position + desired);
-        }
-
-        return 1;
-    }
+    
 
     public IEnumerator Attack(NPC other)
     {
@@ -127,7 +70,12 @@ public class NPC : MonoBehaviour
         if (_health <= 0)
         {
             _controller.SetTrigger("Dead");
-            Destroy(this);
         }
+    }
+
+    public void Die()
+    {
+        _manager.DeleteTroop(transform,Team);
+        Destroy(gameObject);
     }
 }
