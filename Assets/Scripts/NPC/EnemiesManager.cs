@@ -26,7 +26,7 @@ public class EnemiesManager : MonoBehaviour
 
     public void DeleteTroop(Transform en, bool team)
     {
-        if(team)
+        if (team)
             TroopsA.Remove(en);
         else
             TroopsB.Remove(en);
@@ -34,7 +34,7 @@ public class EnemiesManager : MonoBehaviour
 
     public Transform SearchNearest(Vector3 pos, bool team)
     {
-        List<Transform> Troops = team ? TroopsA : TroopsB;
+        List<Transform> Troops = !team ? TroopsA : TroopsB;
         float dist = Vector3.Distance(Troops[0].position, pos);
         int j = 0;
         for (int i = 1; i < Troops.Count; i++)
@@ -49,17 +49,4 @@ public class EnemiesManager : MonoBehaviour
 
         return Troops[j];
     }
-
-    /*struct TargetByTeam
-    {
-        public Transform pos;
-        public bool Team;
-
-        public TargetByTeam(Transform p, bool t)
-        {
-            pos = p;
-            Team = t;
-        }
-
-    }*/
 }

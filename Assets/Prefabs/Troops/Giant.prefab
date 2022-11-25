@@ -114,7 +114,7 @@ GameObject:
   - component: {fileID: 7424146356389528511}
   - component: {fileID: 5210994536538735880}
   - component: {fileID: 3126365028552277520}
-  - component: {fileID: 196672224794409349}
+  - component: {fileID: 2317530592707937955}
   m_Layer: 0
   m_Name: Giant
   m_TagString: Destructible
@@ -218,7 +218,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7424146356389528510}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -257,7 +257,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 4, y: 4}
   m_EdgeRadius: 0
---- !u!114 &196672224794409349
+--- !u!114 &2317530592707937955
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -266,9 +266,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 7424146356389528510}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c92a8e27206108a46aad169c88daf76f, type: 3}
+  m_Script: {fileID: 11500000, guid: 5ce9c50129cb86d42a6111276082ba76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  t: {fileID: 0}
-  Team: 0
+  _manager: {fileID: 0}
   atributes: {fileID: 11400000, guid: a1159d39aef498d4eb7a1a267f52c99f, type: 2}
+  Team: 0

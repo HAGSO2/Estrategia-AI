@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7816289096130985416}
   - component: {fileID: 4607586566530189490}
   - component: {fileID: 1623089779330718572}
-  - component: {fileID: 1161929177704641322}
+  - component: {fileID: 7169072924395132663}
   m_Layer: 0
   m_Name: Archer
   m_TagString: Destructible
@@ -156,7 +156,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1161929177704641322
+--- !u!114 &7169072924395132663
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -165,12 +165,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1623089779330718575}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c92a8e27206108a46aad169c88daf76f, type: 3}
+  m_Script: {fileID: 11500000, guid: 5ce9c50129cb86d42a6111276082ba76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  t: {fileID: 0}
-  Team: 1
+  _manager: {fileID: 0}
   atributes: {fileID: 11400000, guid: ac181099a8908d34fa39855b1947a391, type: 2}
+  Team: 0
 --- !u!1 &5738530103487055974
 GameObject:
   m_ObjectHideFlags: 0

@@ -19,6 +19,7 @@ public class BinTree
         State actual = top;
         while (actual != null)
         {
+//            Debug.Log(actual.name);
             actual.stateFunc.Invoke();
             if (actual.condition.Invoke())
                 actual = actual.positive;
@@ -58,7 +59,7 @@ public class BinTree
 
     private class State
     {
-        private string name;
+        public string name { get; }
         public State negative;
         public State positive;
         public Func<bool> condition;
