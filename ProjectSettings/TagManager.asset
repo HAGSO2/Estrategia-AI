@@ -9,6 +9,7 @@ TagManager:
   - GroundAI
   - Destructible
   - Attack
+  - Structure
   layers:
   - Default
   - TransparentFX

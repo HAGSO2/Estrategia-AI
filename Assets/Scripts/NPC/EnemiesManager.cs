@@ -5,8 +5,8 @@ using UnityEngine;
 
 public class EnemiesManager : MonoBehaviour
 {
-    public Transform Tower1;
-    public Transform Tower2;
+    public Transform Tower1 { get; set; }
+    public Transform Tower2 { get; set; }
     private List<Transform> TroopsA = new List<Transform>();
     private List<Transform> TroopsB = new List<Transform>();
 
@@ -30,6 +30,13 @@ public class EnemiesManager : MonoBehaviour
             TroopsA.Remove(en);
         else
             TroopsB.Remove(en);
+    }
+
+    public void TowerDown()
+    {
+        for(int i = 0; i < TroopsA.Count;i++){TroopsA[i].GetComponent<NPC>().Stop();}
+        for(int i = 0; i < TroopsB.Count;i++){TroopsB[i].GetComponent<NPC>().Stop();}
+        Debug.Log("FIN");
     }
 
     public Transform SearchNearest(Vector3 pos, bool team)

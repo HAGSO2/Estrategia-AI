@@ -15,6 +15,7 @@ public class NPC : MonoBehaviour
     private Animator _controller;
     private float _health;
     private bool _attackMutex = true;
+    private bool _hardOponent;
     private bool _InRange = false;
     public bool Team;
 
@@ -34,32 +35,34 @@ public class NPC : MonoBehaviour
     void MakeBehaviour()
     {
         _behaviour = new BinTree("Alive", () => _health > 0, () => 1, true, true);
-        _behaviour.InsertState("Dead",()=>true, () =>
+        _behaviour.InsertState("Dead", () => true, () =>
         {
             transform.GetChild(0).gameObject.SetActive(false);
             GetComponent<BoxCollider2D>().enabled = false;
             return 1;
-        },false,false);
-        _behaviour.InsertState("To attack what?",()=>_target!=null,()=>1,true,true);
-        _behaviour.InsertState("Check a look",()=>true,TakeTarget,false,false);
+        }, false, false);
+        _behaviour.InsertState("To attack what?", () => _target != null, () => 1, true, true);
+        _behaviour.InsertState("Check a look", () => _target.GetComponent<NPC>() != null, TakeTarget, true, true);
+        _behaviour.InsertState("Attack Structure", () => true, () =>
+            {
+                _hardOponent = false;
+
+                return 1;
+            }
+            , false, false);
+        _behaviour.InsertState("Attack NPC", () => true, () =>
+        {
+            _hardOponent = true;
+            return 1;
+        }, false, false);
         _behaviour.InsertState("In range?",()=>_InRange,()=>1,true,true);
         _behaviour.InsertState("Go near",()=>true,MoveTo,false,false);
-        _behaviour.InsertState("Atack!",()=>true, ()=>
-        {
-            if (_attackMutex)
-            {
-                _attackMutex = false;
-                _controller.SetBool("Attacking",true);
-                StartCoroutine(Attack(_target.GetComponent<NPC>()));
-            }
-
-            return 1;
-        },false,false);
+        _behaviour.InsertState("Atack!",()=>true, DistinguishAttack,false,false);
     }
 
     private void OnTriggerEnter2D(Collider2D col)
     {
-        if (col.CompareTag("Attack") && col.GetComponentInParent<NPC>().Team != Team)
+        if ((col.CompareTag("Attack") && col.GetComponentInParent<NPC>().Team != Team) || col.CompareTag("Structure"))
         {
             _InRange = true;
         }
@@ -67,11 +70,29 @@ public class NPC : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.CompareTag("Attack") && other.GetComponentInParent<NPC>().Team != Team)
+        if ((other.CompareTag("Attack") || other.CompareTag("Structure")) && other.GetComponentInParent<NPC>().Team != Team)
         {
             _InRange = false;
             Debug.Log("Buala");
         }
+    }
+
+    private int DistinguishAttack()
+    {
+        if (_hardOponent && _attackMutex)
+        {
+            _attackMutex = false;
+            _controller.SetBool("Attacking",true);
+            StartCoroutine(Attack(_target.GetComponent<NPC>()));
+        }
+        else if (!_hardOponent && _attackMutex)
+        {
+            _attackMutex = false;
+            _controller.SetBool("Attacking",true);
+            StartCoroutine(AttackTower(_target.GetComponent<Tower>()));
+        }
+
+        return 1;
     }
 
     private void FixedUpdate()
@@ -110,10 +131,26 @@ public class NPC : MonoBehaviour
             _attackMutex = true;
             _InRange = false;
             _controller.SetBool("Attacking",false);
-            Debug.Log("Abula");
             yield break;
         }
         StartCoroutine(Attack(other));
+    }
+    
+    public IEnumerator AttackTower(Tower other)
+    {
+        yield return new WaitForSeconds(1 / atributes.attacksPerSecond);
+        try
+        {
+            other.Hurt(atributes.damage);
+        }
+        catch
+        {
+            _attackMutex = true;
+            _InRange = false;
+            _controller.SetBool("Attacking",false);
+            yield break;
+        }
+        StartCoroutine(AttackTower(other));
     }
 
     public void Hurt(float dmg)
@@ -130,5 +167,10 @@ public class NPC : MonoBehaviour
         Debug.Log("I've died, i'm an " + gameObject.name);
         _manager.DeleteTroop(transform,Team);
         Destroy(gameObject);
+    }
+
+    public void Stop()
+    {
+        Destroy(this);
     }
 }
