@@ -41,7 +41,6 @@ public class Player : MonoBehaviour
             {
                 rightClickSelection = false;
                 Card card = selectedCard.GetComponent<Card>();
-                card.rightClick = true;
                 cardSystem.TryToPlayCard(card.handIndex, Camera.main.ScreenToWorldPoint(Input.mousePosition));
             }
             else if(!IsCardMoving)

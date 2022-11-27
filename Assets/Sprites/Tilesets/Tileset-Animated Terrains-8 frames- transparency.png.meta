@@ -1,0 +1,3935 @@
+fileFormatVersion: 2
+guid: 040c838f1b1ec6044b28dfc0f1564c59
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4370564112111711551
+    second: Tileset-Animated Terrains-8 frames- transparency_0
+  - first:
+      213: -3391853693866283757
+    second: Tileset-Animated Terrains-8 frames- transparency_1
+  - first:
+      213: 2907493843193599954
+    second: Tileset-Animated Terrains-8 frames- transparency_2
+  - first:
+      213: -4126345723268000064
+    second: Tileset-Animated Terrains-8 frames- transparency_3
+  - first:
+      213: 2691644488938309014
+    second: Tileset-Animated Terrains-8 frames- transparency_4
+  - first:
+      213: 4521535429682053962
+    second: Tileset-Animated Terrains-8 frames- transparency_5
+  - first:
+      213: -9144417968137037629
+    second: Tileset-Animated Terrains-8 frames- transparency_6
+  - first:
+      213: 5551870289364961214
+    second: Tileset-Animated Terrains-8 frames- transparency_7
+  - first:
+      213: 4760664474611498256
+    second: Tileset-Animated Terrains-8 frames- transparency_8
+  - first:
+      213: 5943437237845462110
+    second: Tileset-Animated Terrains-8 frames- transparency_9
+  - first:
+      213: -5231183119834190075
+    second: Tileset-Animated Terrains-8 frames- transparency_10
+  - first:
+      213: 6549581262566628645
+    second: Tileset-Animated Terrains-8 frames- transparency_11
+  - first:
+      213: 9164131127199543748
+    second: Tileset-Animated Terrains-8 frames- transparency_12
+  - first:
+      213: -3812664827720864962
+    second: Tileset-Animated Terrains-8 frames- transparency_13
+  - first:
+      213: 1529058512622091065
+    second: Tileset-Animated Terrains-8 frames- transparency_14
+  - first:
+      213: 2256166059636772126
+    second: Tileset-Animated Terrains-8 frames- transparency_15
+  - first:
+      213: -1937614829957920189
+    second: Tileset-Animated Terrains-8 frames- transparency_16
+  - first:
+      213: 5018927823482910608
+    second: Tileset-Animated Terrains-8 frames- transparency_17
+  - first:
+      213: 5807210182195869680
+    second: Tileset-Animated Terrains-8 frames- transparency_18
+  - first:
+      213: -6621358123844085673
+    second: Tileset-Animated Terrains-8 frames- transparency_19
+  - first:
+      213: 1723682417314921088
+    second: Tileset-Animated Terrains-8 frames- transparency_20
+  - first:
+      213: 5930936696579873251
+    second: Tileset-Animated Terrains-8 frames- transparency_21
+  - first:
+      213: 6134394823653280640
+    second: Tileset-Animated Terrains-8 frames- transparency_22
+  - first:
+      213: -8236579755670455259
+    second: Tileset-Animated Terrains-8 frames- transparency_23
+  - first:
+      213: 7537111574564078426
+    second: Tileset-Animated Terrains-8 frames- transparency_24
+  - first:
+      213: -4413773442466725964
+    second: Tileset-Animated Terrains-8 frames- transparency_25
+  - first:
+      213: -5797098231507921576
+    second: Tileset-Animated Terrains-8 frames- transparency_26
+  - first:
+      213: 4897516381954163914
+    second: Tileset-Animated Terrains-8 frames- transparency_27
+  - first:
+      213: -8546525242082522042
+    second: Tileset-Animated Terrains-8 frames- transparency_28
+  - first:
+      213: 4923374143727311861
+    second: Tileset-Animated Terrains-8 frames- transparency_29
+  - first:
+      213: 5436281324401621066
+    second: Tileset-Animated Terrains-8 frames- transparency_30
+  - first:
+      213: -7503789662221752084
+    second: Tileset-Animated Terrains-8 frames- transparency_31
+  - first:
+      213: 1693218006822435006
+    second: Tileset-Animated Terrains-8 frames- transparency_32
+  - first:
+      213: -3381505397718429996
+    second: Tileset-Animated Terrains-8 frames- transparency_33
+  - first:
+      213: 135695656573074669
+    second: Tileset-Animated Terrains-8 frames- transparency_34
+  - first:
+      213: -6937185559151812527
+    second: Tileset-Animated Terrains-8 frames- transparency_35
+  - first:
+      213: 9160890045164122887
+    second: Tileset-Animated Terrains-8 frames- transparency_36
+  - first:
+      213: 398186884953378052
+    second: Tileset-Animated Terrains-8 frames- transparency_37
+  - first:
+      213: -769154786512688961
+    second: Tileset-Animated Terrains-8 frames- transparency_38
+  - first:
+      213: 1974594781813504893
+    second: Tileset-Animated Terrains-8 frames- transparency_39
+  - first:
+      213: 5284443876760109564
+    second: Tileset-Animated Terrains-8 frames- transparency_40
+  - first:
+      213: -7393473372966123364
+    second: Tileset-Animated Terrains-8 frames- transparency_41
+  - first:
+      213: -7162736262269230099
+    second: Tileset-Animated Terrains-8 frames- transparency_42
+  - first:
+      213: 8964241512144976334
+    second: Tileset-Animated Terrains-8 frames- transparency_43
+  - first:
+      213: 3802218290953477376
+    second: Tileset-Animated Terrains-8 frames- transparency_44
+  - first:
+      213: -7722968215629833649
+    second: Tileset-Animated Terrains-8 frames- transparency_45
+  - first:
+      213: 1490930714103874614
+    second: Tileset-Animated Terrains-8 frames- transparency_46
+  - first:
+      213: -3667903184760055792
+    second: Tileset-Animated Terrains-8 frames- transparency_47
+  - first:
+      213: -5685936472241998609
+    second: Tileset-Animated Terrains-8 frames- transparency_48
+  - first:
+      213: -4769855244933918074
+    second: Tileset-Animated Terrains-8 frames- transparency_49
+  - first:
+      213: -6769322789510677656
+    second: Tileset-Animated Terrains-8 frames- transparency_50
+  - first:
+      213: -4755010527685239041
+    second: Tileset-Animated Terrains-8 frames- transparency_51
+  - first:
+      213: 4272167779298281271
+    second: Tileset-Animated Terrains-8 frames- transparency_52
+  - first:
+      213: 3947569115662537334
+    second: Tileset-Animated Terrains-8 frames- transparency_53
+  - first:
+      213: 3603775944260826573
+    second: Tileset-Animated Terrains-8 frames- transparency_54
+  - first:
+      213: -2294357190966682686
+    second: Tileset-Animated Terrains-8 frames- transparency_55
+  - first:
+      213: -4655047817510875514
+    second: Tileset-Animated Terrains-8 frames- transparency_56
+  - first:
+      213: -942442348169385393
+    second: Tileset-Animated Terrains-8 frames- transparency_57
+  - first:
+      213: -587159424001112351
+    second: Tileset-Animated Terrains-8 frames- transparency_58
+  - first:
+      213: 8758750845722506361
+    second: Tileset-Animated Terrains-8 frames- transparency_59
+  - first:
+      213: -5561802445310457364
+    second: Tileset-Animated Terrains-8 frames- transparency_60
+  - first:
+      213: 469588940891902373
+    second: Tileset-Animated Terrains-8 frames- transparency_61
+  - first:
+      213: -8060667280270784855
+    second: Tileset-Animated Terrains-8 frames- transparency_62
+  - first:
+      213: 4092458342703296587
+    second: Tileset-Animated Terrains-8 frames- transparency_63
+  - first:
+      213: 8370148493449332370
+    second: Tileset-Animated Terrains-8 frames- transparency_64
+  - first:
+      213: -4098136616274192699
+    second: Tileset-Animated Terrains-8 frames- transparency_65
+  - first:
+      213: 704863944695623209
+    second: Tileset-Animated Terrains-8 frames- transparency_66
+  - first:
+      213: 2038482746193031150
+    second: Tileset-Animated Terrains-8 frames- transparency_67
+  - first:
+      213: 1540926675992106161
+    second: Tileset-Animated Terrains-8 frames- transparency_68
+  - first:
+      213: 4921509224272165434
+    second: Tileset-Animated Terrains-8 frames- transparency_69
+  - first:
+      213: -6092568969588849816
+    second: Tileset-Animated Terrains-8 frames- transparency_70
+  - first:
+      213: -7461735161587305022
+    second: Tileset-Animated Terrains-8 frames- transparency_71
+  - first:
+      213: -6997009401351966997
+    second: Tileset-Animated Terrains-8 frames- transparency_72
+  - first:
+      213: 6334240882633709913
+    second: Tileset-Animated Terrains-8 frames- transparency_73
+  - first:
+      213: 6188691904649773573
+    second: Tileset-Animated Terrains-8 frames- transparency_74
+  - first:
+      213: 4128282147774997531
+    second: Tileset-Animated Terrains-8 frames- transparency_75
+  - first:
+      213: 8763974565957011735
+    second: Tileset-Animated Terrains-8 frames- transparency_76
+  - first:
+      213: 4459829907198990290
+    second: Tileset-Animated Terrains-8 frames- transparency_77
+  - first:
+      213: 3634170920310013959
+    second: Tileset-Animated Terrains-8 frames- transparency_78
+  - first:
+      213: 1216516692077773446
+    second: Tileset-Animated Terrains-8 frames- transparency_79
+  - first:
+      213: -6294042883505161774
+    second: Tileset-Animated Terrains-8 frames- transparency_80
+  - first:
+      213: -1425750333392842729
+    second: Tileset-Animated Terrains-8 frames- transparency_81
+  - first:
+      213: -6650859713669046963
+    second: Tileset-Animated Terrains-8 frames- transparency_82
+  - first:
+      213: 2496932405230966254
+    second: Tileset-Animated Terrains-8 frames- transparency_83
+  - first:
+      213: -6790460125581660214
+    second: Tileset-Animated Terrains-8 frames- transparency_84
+  - first:
+      213: 2451763631442498802
+    second: Tileset-Animated Terrains-8 frames- transparency_85
+  - first:
+      213: -5298575839759759891
+    second: Tileset-Animated Terrains-8 frames- transparency_86
+  - first:
+      213: 1779827110449580774
+    second: Tileset-Animated Terrains-8 frames- transparency_87
+  - first:
+      213: -4179418285482004412
+    second: Tileset-Animated Terrains-8 frames- transparency_88
+  - first:
+      213: -7608813256193628304
+    second: Tileset-Animated Terrains-8 frames- transparency_89
+  - first:
+      213: 8468179204249418111
+    second: Tileset-Animated Terrains-8 frames- transparency_90
+  - first:
+      213: -2573920746366982227
+    second: Tileset-Animated Terrains-8 frames- transparency_91
+  - first:
+      213: -6696133054259561633
+    second: Tileset-Animated Terrains-8 frames- transparency_92
+  - first:
+      213: -536933160275000694
+    second: Tileset-Animated Terrains-8 frames- transparency_93
+  - first:
+      213: -238436961126781560
+    second: Tileset-Animated Terrains-8 frames- transparency_94
+  - first:
+      213: 7334481768420396816
+    second: Tileset-Animated Terrains-8 frames- transparency_95
+  - first:
+      213: -3191904753927492658
+    second: Tileset-Animated Terrains-8 frames- transparency_96
+  - first:
+      213: 6644862089633385432
+    second: Tileset-Animated Terrains-8 frames- transparency_97
+  - first:
+      213: 7202057767444003222
+    second: Tileset-Animated Terrains-8 frames- transparency_98
+  - first:
+      213: -2124186701606199145
+    second: Tileset-Animated Terrains-8 frames- transparency_99
+  - first:
+      213: -1401763784288879563
+    second: Tileset-Animated Terrains-8 frames- transparency_100
+  - first:
+      213: 3076354850738307472
+    second: Tileset-Animated Terrains-8 frames- transparency_101
+  - first:
+      213: 3769404996226441664
+    second: Tileset-Animated Terrains-8 frames- transparency_102
+  - first:
+      213: -890168212780195778
+    second: Tileset-Animated Terrains-8 frames- transparency_103
+  - first:
+      213: 5236544680957327404
+    second: Tileset-Animated Terrains-8 frames- transparency_104
+  - first:
+      213: -9042967728985224517
+    second: Tileset-Animated Terrains-8 frames- transparency_105
+  - first:
+      213: -7455130754438644672
+    second: Tileset-Animated Terrains-8 frames- transparency_106
+  - first:
+      213: 7372422629867055092
+    second: Tileset-Animated Terrains-8 frames- transparency_107
+  - first:
+      213: 2804582886028629273
+    second: Tileset-Animated Terrains-8 frames- transparency_108
+  - first:
+      213: -2068091350850291474
+    second: Tileset-Animated Terrains-8 frames- transparency_109
+  - first:
+      213: 8368972091025699208
+    second: Tileset-Animated Terrains-8 frames- transparency_110
+  - first:
+      213: 2415148262586508947
+    second: Tileset-Animated Terrains-8 frames- transparency_111
+  - first:
+      213: -5625934636922100592
+    second: Tileset-Animated Terrains-8 frames- transparency_112
+  - first:
+      213: 3934553999624751019
+    second: Tileset-Animated Terrains-8 frames- transparency_113
+  - first:
+      213: 7447428018522756904
+    second: Tileset-Animated Terrains-8 frames- transparency_114
+  - first:
+      213: -2295038345461803675
+    second: Tileset-Animated Terrains-8 frames- transparency_115
+  - first:
+      213: 2858056865824862669
+    second: Tileset-Animated Terrains-8 frames- transparency_116
+  - first:
+      213: 7600630379014628017
+    second: Tileset-Animated Terrains-8 frames- transparency_117
+  - first:
+      213: -7664696292186650009
+    second: Tileset-Animated Terrains-8 frames- transparency_118
+  - first:
+      213: -3343967938415505315
+    second: Tileset-Animated Terrains-8 frames- transparency_119
+  - first:
+      213: -1954214408503964317
+    second: Tileset-Animated Terrains-8 frames- transparency_120
+  - first:
+      213: -8114362716536111128
+    second: Tileset-Animated Terrains-8 frames- transparency_121
+  - first:
+      213: -7273633492094592490
+    second: Tileset-Animated Terrains-8 frames- transparency_122
+  - first:
+      213: 5593717362746353298
+    second: Tileset-Animated Terrains-8 frames- transparency_123
+  - first:
+      213: 2133355800920613008
+    second: Tileset-Animated Terrains-8 frames- transparency_124
+  - first:
+      213: -493130475754040787
+    second: Tileset-Animated Terrains-8 frames- transparency_125
+  - first:
+      213: 1760600289889737057
+    second: Tileset-Animated Terrains-8 frames- transparency_126
+  - first:
+      213: -1300041117260896124
+    second: Tileset-Animated Terrains-8 frames- transparency_127
+  - first:
+      213: -1243957810123592776
+    second: Tileset-Animated Terrains-8 frames- transparency_128
+  - first:
+      213: 5810063645211676004
+    second: Tileset-Animated Terrains-8 frames- transparency_129
+  - first:
+      213: -3096573864406717880
+    second: Tileset-Animated Terrains-8 frames- transparency_130
+  - first:
+      213: -8498523657226205034
+    second: Tileset-Animated Terrains-8 frames- transparency_131
+  - first:
+      213: 9078296354381004667
+    second: Tileset-Animated Terrains-8 frames- transparency_132
+  - first:
+      213: -6366240137007043046
+    second: Tileset-Animated Terrains-8 frames- transparency_133
+  - first:
+      213: 122581185364801371
+    second: Tileset-Animated Terrains-8 frames- transparency_134
+  - first:
+      213: -8370645787000295421
+    second: Tileset-Animated Terrains-8 frames- transparency_135
+  - first:
+      213: -3467000416743499321
+    second: Tileset-Animated Terrains-8 frames- transparency_136
+  - first:
+      213: 1808332833690660955
+    second: Tileset-Animated Terrains-8 frames- transparency_137
+  - first:
+      213: -4014686279154297776
+    second: Tileset-Animated Terrains-8 frames- transparency_138
+  - first:
+      213: -7008916657407584670
+    second: Tileset-Animated Terrains-8 frames- transparency_139
+  - first:
+      213: 2976421782233144495
+    second: Tileset-Animated Terrains-8 frames- transparency_140
+  - first:
+      213: -7981243524154278808
+    second: Tileset-Animated Terrains-8 frames- transparency_141
+  - first:
+      213: -6658374366818809398
+    second: Tileset-Animated Terrains-8 frames- transparency_142
+  - first:
+      213: 666661088658705743
+    second: Tileset-Animated Terrains-8 frames- transparency_143
+  - first:
+      213: 5116578404552629515
+    second: Tileset-Animated Terrains-8 frames- transparency_144
+  - first:
+      213: -2062351442811206277
+    second: Tileset-Animated Terrains-8 frames- transparency_145
+  - first:
+      213: -5496144309663076143
+    second: Tileset-Animated Terrains-8 frames- transparency_146
+  - first:
+      213: 5931259792561223455
+    second: Tileset-Animated Terrains-8 frames- transparency_147
+  - first:
+      213: -7396756370506487847
+    second: Tileset-Animated Terrains-8 frames- transparency_148
+  - first:
+      213: 7750947430663555667
+    second: Tileset-Animated Terrains-8 frames- transparency_149
+  - first:
+      213: 8059358151599438156
+    second: Tileset-Animated Terrains-8 frames- transparency_150
+  - first:
+      213: 921168240805814824
+    second: Tileset-Animated Terrains-8 frames- transparency_151
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cac285a813a853c0800000000000000
+      internalID: -4370564112111711551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31de0074907bde0d0800000000000000
+      internalID: -3391853693866283757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d7903eee3e795820800000000000000
+      internalID: 2907493843193599954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c698205d664cb6c0800000000000000
+      internalID: -4126345723268000064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6954ec8d664aa5520800000000000000
+      internalID: 2691644488938309014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a43ca856488bfbe30800000000000000
+      internalID: 4521535429682053962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c81e73ae40881180800000000000000
+      internalID: -9144417968137037629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_7
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb7c4a4fc943c0d40800000000000000
+      internalID: 5551870289364961214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_8
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01d3a08dd17411240800000000000000
+      internalID: 4760664474611498256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_9
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5c8b9a9da45b7250800000000000000
+      internalID: 5943437237845462110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_10
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50f63432baa1767b0800000000000000
+      internalID: -5231183119834190075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_11
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52d96d60579c4ea50800000000000000
+      internalID: 6549581262566628645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_12
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c134dfd4b88d2f70800000000000000
+      internalID: 9164131127199543748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_13
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3b62102a81b61bc0800000000000000
+      internalID: -3812664827720864962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_14
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93b70adad9e483510800000000000000
+      internalID: 1529058512622091065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_15
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1d41fad3138f4f10800000000000000
+      internalID: 2256166059636772126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34a44dcf3953c15e0800000000000000
+      internalID: -1937614829957920189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_17
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 097f5089340d6a540800000000000000
+      internalID: 5018927823482910608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_18
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f7f0dd84ea579050800000000000000
+      internalID: 5807210182195869680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_19
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75850a92ed53c14a0800000000000000
+      internalID: -6621358123844085673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_20
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08a74ada600cbe710800000000000000
+      internalID: 1723682417314921088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_21
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e9d8f8808bee4250800000000000000
+      internalID: 5930936696579873251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_22
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08b49d7379fb12550800000000000000
+      internalID: 6134394823653280640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_23
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52cb61bf95ac1bd80800000000000000
+      internalID: -8236579755670455259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_24
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5380623b03399860800000000000000
+      internalID: 7537111574564078426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_25
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bfb7b270702fb2c0800000000000000
+      internalID: -4413773442466725964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_26
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 855dcee6fd19c8fa0800000000000000
+      internalID: -5797098231507921576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_27
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac4c804833977f340800000000000000
+      internalID: 4897516381954163914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_28
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64c03c1e294a46980800000000000000
+      internalID: -8546525242082522042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_29
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fb9535d2b6535440800000000000000
+      internalID: 4923374143727311861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_30
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a487c08df0d817b40800000000000000
+      internalID: 5436281324401621066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_31
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce8260a1f0f2dd790800000000000000
+      internalID: -7503789662221752084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_32
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb832ff5ec48f7710800000000000000
+      internalID: 1693218006822435006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_33
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4de4deab1ca7211d0800000000000000
+      internalID: -3381505397718429996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_34
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: decf99f0b7612e100800000000000000
+      internalID: 135695656573074669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_35
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15069cd1d7a2abf90800000000000000
+      internalID: -6937185559151812527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_36
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7037b68a5f4022f70800000000000000
+      internalID: 9160890045164122887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_37
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40d8dd7bcd4a68500800000000000000
+      internalID: 398186884953378052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_38
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb8ae9cfbc96355f0800000000000000
+      internalID: -769154786512688961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_39
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7b75510e7b276b10800000000000000
+      internalID: 1974594781813504893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_40
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf146cd25bd165940800000000000000
+      internalID: 5284443876760109564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_41
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c988b0cb32b156990800000000000000
+      internalID: -7393473372966123364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_42
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de322abb159d89c90800000000000000
+      internalID: -7162736262269230099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_43
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec936342922676c70800000000000000
+      internalID: 8964241512144976334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_44
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00d56cef36134c430800000000000000
+      internalID: 3802218290953477376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_45
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4a50cf635182d490800000000000000
+      internalID: -7722968215629833649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_46
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63481eec599d0b410800000000000000
+      internalID: 1490930714103874614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_47
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0185ad1ac7df81dc0800000000000000
+      internalID: -3667903184760055792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_48
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe4f39467ee7711b0800000000000000
+      internalID: -5685936472241998609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_49
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6821eaf2de11ecdb0800000000000000
+      internalID: -4769855244933918074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_50
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86b7241d9c88e02a0800000000000000
+      internalID: -6769322789510677656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_51
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffe14124e1fc20eb0800000000000000
+      internalID: -4755010527685239041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_52
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73781f9d5f9c94b30800000000000000
+      internalID: 4272167779298281271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_53
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6725e51123598c630800000000000000
+      internalID: 3947569115662537334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_54
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc5b3cfa02f230230800000000000000
+      internalID: 3603775944260826573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_55
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cb51947a4ec820e0800000000000000
+      internalID: -2294357190966682686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_56
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68e8ec86ca2f56fb0800000000000000
+      internalID: -4655047817510875514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_57
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4a24187da5cbe2f0800000000000000
+      internalID: -942442348169385393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_58
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e604e16d9df9d7f0800000000000000
+      internalID: -587159424001112351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_59
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97431730d755d8970800000000000000
+      internalID: 8758750845722506361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_60
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce90f58c42280d2b0800000000000000
+      internalID: -5561802445310457364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_61
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a1505c57a0548600800000000000000
+      internalID: 469588940891902373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_62
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a688dad0d1c22090800000000000000
+      internalID: -8060667280270784855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_63
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b40f9ee0e255bc830800000000000000
+      internalID: 4092458342703296587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_64
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 296815535bdb82470800000000000000
+      internalID: 8370148493449332370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_65
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c694f9d57e7027c0800000000000000
+      internalID: -4098136616274192699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_66
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92e209ee50e28c900800000000000000
+      internalID: 704863944695623209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_67
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eef299fd1452a4c10800000000000000
+      internalID: 2038482746193031150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_68
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b4de6bc5a8726510800000000000000
+      internalID: 1540926675992106161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_69
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3afc8f6096bc4440800000000000000
+      internalID: 4921509224272165434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_70
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 863c61e4dc8d27ba0800000000000000
+      internalID: -6092568969588849816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_71
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c5fb8d8767927890800000000000000
+      internalID: -7461735161587305022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_72
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: beee85e6501a5ee90800000000000000
+      internalID: -6997009401351966997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_73
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9599323c58eb7e750800000000000000
+      internalID: 6334240882633709913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_74
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5024cf88f76a2e550800000000000000
+      internalID: 6188691904649773573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_75
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1427b6adba9a4930800000000000000
+      internalID: 4128282147774997531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_76
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7190d682f64ef9970800000000000000
+      internalID: 8763974565957011735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_77
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d75241ebaf74ed30800000000000000
+      internalID: 4459829907198990290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_78
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7000226823b2f6230800000000000000
+      internalID: 3634170920310013959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_79
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68201ae6c7fe1e010800000000000000
+      internalID: 1216516692077773446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_80
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d9799f385117a8a0800000000000000
+      internalID: -6294042883505161774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_81
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71099bf20a7b63ce0800000000000000
+      internalID: -1425750333392842729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_82
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4ddcc3045663b3a0800000000000000
+      internalID: -6650859713669046963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_83
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee514f11bc2e6a220800000000000000
+      internalID: 2496932405230966254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_84
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acf20414e7073c1a0800000000000000
+      internalID: -6790460125581660214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_85
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f41a55680a660220800000000000000
+      internalID: 2451763631442498802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_86
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de507a7c85da776b0800000000000000
+      internalID: -5298575839759759891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_87
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ea05f7b35733b810800000000000000
+      internalID: 1779827110449580774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_88
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 440b21e7639bff5c0800000000000000
+      internalID: -4179418285482004412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_89
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 077ab4e18a0186690800000000000000
+      internalID: -7608813256193628304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_90
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f79f2a3be14058570800000000000000
+      internalID: 8468179204249418111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_91
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da7a9c8e7b8974cd0800000000000000
+      internalID: -2573920746366982227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_92
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5b7b1cf67e8213a0800000000000000
+      internalID: -6696133054259561633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_93
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a824ea1b22e6c88f0800000000000000
+      internalID: -536933160275000694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_94
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88de6bed8d6e0bcf0800000000000000
+      internalID: -238436961126781560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_95
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01fc6420f4059c560800000000000000
+      internalID: 7334481768420396816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_96
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecb6549a98314b3d0800000000000000
+      internalID: -3191904753927492658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_97
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dbce025dda473c50800000000000000
+      internalID: 6644862089633385432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_98
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 699b750a169d2f360800000000000000
+      internalID: 7202057767444003222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_99
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7906726037f5582e0800000000000000
+      internalID: -2124186701606199145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_100
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53c347ad34feb8ce0800000000000000
+      internalID: -1401763784288879563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_101
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0918e41007861ba20800000000000000
+      internalID: 3076354850738307472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_102
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c1e8a67fdd9f4430800000000000000
+      internalID: 3769404996226441664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_103
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3064ee0abc75a3f0800000000000000
+      internalID: -890168212780195778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_104
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c283ce694a1fba840800000000000000
+      internalID: 5236544680957327404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_105
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbac38e13cce08280800000000000000
+      internalID: -9042967728985224517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_106
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04c389be31e0a8890800000000000000
+      internalID: -7455130754438644672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_107
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f7e643325b105660800000000000000
+      internalID: 7372422629867055092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_108
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91550e88641ebe620800000000000000
+      internalID: 2804582886028629273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_109
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee8b285afd9ac43e0800000000000000
+      internalID: -2068091350850291474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_110
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 881bebca6cf842470800000000000000
+      internalID: 8368972091025699208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_111
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 396ee5f7c84548120800000000000000
+      internalID: 2415148262586508947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_112
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09421b4514aace1b0800000000000000
+      internalID: -5625934636922100592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_113
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba7c93934085a9630800000000000000
+      internalID: 3934553999624751019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_114
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 827175e13549a5760800000000000000
+      internalID: 7447428018522756904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_115
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56559d0d8c26620e0800000000000000
+      internalID: -2295038345461803675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_116
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc17b5ba39bd9a720800000000000000
+      internalID: 2858056865824862669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_117
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b2a5325f0dda7960800000000000000
+      internalID: 7600630379014628017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_118
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76a06f0e45781a590800000000000000
+      internalID: -7664696292186650009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_119
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d50d27a80e6d791d0800000000000000
+      internalID: -3343967938415505315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_120
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36dcb2e695c31e4e0800000000000000
+      internalID: -1954214408503964317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_121
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8eff03ed91ef36f80800000000000000
+      internalID: -8114362716536111128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_122
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61a515550ecde0b90800000000000000
+      internalID: -7273633492094592490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_123
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2966e6cfd40e0ad40800000000000000
+      internalID: 5593717362746353298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_124
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09064654cc33b9d10800000000000000
+      internalID: 2133355800920613008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_125
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d22d2cce17c0829f0800000000000000
+      internalID: -493130475754040787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_126
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 169d356b2a8ee6810800000000000000
+      internalID: 1760600289889737057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_127
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4882344ed7355fde0800000000000000
+      internalID: -1300041117260896124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_128
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bba20466f29cbee0800000000000000
+      internalID: -1243957810123592776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_129
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46dc04f2a1e71a050800000000000000
+      internalID: 5810063645211676004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_130
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84a67470a72c605d0800000000000000
+      internalID: -3096573864406717880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_131
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69847c7c2cd2f0a80800000000000000
+      internalID: -8498523657226205034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_132
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7f7a987f669cfd70800000000000000
+      internalID: 9078296354381004667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_133
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1e6cde335296a7a0800000000000000
+      internalID: -6366240137007043046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_134
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b57b0d940fe73b100800000000000000
+      internalID: 122581185364801371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_135
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3003a3d910e75db80800000000000000
+      internalID: -8370645787000295421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_136
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c95fdb6d7db2efc0800000000000000
+      internalID: -3467000416743499321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_137
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b50becb912d781910800000000000000
+      internalID: 1808332833690660955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_138
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0549f5e8918f848c0800000000000000
+      internalID: -4014686279154297776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_139
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26617e65f635bbe90800000000000000
+      internalID: -7008916657407584670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_140
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: facddb757df5e4920800000000000000
+      internalID: 2976421782233144495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_141
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86cb5ec1d4dec3190800000000000000
+      internalID: -7981243524154278808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_142
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac9c23c7ac3b893a0800000000000000
+      internalID: -6658374366818809398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_143
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4dc31f5ab4704900800000000000000
+      internalID: 666661088658705743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_144
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0d5bcc33fcb10740800000000000000
+      internalID: 5116578404552629515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_145
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7549312a4e0163e0800000000000000
+      internalID: -2062351442811206277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_146
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d07f34ced5c9b3b0800000000000000
+      internalID: -5496144309663076143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_147
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f173b2e2b51105250800000000000000
+      internalID: 5931259792561223455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_148
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d76add4541795990800000000000000
+      internalID: -7396756370506487847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_149
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35a8d653f95e09b60800000000000000
+      internalID: 7750947430663555667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_150
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c49bbbfd98798df60800000000000000
+      internalID: 8059358151599438156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Animated Terrains-8 frames- transparency_151
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8222a9b62a5a8cc00800000000000000
+      internalID: 921168240805814824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Tileset-Animated Terrains-8 frames- transparency_109: -2068091350850291474
+      Tileset-Animated Terrains-8 frames- transparency_51: -4755010527685239041
+      Tileset-Animated Terrains-8 frames- transparency_10: -5231183119834190075
+      Tileset-Animated Terrains-8 frames- transparency_92: -6696133054259561633
+      Tileset-Animated Terrains-8 frames- transparency_111: 2415148262586508947
+      Tileset-Animated Terrains-8 frames- transparency_127: -1300041117260896124
+      Tileset-Animated Terrains-8 frames- transparency_144: 5116578404552629515
+      Tileset-Animated Terrains-8 frames- transparency_28: -8546525242082522042
+      Tileset-Animated Terrains-8 frames- transparency_85: 2451763631442498802
+      Tileset-Animated Terrains-8 frames- transparency_57: -942442348169385393
+      Tileset-Animated Terrains-8 frames- transparency_25: -4413773442466725964
+      Tileset-Animated Terrains-8 frames- transparency_31: -7503789662221752084
+      Tileset-Animated Terrains-8 frames- transparency_35: -6937185559151812527
+      Tileset-Animated Terrains-8 frames- transparency_19: -6621358123844085673
+      Tileset-Animated Terrains-8 frames- transparency_67: 2038482746193031150
+      Tileset-Animated Terrains-8 frames- transparency_105: -9042967728985224517
+      Tileset-Animated Terrains-8 frames- transparency_114: 7447428018522756904
+      Tileset-Animated Terrains-8 frames- transparency_62: -8060667280270784855
+      Tileset-Animated Terrains-8 frames- transparency_122: -7273633492094592490
+      Tileset-Animated Terrains-8 frames- transparency_72: -6997009401351966997
+      Tileset-Animated Terrains-8 frames- transparency_6: -9144417968137037629
+      Tileset-Animated Terrains-8 frames- transparency_23: -8236579755670455259
+      Tileset-Animated Terrains-8 frames- transparency_143: 666661088658705743
+      Tileset-Animated Terrains-8 frames- transparency_147: 5931259792561223455
+      Tileset-Animated Terrains-8 frames- transparency_83: 2496932405230966254
+      Tileset-Animated Terrains-8 frames- transparency_52: 4272167779298281271
+      Tileset-Animated Terrains-8 frames- transparency_3: -4126345723268000064
+      Tileset-Animated Terrains-8 frames- transparency_136: -3467000416743499321
+      Tileset-Animated Terrains-8 frames- transparency_42: -7162736262269230099
+      Tileset-Animated Terrains-8 frames- transparency_56: -4655047817510875514
+      Tileset-Animated Terrains-8 frames- transparency_2: 2907493843193599954
+      Tileset-Animated Terrains-8 frames- transparency_106: -7455130754438644672
+      Tileset-Animated Terrains-8 frames- transparency_116: 2858056865824862669
+      Tileset-Animated Terrains-8 frames- transparency_118: -7664696292186650009
+      Tileset-Animated Terrains-8 frames- transparency_63: 4092458342703296587
+      Tileset-Animated Terrains-8 frames- transparency_82: -6650859713669046963
+      Tileset-Animated Terrains-8 frames- transparency_55: -2294357190966682686
+      Tileset-Animated Terrains-8 frames- transparency_33: -3381505397718429996
+      Tileset-Animated Terrains-8 frames- transparency_15: 2256166059636772126
+      Tileset-Animated Terrains-8 frames- transparency_70: -6092568969588849816
+      Tileset-Animated Terrains-8 frames- transparency_84: -6790460125581660214
+      Tileset-Animated Terrains-8 frames- transparency_93: -536933160275000694
+      Tileset-Animated Terrains-8 frames- transparency_59: 8758750845722506361
+      Tileset-Animated Terrains-8 frames- transparency_13: -3812664827720864962
+      Tileset-Animated Terrains-8 frames- transparency_98: 7202057767444003222
+      Tileset-Animated Terrains-8 frames- transparency_76: 8763974565957011735
+      Tileset-Animated Terrains-8 frames- transparency_1: -3391853693866283757
+      Tileset-Animated Terrains-8 frames- transparency_86: -5298575839759759891
+      Tileset-Animated Terrains-8 frames- transparency_123: 5593717362746353298
+      Tileset-Animated Terrains-8 frames- transparency_88: -4179418285482004412
+      Tileset-Animated Terrains-8 frames- transparency_16: -1937614829957920189
+      Tileset-Animated Terrains-8 frames- transparency_96: -3191904753927492658
+      Tileset-Animated Terrains-8 frames- transparency_121: -8114362716536111128
+      Tileset-Animated Terrains-8 frames- transparency_129: 5810063645211676004
+      Tileset-Animated Terrains-8 frames- transparency_138: -4014686279154297776
+      Tileset-Animated Terrains-8 frames- transparency_140: 2976421782233144495
+      Tileset-Animated Terrains-8 frames- transparency_101: 3076354850738307472
+      Tileset-Animated Terrains-8 frames- transparency_133: -6366240137007043046
+      Tileset-Animated Terrains-8 frames- transparency_87: 1779827110449580774
+      Tileset-Animated Terrains-8 frames- transparency_100: -1401763784288879563
+      Tileset-Animated Terrains-8 frames- transparency_149: 7750947430663555667
+      Tileset-Animated Terrains-8 frames- transparency_141: -7981243524154278808
+      Tileset-Animated Terrains-8 frames- transparency_41: -7393473372966123364
+      Tileset-Animated Terrains-8 frames- transparency_78: 3634170920310013959
+      Tileset-Animated Terrains-8 frames- transparency_69: 4921509224272165434
+      Tileset-Animated Terrains-8 frames- transparency_108: 2804582886028629273
+      Tileset-Animated Terrains-8 frames- transparency_75: 4128282147774997531
+      Tileset-Animated Terrains-8 frames- transparency_20: 1723682417314921088
+      Tileset-Animated Terrains-8 frames- transparency_65: -4098136616274192699
+      Tileset-Animated Terrains-8 frames- transparency_130: -3096573864406717880
+      Tileset-Animated Terrains-8 frames- transparency_12: 9164131127199543748
+      Tileset-Animated Terrains-8 frames- transparency_145: -2062351442811206277
+      Tileset-Animated Terrains-8 frames- transparency_91: -2573920746366982227
+      Tileset-Animated Terrains-8 frames- transparency_45: -7722968215629833649
+      Tileset-Animated Terrains-8 frames- transparency_95: 7334481768420396816
+      Tileset-Animated Terrains-8 frames- transparency_68: 1540926675992106161
+      Tileset-Animated Terrains-8 frames- transparency_49: -4769855244933918074
+      Tileset-Animated Terrains-8 frames- transparency_9: 5943437237845462110
+      Tileset-Animated Terrains-8 frames- transparency_66: 704863944695623209
+      Tileset-Animated Terrains-8 frames- transparency_47: -3667903184760055792
+      Tileset-Animated Terrains-8 frames- transparency_81: -1425750333392842729
+      Tileset-Animated Terrains-8 frames- transparency_104: 5236544680957327404
+      Tileset-Animated Terrains-8 frames- transparency_27: 4897516381954163914
+      Tileset-Animated Terrains-8 frames- transparency_46: 1490930714103874614
+      Tileset-Animated Terrains-8 frames- transparency_58: -587159424001112351
+      Tileset-Animated Terrains-8 frames- transparency_125: -493130475754040787
+      Tileset-Animated Terrains-8 frames- transparency_119: -3343967938415505315
+      Tileset-Animated Terrains-8 frames- transparency_97: 6644862089633385432
+      Tileset-Animated Terrains-8 frames- transparency_142: -6658374366818809398
+      Tileset-Animated Terrains-8 frames- transparency_124: 2133355800920613008
+      Tileset-Animated Terrains-8 frames- transparency_40: 5284443876760109564
+      Tileset-Animated Terrains-8 frames- transparency_64: 8370148493449332370
+      Tileset-Animated Terrains-8 frames- transparency_14: 1529058512622091065
+      Tileset-Animated Terrains-8 frames- transparency_89: -7608813256193628304
+      Tileset-Animated Terrains-8 frames- transparency_26: -5797098231507921576
+      Tileset-Animated Terrains-8 frames- transparency_32: 1693218006822435006
+      Tileset-Animated Terrains-8 frames- transparency_30: 5436281324401621066
+      Tileset-Animated Terrains-8 frames- transparency_22: 6134394823653280640
+      Tileset-Animated Terrains-8 frames- transparency_103: -890168212780195778
+      Tileset-Animated Terrains-8 frames- transparency_99: -2124186701606199145
+      Tileset-Animated Terrains-8 frames- transparency_54: 3603775944260826573
+      Tileset-Animated Terrains-8 frames- transparency_131: -8498523657226205034
+      Tileset-Animated Terrains-8 frames- transparency_71: -7461735161587305022
+      Tileset-Animated Terrains-8 frames- transparency_21: 5930936696579873251
+      Tileset-Animated Terrains-8 frames- transparency_107: 7372422629867055092
+      Tileset-Animated Terrains-8 frames- transparency_113: 3934553999624751019
+      Tileset-Animated Terrains-8 frames- transparency_128: -1243957810123592776
+      Tileset-Animated Terrains-8 frames- transparency_60: -5561802445310457364
+      Tileset-Animated Terrains-8 frames- transparency_0: -4370564112111711551
+      Tileset-Animated Terrains-8 frames- transparency_132: 9078296354381004667
+      Tileset-Animated Terrains-8 frames- transparency_38: -769154786512688961
+      Tileset-Animated Terrains-8 frames- transparency_39: 1974594781813504893
+      Tileset-Animated Terrains-8 frames- transparency_77: 4459829907198990290
+      Tileset-Animated Terrains-8 frames- transparency_115: -2295038345461803675
+      Tileset-Animated Terrains-8 frames- transparency_24: 7537111574564078426
+      Tileset-Animated Terrains-8 frames- transparency_34: 135695656573074669
+      Tileset-Animated Terrains-8 frames- transparency_50: -6769322789510677656
+      Tileset-Animated Terrains-8 frames- transparency_74: 6188691904649773573
+      Tileset-Animated Terrains-8 frames- transparency_102: 3769404996226441664
+      Tileset-Animated Terrains-8 frames- transparency_43: 8964241512144976334
+      Tileset-Animated Terrains-8 frames- transparency_4: 2691644488938309014
+      Tileset-Animated Terrains-8 frames- transparency_110: 8368972091025699208
+      Tileset-Animated Terrains-8 frames- transparency_120: -1954214408503964317
+      Tileset-Animated Terrains-8 frames- transparency_79: 1216516692077773446
+      Tileset-Animated Terrains-8 frames- transparency_36: 9160890045164122887
+      Tileset-Animated Terrains-8 frames- transparency_94: -238436961126781560
+      Tileset-Animated Terrains-8 frames- transparency_80: -6294042883505161774
+      Tileset-Animated Terrains-8 frames- transparency_146: -5496144309663076143
+      Tileset-Animated Terrains-8 frames- transparency_150: 8059358151599438156
+      Tileset-Animated Terrains-8 frames- transparency_137: 1808332833690660955
+      Tileset-Animated Terrains-8 frames- transparency_11: 6549581262566628645
+      Tileset-Animated Terrains-8 frames- transparency_48: -5685936472241998609
+      Tileset-Animated Terrains-8 frames- transparency_73: 6334240882633709913
+      Tileset-Animated Terrains-8 frames- transparency_7: 5551870289364961214
+      Tileset-Animated Terrains-8 frames- transparency_5: 4521535429682053962
+      Tileset-Animated Terrains-8 frames- transparency_37: 398186884953378052
+      Tileset-Animated Terrains-8 frames- transparency_117: 7600630379014628017
+      Tileset-Animated Terrains-8 frames- transparency_44: 3802218290953477376
+      Tileset-Animated Terrains-8 frames- transparency_53: 3947569115662537334
+      Tileset-Animated Terrains-8 frames- transparency_134: 122581185364801371
+      Tileset-Animated Terrains-8 frames- transparency_126: 1760600289889737057
+      Tileset-Animated Terrains-8 frames- transparency_148: -7396756370506487847
+      Tileset-Animated Terrains-8 frames- transparency_151: 921168240805814824
+      Tileset-Animated Terrains-8 frames- transparency_90: 8468179204249418111
+      Tileset-Animated Terrains-8 frames- transparency_61: 469588940891902373
+      Tileset-Animated Terrains-8 frames- transparency_112: -5625934636922100592
+      Tileset-Animated Terrains-8 frames- transparency_135: -8370645787000295421
+      Tileset-Animated Terrains-8 frames- transparency_29: 4923374143727311861
+      Tileset-Animated Terrains-8 frames- transparency_17: 5018927823482910608
+      Tileset-Animated Terrains-8 frames- transparency_18: 5807210182195869680
+      Tileset-Animated Terrains-8 frames- transparency_139: -7008916657407584670
+      Tileset-Animated Terrains-8 frames- transparency_8: 4760664474611498256
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

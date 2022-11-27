@@ -1,0 +1,1335 @@
+fileFormatVersion: 2
+guid: 46420f59124111b43bd8155b62abfacf
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7435217617827650440
+    second: wall-8 - 2 tiles tall-transparency_0
+  - first:
+      213: -3070055227276682360
+    second: wall-8 - 2 tiles tall-transparency_1
+  - first:
+      213: 6558428621813583221
+    second: wall-8 - 2 tiles tall-transparency_2
+  - first:
+      213: 2629892034527970896
+    second: wall-8 - 2 tiles tall-transparency_3
+  - first:
+      213: 3138658684152810726
+    second: wall-8 - 2 tiles tall-transparency_4
+  - first:
+      213: 4428588640767943980
+    second: wall-8 - 2 tiles tall-transparency_5
+  - first:
+      213: 686903439566912362
+    second: wall-8 - 2 tiles tall-transparency_6
+  - first:
+      213: -3303251995931665361
+    second: wall-8 - 2 tiles tall-transparency_7
+  - first:
+      213: -4098190842476695402
+    second: wall-8 - 2 tiles tall-transparency_8
+  - first:
+      213: 9181443416335874529
+    second: wall-8 - 2 tiles tall-transparency_9
+  - first:
+      213: -2494038880838002184
+    second: wall-8 - 2 tiles tall-transparency_10
+  - first:
+      213: 5022495044942131527
+    second: wall-8 - 2 tiles tall-transparency_11
+  - first:
+      213: -9002767212985934664
+    second: wall-8 - 2 tiles tall-transparency_12
+  - first:
+      213: 8901628563154517912
+    second: wall-8 - 2 tiles tall-transparency_13
+  - first:
+      213: -4166628799720499360
+    second: wall-8 - 2 tiles tall-transparency_14
+  - first:
+      213: -2418911576935062642
+    second: wall-8 - 2 tiles tall-transparency_15
+  - first:
+      213: 6861492772400535958
+    second: wall-8 - 2 tiles tall-transparency_16
+  - first:
+      213: -1939228809081413152
+    second: wall-8 - 2 tiles tall-transparency_17
+  - first:
+      213: -237399373035404829
+    second: wall-8 - 2 tiles tall-transparency_18
+  - first:
+      213: -4562237229349747136
+    second: wall-8 - 2 tiles tall-transparency_19
+  - first:
+      213: 5460211579920440348
+    second: wall-8 - 2 tiles tall-transparency_20
+  - first:
+      213: 5997359649814605438
+    second: wall-8 - 2 tiles tall-transparency_21
+  - first:
+      213: 1153818551923956278
+    second: wall-8 - 2 tiles tall-transparency_22
+  - first:
+      213: -6348916822047342840
+    second: wall-8 - 2 tiles tall-transparency_23
+  - first:
+      213: 3505278380759974169
+    second: wall-8 - 2 tiles tall-transparency_24
+  - first:
+      213: -4025028615475751398
+    second: wall-8 - 2 tiles tall-transparency_25
+  - first:
+      213: 7464083286778644355
+    second: wall-8 - 2 tiles tall-transparency_26
+  - first:
+      213: 3862403996732922711
+    second: wall-8 - 2 tiles tall-transparency_27
+  - first:
+      213: 2417585101856378478
+    second: wall-8 - 2 tiles tall-transparency_28
+  - first:
+      213: 3030312794311093419
+    second: wall-8 - 2 tiles tall-transparency_29
+  - first:
+      213: 6788831799863199713
+    second: wall-8 - 2 tiles tall-transparency_30
+  - first:
+      213: -987738417304688135
+    second: wall-8 - 2 tiles tall-transparency_31
+  - first:
+      213: 5690062716557035907
+    second: wall-8 - 2 tiles tall-transparency_32
+  - first:
+      213: 6425115080329997642
+    second: wall-8 - 2 tiles tall-transparency_33
+  - first:
+      213: -121878366767442070
+    second: wall-8 - 2 tiles tall-transparency_34
+  - first:
+      213: -7649427771732223125
+    second: wall-8 - 2 tiles tall-transparency_35
+  - first:
+      213: -7387922983304267899
+    second: wall-8 - 2 tiles tall-transparency_36
+  - first:
+      213: 1791456834822610733
+    second: wall-8 - 2 tiles tall-transparency_37
+  - first:
+      213: 876868281618655788
+    second: wall-8 - 2 tiles tall-transparency_38
+  - first:
+      213: 7193621931163972581
+    second: wall-8 - 2 tiles tall-transparency_39
+  - first:
+      213: 1521725849371016241
+    second: wall-8 - 2 tiles tall-transparency_40
+  - first:
+      213: -4721801328716614644
+    second: wall-8 - 2 tiles tall-transparency_41
+  - first:
+      213: 3129235306509924691
+    second: wall-8 - 2 tiles tall-transparency_42
+  - first:
+      213: 4501782849170236069
+    second: wall-8 - 2 tiles tall-transparency_43
+  - first:
+      213: -1162932473013880399
+    second: wall-8 - 2 tiles tall-transparency_44
+  - first:
+      213: -984130744176635126
+    second: wall-8 - 2 tiles tall-transparency_45
+  - first:
+      213: 1814595926101344826
+    second: wall-8 - 2 tiles tall-transparency_46
+  - first:
+      213: 3602497084470484197
+    second: wall-8 - 2 tiles tall-transparency_47
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: wall-8 - 2 tiles tall-transparency_0
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88bd75aa7033f2760800000000000000
+      internalID: 7435217617827650440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall-8 - 2 tiles tall-transparency_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88b97516909f465d0800000000000000
+      internalID: -3070055227276682360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall-8 - 2 tiles tall-transparency_2
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57d04ff5518340b50800000000000000
+      internalID: 6558428621813583221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall-8 - 2 tiles tall-transparency_3
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0564ba32fd04f7420800000000000000
+      internalID: 2629892034527970896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall-8 - 2 tiles tall-transparency_4
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ec8f14a171ce8b20800000000000000
+      internalID: 3138658684152810726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall-8 - 2 tiles tall-transparency_5
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c25ad45b7e1857d30800000000000000
+      internalID: 4428588640767943980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall-8 - 2 tiles tall-transparency_6
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6b3166f90f588900800000000000000
+      internalID: 686903439566912362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall-8 - 2 tiles tall-transparency_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2c94e2afcd7822d0800000000000000
+      internalID: -3303251995931665361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall-8 - 2 tiles tall-transparency_8
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 690fa64542d4027c0800000000000000
+      internalID: -4098190842476695402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall-8 - 2 tiles tall-transparency_9
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e97c0c442a0b6f70800000000000000
+      internalID: 9181443416335874529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall-8 - 2 tiles tall-transparency_10
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f953a31ad4636dd0800000000000000
+      internalID: -2494038880838002184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall-8 - 2 tiles tall-transparency_11
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7417fef02ac73b540800000000000000
+      internalID: 5022495044942131527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall-8 - 2 tiles tall-transparency_12
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bc90722beebf0380800000000000000
+      internalID: -9002767212985934664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall-8 - 2 tiles tall-transparency_13
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89fbb4de300f88b70800000000000000
+      internalID: 8901628563154517912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall-8 - 2 tiles tall-transparency_14
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0675fb1be292d26c0800000000000000
+      internalID: -4166628799720499360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall-8 - 2 tiles tall-transparency_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e83a4b99cbc4e6ed0800000000000000
+      internalID: -2418911576935062642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall-8 - 2 tiles tall-transparency_16
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69918df925be83f50800000000000000
+      internalID: 6861492772400535958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall-8 - 2 tiles tall-transparency_17
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e1af703ca97615e0800000000000000
+      internalID: -1939228809081413152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall-8 - 2 tiles tall-transparency_18
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e1035c278694bcf0800000000000000
+      internalID: -237399373035404829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall-8 - 2 tiles tall-transparency_19
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 046cb83696dafa0c0800000000000000
+      internalID: -4562237229349747136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall-8 - 2 tiles tall-transparency_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1cd1a3a08196cb40800000000000000
+      internalID: 5460211579920440348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall-8 - 2 tiles tall-transparency_21
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7ee57d73d6ea3350800000000000000
+      internalID: 5997359649814605438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall-8 - 2 tiles tall-transparency_22
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63adeaa1cdf230010800000000000000
+      internalID: 1153818551923956278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall-8 - 2 tiles tall-transparency_23
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80fbd51d9cd14e7a0800000000000000
+      internalID: -6348916822047342840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall-8 - 2 tiles tall-transparency_24
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9110e049d1045a030800000000000000
+      internalID: 3505278380759974169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall-8 - 2 tiles tall-transparency_25
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1619cbbcc93428c0800000000000000
+      internalID: -4025028615475751398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall-8 - 2 tiles tall-transparency_26
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3870f52f330c59760800000000000000
+      internalID: 7464083286778644355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall-8 - 2 tiles tall-transparency_27
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75b905c98f30a9530800000000000000
+      internalID: 3862403996732922711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall-8 - 2 tiles tall-transparency_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6e0d6a57dcfc8120800000000000000
+      internalID: 2417585101856378478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall-8 - 2 tiles tall-transparency_29
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: baceb3f5e65dd0a20800000000000000
+      internalID: 3030312794311093419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall-8 - 2 tiles tall-transparency_30
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e7c8be9d86c63e50800000000000000
+      internalID: 6788831799863199713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall-8 - 2 tiles tall-transparency_31
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f92c898429da42f0800000000000000
+      internalID: -987738417304688135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall-8 - 2 tiles tall-transparency_32
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 389831ab4e927fe40800000000000000
+      internalID: 5690062716557035907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall-8 - 2 tiles tall-transparency_33
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4d2314bf189a2950800000000000000
+      internalID: 6425115080329997642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall-8 - 2 tiles tall-transparency_34
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a67950b65400f4ef0800000000000000
+      internalID: -121878366767442070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall-8 - 2 tiles tall-transparency_35
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6b94e258f5c7d590800000000000000
+      internalID: -7649427771732223125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall-8 - 2 tiles tall-transparency_36
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58774388033d87990800000000000000
+      internalID: -7387922983304267899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall-8 - 2 tiles tall-transparency_37
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2f1c0eef788cd810800000000000000
+      internalID: 1791456834822610733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall-8 - 2 tiles tall-transparency_38
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2aefa86e034b2c00800000000000000
+      internalID: 876868281618655788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall-8 - 2 tiles tall-transparency_39
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e3fc7f6801e4d360800000000000000
+      internalID: 7193621931163972581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall-8 - 2 tiles tall-transparency_40
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13cf949f8914e1510800000000000000
+      internalID: 1521725849371016241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall-8 - 2 tiles tall-transparency_41
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c04f0ed65bac87eb0800000000000000
+      internalID: -4721801328716614644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall-8 - 2 tiles tall-transparency_42
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 359722f8ee64d6b20800000000000000
+      internalID: 3129235306509924691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall-8 - 2 tiles tall-transparency_43
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a2ecbc56ab897e30800000000000000
+      internalID: 4501782849170236069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall-8 - 2 tiles tall-transparency_44
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b9bd38c31f6cdfe0800000000000000
+      internalID: -1162932473013880399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall-8 - 2 tiles tall-transparency_45
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a039fc46d4aa752f0800000000000000
+      internalID: -984130744176635126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall-8 - 2 tiles tall-transparency_46
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a324422716dbe2910800000000000000
+      internalID: 1814595926101344826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall-8 - 2 tiles tall-transparency_47
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ec5e30f204aef130800000000000000
+      internalID: 3602497084470484197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      wall-8 - 2 tiles tall-transparency_10: -2494038880838002184
+      wall-8 - 2 tiles tall-transparency_16: 6861492772400535958
+      wall-8 - 2 tiles tall-transparency_7: -3303251995931665361
+      wall-8 - 2 tiles tall-transparency_40: 1521725849371016241
+      wall-8 - 2 tiles tall-transparency_1: -3070055227276682360
+      wall-8 - 2 tiles tall-transparency_28: 2417585101856378478
+      wall-8 - 2 tiles tall-transparency_43: 4501782849170236069
+      wall-8 - 2 tiles tall-transparency_3: 2629892034527970896
+      wall-8 - 2 tiles tall-transparency_47: 3602497084470484197
+      wall-8 - 2 tiles tall-transparency_21: 5997359649814605438
+      wall-8 - 2 tiles tall-transparency_27: 3862403996732922711
+      wall-8 - 2 tiles tall-transparency_2: 6558428621813583221
+      wall-8 - 2 tiles tall-transparency_26: 7464083286778644355
+      wall-8 - 2 tiles tall-transparency_41: -4721801328716614644
+      wall-8 - 2 tiles tall-transparency_20: 5460211579920440348
+      wall-8 - 2 tiles tall-transparency_35: -7649427771732223125
+      wall-8 - 2 tiles tall-transparency_37: 1791456834822610733
+      wall-8 - 2 tiles tall-transparency_4: 3138658684152810726
+      wall-8 - 2 tiles tall-transparency_13: 8901628563154517912
+      wall-8 - 2 tiles tall-transparency_31: -987738417304688135
+      wall-8 - 2 tiles tall-transparency_17: -1939228809081413152
+      wall-8 - 2 tiles tall-transparency_0: 7435217617827650440
+      wall-8 - 2 tiles tall-transparency_45: -984130744176635126
+      wall-8 - 2 tiles tall-transparency_22: 1153818551923956278
+      wall-8 - 2 tiles tall-transparency_38: 876868281618655788
+      wall-8 - 2 tiles tall-transparency_25: -4025028615475751398
+      wall-8 - 2 tiles tall-transparency_30: 6788831799863199713
+      wall-8 - 2 tiles tall-transparency_33: 6425115080329997642
+      wall-8 - 2 tiles tall-transparency_18: -237399373035404829
+      wall-8 - 2 tiles tall-transparency_29: 3030312794311093419
+      wall-8 - 2 tiles tall-transparency_23: -6348916822047342840
+      wall-8 - 2 tiles tall-transparency_32: 5690062716557035907
+      wall-8 - 2 tiles tall-transparency_46: 1814595926101344826
+      wall-8 - 2 tiles tall-transparency_9: 9181443416335874529
+      wall-8 - 2 tiles tall-transparency_14: -4166628799720499360
+      wall-8 - 2 tiles tall-transparency_6: 686903439566912362
+      wall-8 - 2 tiles tall-transparency_42: 3129235306509924691
+      wall-8 - 2 tiles tall-transparency_19: -4562237229349747136
+      wall-8 - 2 tiles tall-transparency_11: 5022495044942131527
+      wall-8 - 2 tiles tall-transparency_44: -1162932473013880399
+      wall-8 - 2 tiles tall-transparency_5: 4428588640767943980
+      wall-8 - 2 tiles tall-transparency_34: -121878366767442070
+      wall-8 - 2 tiles tall-transparency_39: 7193621931163972581
+      wall-8 - 2 tiles tall-transparency_24: 3505278380759974169
+      wall-8 - 2 tiles tall-transparency_12: -9002767212985934664
+      wall-8 - 2 tiles tall-transparency_36: -7387922983304267899
+      wall-8 - 2 tiles tall-transparency_8: -4098190842476695402
+      wall-8 - 2 tiles tall-transparency_15: -2418911576935062642
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

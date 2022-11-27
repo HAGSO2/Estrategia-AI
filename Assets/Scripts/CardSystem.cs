@@ -10,8 +10,9 @@ public class CardSystem : MonoBehaviour
     [SerializeField] Card[] initialDeck = new Card[8];
     [SerializeField] Transform deckTransform;
 
-    //[SerializeField] Transform minCardPosToBePlayed;
-    //[SerializeField] Transform maxCardPosToBePlayed;
+    [SerializeField] Transform minCardPosToBePlayed;
+    [SerializeField] Transform maxCardPosToBePlayed;
+
 
     public Card[] hand = new Card[4];
     public Queue<Card> deck = new Queue<Card>(4);
@@ -48,24 +49,28 @@ public class CardSystem : MonoBehaviour
         }
     }
 
-    public void TryToPlayCardAI(int playedCardIndex, Vector3 pos)
+    public void TryToPlayCardAI(int playedCardIndex)
     {
         Card playedCard = hand[playedCardIndex];
 
-        PlayCardAI(playedCard);
-        deployCardSystem.DeployCardAI(playedCard, pos);
+        Vector3 pos = RandomPositionBetween(minCardPosToBePlayed.position, maxCardPosToBePlayed.position);
+
+        if (deployCardSystem.CanDeploy(playedCard))
+        {
+            PlayCardAI(playedCard);
+            deployCardSystem.DeployCardAI(playedCard, pos);
+        }
+        else
+        {
+            Debug.Log("AI --> Not enough elixir");
+        }
     }
 
     public void TryToPlayCard(int playedCardIndex, Vector3 pos)
     {
         Card playedCard = hand[playedCardIndex];
 
-        //Vector3 pos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-
-        //if ((playedCard.canBePlayed || playedCard.rightClick) && pos.y > minCardPosToBePlayed.position.y && pos.y < maxCardPosToBePlayed.position.y &&
-        //    pos.x > minCardPosToBePlayed.position.x && pos.x < maxCardPosToBePlayed.position.x && deployCardSystem.CanDeploy(playedCard))
-
-        if ((playedCard.canBePlayed || playedCard.rightClick) && deployCardSystem.CanDeploy(playedCard))
+        if (IsPosBetween(pos, minCardPosToBePlayed.position, maxCardPosToBePlayed.position) && deployCardSystem.CanDeploy(playedCard))
         {
             PlayCard(playedCard);
             deployCardSystem.DeployCard(playedCard, pos);
@@ -96,5 +101,21 @@ public class CardSystem : MonoBehaviour
 
         hand[playedCard.handIndex] = nextCard;
         nextCard.handIndex = playedCard.handIndex;
+    }
+
+    private bool IsPosBetween(Vector3 pos, Vector3 minPos, Vector3 maxPos)
+    {
+        return pos.x > minPos.x && pos.x < maxPos.x && pos.y > minPos.y && pos.y < maxPos.y;
+    }
+
+    private Vector3 RandomPositionBetween(Vector3 minPos, Vector3 maxPos)
+    {
+        Vector3 result = Vector3.zero;
+
+        result.x = Random.Range(minPos.x, maxPos.x);
+        result.y = Random.Range(minPos.y, maxPos.y);
+        //result.z = 0;
+
+        return result;
     }
 }
