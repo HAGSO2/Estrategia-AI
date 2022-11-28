@@ -5,13 +5,15 @@ using UnityEngine;
 
 public class EnemiesManager : MonoBehaviour
 {
-    public Transform Tower1 { get; set; }
-    public Transform Tower2 { get; set; }
-    private List<Transform> TroopsA = new List<Transform>();
-    private List<Transform> TroopsB = new List<Transform>();
+    [SerializeField]private Transform Tower1;
+    [SerializeField]private Transform Tower2;
+    private List<Transform> TroopsA;
+    private List<Transform> TroopsB;
 
-    private void Start()
+    private void Awake()
     {
+        TroopsA = new List<Transform>();
+        TroopsB = new List<Transform>();
         TroopsA.Add(Tower1);
         TroopsB.Add(Tower2);
     }
@@ -41,12 +43,12 @@ public class EnemiesManager : MonoBehaviour
 
     public Transform SearchNearest(Vector3 pos, bool team)
     {
-        List<Transform> Troops = !team ? TroopsA : TroopsB;
-        float dist = Vector3.Distance(Troops[0].position, pos);
+        List<Transform> troops = !team ? TroopsA : TroopsB;
+        float dist = Vector3.Distance(troops[0].position, pos);
         int j = 0;
-        for (int i = 1; i < Troops.Count; i++)
+        for (int i = 1; i < troops.Count; i++)
         {
-            float temp = Vector3.Distance(Troops[i].position, pos);
+            float temp = Vector3.Distance(troops[i].position, pos);
             if (temp < dist)
             {
                 dist = temp;
@@ -54,6 +56,6 @@ public class EnemiesManager : MonoBehaviour
             }
         }
 
-        return Troops[j];
+        return troops[j];
     }
 }

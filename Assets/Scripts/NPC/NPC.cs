@@ -10,6 +10,7 @@ public class NPC : MonoBehaviour
     [SerializeField] private EnemiesManager _manager;
     private Transform _target = null;
     [SerializeField] private Troop atributes;
+    private Pathfinding _path;
     private BinTree _behaviour;
     private Rigidbody2D _body;
     private Animator _controller;
@@ -18,9 +19,19 @@ public class NPC : MonoBehaviour
     private bool _hardOponent;
     private bool _InRange = false;
     public bool Team;
+    public bool doStart;
+    public EnemiesManager manualManager;
 
     private void Start()
     {
+        if(doStart)
+            Set(manualManager);
+    }
+
+    public void Set(EnemiesManager m)
+    {
+        _path = GetComponent<Pathfinding>();
+        _manager = m;
         _body = GetComponent<Rigidbody2D>();
         _controller = GetComponent<Animator>();
         _health = atributes.health;
@@ -62,7 +73,7 @@ public class NPC : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D col)
     {
-        if ((col.CompareTag("Attack") && col.GetComponentInParent<NPC>().Team != Team) || col.CompareTag("Structure"))
+        if ((col.CompareTag("Attack") && col.GetComponentInParent<NPC>().Team != Team) || (col.CompareTag("Structure") && col.GetComponentInParent<Tower>().Team != Team))
         {
             _InRange = true;
         }
@@ -103,16 +114,17 @@ public class NPC : MonoBehaviour
     private int TakeTarget()
     {
         _target = _manager.SearchNearest(transform.position, Team);
+        _path.targetPos = _target;
         Debug.Log("Target for:" + _target.name);
         return 1;
     }
     
     public int MoveTo()
     {
-        Vector3 desired = _target.position - transform.position;
+        Vector3 desired = _path.finalPath[1].position - transform.position;
         if (desired.magnitude > 0.1f)
         {
-            desired = desired.normalized * atributes.speed * Time.deltaTime;
+            desired = desired.normalized * atributes.speed * Time.deltaTime * Time.timeScale;
             _body.MovePosition(transform.position + desired);
         }
 
