@@ -121,6 +121,7 @@ public class NPC : MonoBehaviour
 
     private int TakeTarget()
     {
+        // TO DO
         _target = _manager.SearchNearest(transform.position, Team);
         _path.targetPos = _target;
         if (Vector3.Distance(transform.position, _target.position) < atributes.attackRange / 2)

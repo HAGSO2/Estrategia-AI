@@ -11,6 +11,7 @@ public class Tower : MonoBehaviour
 
     public void Hurt(float dmg)
     {
+        // TO DO
         _health -= dmg;
         if (_health <= 0)
         {

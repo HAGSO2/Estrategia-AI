@@ -46,7 +46,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aefdf3bbfe3bd7e49baaf9101599176b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy: {fileID: 6362256613582923689, guid: f3f6c219d24b014439e19b7ee52b60ab, type: 3}
+  enemy: {fileID: 7424146356389528510, guid: c8df1a49a900236468512496ebf0dce3, type: 3}
   cost: 5
   handIndex: 0
   canBePlayed: 0
