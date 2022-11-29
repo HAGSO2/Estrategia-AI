@@ -114,7 +114,7 @@ GameObject:
   - component: {fileID: 5607865938419896784}
   - component: {fileID: 2862604440359075210}
   - component: {fileID: 701874925624241658}
-  - component: {fileID: 5040786161794980179}
+  - component: {fileID: 5779293593772649024}
   m_Layer: 0
   m_Name: Knight
   m_TagString: Destructible
@@ -218,7 +218,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5607865938419896785}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -241,7 +241,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.04017675, y: -0.20453602}
@@ -257,7 +257,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.8677988, y: 1.309678}
   m_EdgeRadius: 0
---- !u!114 &5040786161794980179
+--- !u!114 &5779293593772649024
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -266,9 +266,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 5607865938419896785}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c92a8e27206108a46aad169c88daf76f, type: 3}
+  m_Script: {fileID: 11500000, guid: 5ce9c50129cb86d42a6111276082ba76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  t: {fileID: 0}
-  Team: 0
+  _manager: {fileID: 0}
   atributes: {fileID: 11400000, guid: 715713585a6e93043acd3207423904c2, type: 2}
+  Team: 0
