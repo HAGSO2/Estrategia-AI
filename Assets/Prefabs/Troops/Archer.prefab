@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 4607586566530189490}
   - component: {fileID: 1623089779330718572}
   - component: {fileID: 7169072924395132663}
+  - component: {fileID: 6861284595649499384}
   m_Layer: 0
   m_Name: Archer
   m_TagString: Destructible
@@ -144,7 +145,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 3
   m_Sprite: {fileID: -1641363710, guid: 0f9f7d9fc8c8e9844afaca3370efd90e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
@@ -168,9 +169,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ce9c50129cb86d42a6111276082ba76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _manager: {fileID: 0}
   atributes: {fileID: 11400000, guid: ac181099a8908d34fa39855b1947a391, type: 2}
   Team: 0
+  doStart: 0
+  manualManager: {fileID: 0}
+--- !u!114 &6861284595649499384
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1623089779330718575}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c5447dcb9e39fc45aaa1d6c826c5eee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DrawPath: 1
+  targetPos: {fileID: 0}
+  s: {fileID: 0}
 --- !u!1 &5738530103487055974
 GameObject:
   m_ObjectHideFlags: 0

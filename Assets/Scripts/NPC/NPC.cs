@@ -7,7 +7,7 @@ using UnityEngine.Serialization;
 
 public class NPC : MonoBehaviour
 {
-    [SerializeField] private EnemiesManager _manager;
+    private EnemiesManager _manager;
     private Transform _target = null;
     [SerializeField] private Troop atributes;
     private Pathfinding _path;
@@ -39,7 +39,7 @@ public class NPC : MonoBehaviour
         _attackMutex = true;
         _InRange = false;
         _manager.AddTroop(transform,Team);
-        GetComponent<SpriteRenderer>().flipX = Team;
+        GetComponent<SpriteRenderer>().flipX = !Team;
         MakeBehaviour();
     }
 
@@ -57,7 +57,6 @@ public class NPC : MonoBehaviour
         _behaviour.InsertState("Attack Structure", () => true, () =>
             {
                 _hardOponent = false;
-
                 return 1;
             }
             , false, false);
@@ -73,7 +72,7 @@ public class NPC : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D col)
     {
-        if ((col.CompareTag("Attack") && col.GetComponentInParent<NPC>().Team != Team) || (col.CompareTag("Structure") && col.GetComponentInParent<Tower>().Team != Team))
+        if ((col.CompareTag("Destructible") && col.GetComponentInParent<NPC>().Team != Team) || (col.CompareTag("Structure") && col.GetComponentInParent<Tower>().Team != Team))
         {
             _InRange = true;
         }
@@ -90,18 +89,27 @@ public class NPC : MonoBehaviour
 
     private int DistinguishAttack()
     {
-        if (_hardOponent && _attackMutex)
+
+        if (_attackMutex)
         {
+//            Debug.Log(gameObject.name + " go for the attack");
+            _path.enabled = false;
+            if(gameObject.name == "Giant (1)")
+                Debug.Log("On attack");
+            if (_hardOponent)
+            {
+                _controller.SetBool("Attacking", true);
+                StartCoroutine(Attack(_target.GetComponent<NPC>()));
+            }
+            else
+            {
+                _controller.SetBool("Attacking", true);
+                StartCoroutine(AttackTower(_target.GetComponent<Tower>()));
+            }
+
             _attackMutex = false;
-            _controller.SetBool("Attacking",true);
-            StartCoroutine(Attack(_target.GetComponent<NPC>()));
         }
-        else if (!_hardOponent && _attackMutex)
-        {
-            _attackMutex = false;
-            _controller.SetBool("Attacking",true);
-            StartCoroutine(AttackTower(_target.GetComponent<Tower>()));
-        }
+
 
         return 1;
     }
@@ -115,17 +123,25 @@ public class NPC : MonoBehaviour
     {
         _target = _manager.SearchNearest(transform.position, Team);
         _path.targetPos = _target;
-        Debug.Log("Target for:" + _target.name);
+        if (Vector3.Distance(transform.position, _target.position) < atributes.attackRange / 2)
+            _InRange = true;
+        _path.enabled = true;
+        if(gameObject.name == "Giant (1)")
+            Debug.Log(_target.name);
+//        Debug.Log("Target for:" + _target.name);
         return 1;
     }
     
     public int MoveTo()
     {
-        Vector3 desired = _path.finalPath[1].position - transform.position;
-        if (desired.magnitude > 0.1f)
+        if (_path.finalPath.Count > 1)
         {
-            desired = desired.normalized * atributes.speed * Time.deltaTime * Time.timeScale;
-            _body.MovePosition(transform.position + desired);
+            Vector3 desired = _path.finalPath[1].position - transform.position;
+            if (desired.magnitude > 0.1f)
+            {
+                desired = desired.normalized * atributes.speed * Time.deltaTime * Time.timeScale;
+                _body.MovePosition(transform.position + desired);
+            }
         }
 
         return 1;
@@ -158,6 +174,7 @@ public class NPC : MonoBehaviour
         catch
         {
             _attackMutex = true;
+            _target = null;
             _InRange = false;
             _controller.SetBool("Attacking",false);
             yield break;
@@ -183,6 +200,8 @@ public class NPC : MonoBehaviour
 
     public void Stop()
     {
+        _path.enabled = false;
+        Destroy(GetComponent<Pathfinding>());
         Destroy(this);
     }
 }

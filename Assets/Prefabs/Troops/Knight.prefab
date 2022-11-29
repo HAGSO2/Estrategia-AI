@@ -115,6 +115,7 @@ GameObject:
   - component: {fileID: 2862604440359075210}
   - component: {fileID: 701874925624241658}
   - component: {fileID: 5779293593772649024}
+  - component: {fileID: 1739007679921301835}
   m_Layer: 0
   m_Name: Knight
   m_TagString: Destructible
@@ -198,7 +199,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: ea51fa2df485e1747a7a1eacc87a130a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -269,6 +270,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ce9c50129cb86d42a6111276082ba76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _manager: {fileID: 0}
   atributes: {fileID: 11400000, guid: 715713585a6e93043acd3207423904c2, type: 2}
   Team: 0
+  doStart: 0
+  manualManager: {fileID: 0}
+--- !u!114 &1739007679921301835
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5607865938419896785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c5447dcb9e39fc45aaa1d6c826c5eee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DrawPath: 1
+  targetPos: {fileID: 0}
+  s: {fileID: 0}

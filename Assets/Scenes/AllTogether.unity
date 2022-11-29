@@ -7195,10 +7195,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1623089779330718572, guid: 4dfc9ae35737cb648b5eca72ba5a93f5, type: 3}
+      propertyPath: m_FlipX
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1623089779330718575, guid: 4dfc9ae35737cb648b5eca72ba5a93f5, type: 3}
       propertyPath: m_Name
       value: Archer
       objectReference: {fileID: 0}
+    - target: {fileID: 6861284595649499384, guid: 4dfc9ae35737cb648b5eca72ba5a93f5, type: 3}
+      propertyPath: s
+      value: 
+      objectReference: {fileID: 6488844924959530336, guid: 89ce07cf147e71c419c22cf8904b40c1, type: 3}
     - target: {fileID: 7169072924395132663, guid: 4dfc9ae35737cb648b5eca72ba5a93f5, type: 3}
       propertyPath: Team
       value: 1
@@ -7215,6 +7223,10 @@ PrefabInstance:
       propertyPath: manualManager
       value: 
       objectReference: {fileID: 339811827}
+    - target: {fileID: 7816289096130985416, guid: 4dfc9ae35737cb648b5eca72ba5a93f5, type: 3}
+      propertyPath: m_BodyType
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4dfc9ae35737cb648b5eca72ba5a93f5, type: 3}
 --- !u!1 &1351560728
@@ -11451,26 +11463,6 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!1 &1649581161 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1623089779330718575, guid: 4dfc9ae35737cb648b5eca72ba5a93f5, type: 3}
-  m_PrefabInstance: {fileID: 1166841292}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1649581162
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1649581161}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c5447dcb9e39fc45aaa1d6c826c5eee, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DrawPath: 1
-  targetPos: {fileID: 1145372844}
-  s: {fileID: 6488844924959530336, guid: 89ce07cf147e71c419c22cf8904b40c1, type: 3}
 --- !u!1 &2128104930
 GameObject:
   m_ObjectHideFlags: 0
