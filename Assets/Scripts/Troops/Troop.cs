@@ -11,6 +11,7 @@ public class Troop : ScriptableObject
     public float health = 10f;
     public float attacksPerSecond = 2f;
     public float damage = 10f;
+    public float visionRange = 10f;
     public bool onlyAttacksBuildings = false;
     public int elixirCost = 1;
 }

@@ -41,17 +41,17 @@ public class EnemiesManager : MonoBehaviour
         Debug.Log("FIN");
     }
 
-    public Transform SearchNearest(Vector3 pos, bool team)
+    public Transform SearchNearest(Vector3 pos,float mindist, bool team)
     {
         List<Transform> troops = !team ? TroopsA : TroopsB;
-        float dist = Vector3.Distance(troops[0].position, pos);
+        //float dist = mindist;
         int j = 0;
         for (int i = 1; i < troops.Count; i++)
         {
             float temp = Vector3.Distance(troops[i].position, pos);
-            if (temp < dist)
+            if (temp < mindist)
             {
-                dist = temp;
+                mindist = temp;
                 j = i;
             }
         }
