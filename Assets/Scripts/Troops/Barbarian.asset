@@ -15,6 +15,7 @@ MonoBehaviour:
   speed: 5
   attackRange: 8
   health: 50
+  maxHealth: 50
   attacksPerSecond: 1
   damage: 6
   visionRange: 1

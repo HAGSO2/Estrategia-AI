@@ -5,15 +5,16 @@ using UnityEngine;
 
 public class Tower : MonoBehaviour
 {
-    [SerializeField]private float _health;
+    public float health;
+    public float maxHealth;
     public EnemiesManager _Manager;
     public bool Team;
 
     public void Hurt(float dmg)
     {
         // TO DO
-        _health -= dmg;
-        if (_health <= 0)
+        health -= dmg;
+        if (health <= 0)
         {
             _Manager.TowerDown();
             Debug.Log("Za warudo");

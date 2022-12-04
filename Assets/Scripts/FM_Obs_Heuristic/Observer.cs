@@ -16,20 +16,23 @@ public class Observer : MonoBehaviour
     private List<Queue<Card>> _playersDeck = new List<Queue<Card>>(2);
 
     // Make sure that the spawned troops will have the NPC component
-    public NPC[] player1Troops;
-    public NPC[] player2Troops;
-    private List<NPC[]> _playersTroops = new List<NPC[]>(2);
-    [SerializeField] private GameObject _player1TroopsParent;
-    [SerializeField] private GameObject _player2TroopsParent;
+    public GameObject[] player1Troops;
+    public GameObject[] player2Troops;
+    private List<GameObject[]> _playersTroops = new List<GameObject[]>(2);
+    public GameObject player1TroopsParent;
+    public GameObject player2TroopsParent;
     private List<GameObject> _playersTroopsParents = new List<GameObject>(2);
 
     // Probably the elixir here will need to be changed to adapt it to the ElixirSystem class
     public float player1Elixir;
     public float player2Elixir;
     private List<float> _playersElixir = new List<float>(2);
+    
+    public float player1BurnedElixirInLastSimulation;
+    public float player2BurnedElixirInLastSimulation;
 
-    public GameObject Player1KingTower;
-    public GameObject Player2KingTower;
+    public Tower Player1KingTower;
+    public Tower Player2KingTower;
 
     public float timeLeft;
 
@@ -47,8 +50,8 @@ public class Observer : MonoBehaviour
         _playersTroops.Add(player1Troops);
         _playersTroops.Add(player2Troops);
         
-        _playersTroopsParents.Add(_player1TroopsParent);
-        _playersTroopsParents.Add(_player2TroopsParent);
+        _playersTroopsParents.Add(player1TroopsParent);
+        _playersTroopsParents.Add(player2TroopsParent);
         
         _playersElixir.Add(player1Elixir);
         _playersElixir.Add(player2Elixir);
@@ -71,7 +74,7 @@ public class Observer : MonoBehaviour
         if (player < 0) player = 0;
         else if (player > 1) player = 1;
 
-        _playersTroops[player] = _playersTroopsParents[player].GetComponentsInChildren<NPC>();
+        _playersTroops[player] = _playersTroopsParents[player].GetComponentsInChildren<GameObject>();
 
     }
 /*

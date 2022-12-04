@@ -9,7 +9,7 @@ public class NPC : MonoBehaviour
 {
     private EnemiesManager _manager;
     private Transform _target = null;
-    [SerializeField] private Troop atributes;
+    public Troop atributes;
     private Pathfinding _path;
     private BinTree _behaviour;
     private Rigidbody2D _body;

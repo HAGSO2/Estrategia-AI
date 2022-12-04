@@ -9,6 +9,7 @@ public class Troop : ScriptableObject
     public float speed = 10f;
     public float attackRange = 10f;
     public float health = 10f;
+    public float maxHealth = 10f;
     public float attacksPerSecond = 2f;
     public float damage = 10f;
     public float visionRange = 10f;
