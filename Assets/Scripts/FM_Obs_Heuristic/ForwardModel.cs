@@ -10,7 +10,7 @@ public class ForwardModel : MonoBehaviour
     [SerializeField] private static NPC[] _troops;
     [SerializeField] private EnemiesManager enemiesManager;
     //[SerializeField] private CardSystem _gameCards;
-    [SerializeField] private Observer _simulationObserver;
+    public Observer _simulationObserver;
     [SerializeField] private  Card[] cardsP1 = new Card[8];
     [SerializeField] private  Card[] cardsP2 = new Card[8];
     [SerializeField] private  float[] timesP1 = new float[8];
@@ -18,8 +18,10 @@ public class ForwardModel : MonoBehaviour
     [SerializeField] private  Vector3[] posP1 = new Vector3[8];
     [SerializeField] private  Vector3[] posP2 = new Vector3[8];
     
-    private static int _speedMultiplier = 100;
+    private static int _speedMultiplier = 1;
+    public bool finished = false;
 
+    private Observer obs;
 
     private void Start()
     {
@@ -28,16 +30,27 @@ public class ForwardModel : MonoBehaviour
         _simulationObserver.player2Elixir = 5;
         _simulationObserver.TroopsInField(0);
         _simulationObserver.TroopsInField(1);
-        Observer obs = _simulationObserver;
+        obs = _simulationObserver;
         TroopsToDeploy player1Parameters = new TroopsToDeploy(cardsP1, timesP1, posP1);
         TroopsToDeploy player2Parameters = new TroopsToDeploy(cardsP2, timesP2, posP2);
 
         Simulate(obs, 100, player1Parameters, player2Parameters);
     }
 
-    public Observer Simulate(Observer observation, float maxSimulationTime,
+    private void Update()
+    {
+        if (finished)
+        {
+            Debug.Log("Heuristic: " + Heuristic.GetScore(obs, _simulationObserver));
+            Debug.Log("Tower 1 health: " + _simulationObserver.Player1KingTower.health + ".\n Tower 2 health: " + _simulationObserver.Player2KingTower.health);
+            finished = false;
+        }
+    }
+
+    public void Simulate(Observer observation, float maxSimulationTime,
                                     TroopsToDeploy player1Parameters,TroopsToDeploy player2Parameters)
     {
+        finished = false;
         _simulationObserver.timeLeft = observation.timeLeft / _speedMultiplier;
         BurnedAndFinalElixir(observation, true, player1Parameters);
         BurnedAndFinalElixir(observation, false, player2Parameters);
@@ -62,8 +75,6 @@ public class ForwardModel : MonoBehaviour
         // Coroutine that manages when simulation arrived to an ending point
 
         StartCoroutine(SimulationEnded(maxSimulationTime));
-
-        return _simulationObserver;
     }
     
     private IEnumerator PlayerDeploys(int n, bool isPlayer1, TroopsToDeploy playerTroops)
@@ -105,11 +116,13 @@ public class ForwardModel : MonoBehaviour
             yield return new WaitForSeconds(comprobationInterval);
             _simulationObserver.timeLeft -= comprobationInterval;
             maxSimulationTime -= comprobationInterval;
+            yield return SimulationEnded(maxSimulationTime);
         }
         else
         {
             _simulationObserver.TroopsInField(0);
             _simulationObserver.TroopsInField(1);
+            finished = true;
         }
     }
 
