@@ -74,8 +74,14 @@ public class Observer : MonoBehaviour
         if (player < 0) player = 0;
         else if (player > 1) player = 1;
 
-        _playersTroops[player] = _playersTroopsParents[player].GetComponentsInChildren<GameObject>();
-
+        GameObject[] childs = new GameObject[_playersTroopsParents[player].transform.childCount];
+        int i = 0;
+        foreach (NPC child in _playersTroopsParents[player].GetComponentsInChildren<NPC>())
+        {
+            childs[i] = child.gameObject;
+            i++;
+        }
+        _playersTroops[player] = childs;
     }
 /*
     public Observer Clone()
