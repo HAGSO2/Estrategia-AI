@@ -49,6 +49,7 @@ MonoBehaviour:
   enemy: {fileID: 435746806494400830, guid: 14b2537ae0380e0468cc85ea4baf256b, type: 3}
   cost: 1
   handIndex: 0
+  name: Goblin
   canBePlayed: 0
 --- !u!212 &1344763161594703286
 SpriteRenderer:
@@ -119,7 +120,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1.28}
+    oldSize: {x: 2, y: 2.56}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0

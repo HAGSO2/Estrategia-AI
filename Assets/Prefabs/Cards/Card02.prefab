@@ -49,6 +49,7 @@ MonoBehaviour:
   enemy: {fileID: 1623089779330718575, guid: 4dfc9ae35737cb648b5eca72ba5a93f5, type: 3}
   cost: 2
   handIndex: 0
+  name: Archer
   canBePlayed: 0
 --- !u!212 &3055273509096845237
 SpriteRenderer:
@@ -119,7 +120,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1.28}
+    oldSize: {x: 2, y: 2.56}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0

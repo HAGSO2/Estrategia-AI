@@ -49,6 +49,7 @@ MonoBehaviour:
   enemy: {fileID: 7424146356389528510, guid: c8df1a49a900236468512496ebf0dce3, type: 3}
   cost: 5
   handIndex: 0
+  name: Giant
   canBePlayed: 0
 --- !u!212 &256385612438731616
 SpriteRenderer:
@@ -119,7 +120,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1.28}
+    oldSize: {x: 2, y: 2.56}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0

@@ -8,6 +8,7 @@ public class Card : MonoBehaviour
     public GameObject enemy;
     public int cost;
     public int handIndex;
+    public new string name;
 
     public bool canBePlayed;
 
@@ -18,6 +19,10 @@ public class Card : MonoBehaviour
     {
         scaleUp = transform.localScale + new Vector3(0.2f, 0.2f, 0);
         scaleDown = transform.localScale;
+    }
+    private void Update()
+    {
+        Debug.Log(name);
     }
 
     private void OnMouseEnter()
