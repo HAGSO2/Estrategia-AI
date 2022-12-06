@@ -53,8 +53,8 @@ public class NPC : MonoBehaviour
             return 1;
         }, false, false);
         _behaviour.InsertState("To attack what?", () => _target != null, () => 1, true, true);
-        _behaviour.InsertState("Check a look", () => _target.GetComponent<NPC>() != null, TakeTarget, true, true);
-        _behaviour.InsertState("Attack Structure", () => true, () =>
+        _behaviour.InsertState("Check a look", () => true, TakeTarget, false, false);
+/*        _behaviour.InsertState("Attack Structure", () => true, () =>
             {
                 _hardOponent = false;
                 return 1;
@@ -64,7 +64,7 @@ public class NPC : MonoBehaviour
         {
             _hardOponent = true;
             return 1;
-        }, false, false);
+        }, false, false);*/
         _behaviour.InsertState("In range?",()=>_InRange,()=>1,true,true);
         _behaviour.InsertState("Go near",()=>true,MoveTo,false,false);
         _behaviour.InsertState("Atack!",()=>true, DistinguishAttack,false,false);
@@ -75,6 +75,9 @@ public class NPC : MonoBehaviour
         if ((col.CompareTag("Destructible") && col.GetComponentInParent<NPC>().Team != Team) || (col.CompareTag("Structure") && col.GetComponentInParent<Tower>().Team != Team))
         {
             _InRange = true;
+            _hardOponent = col.CompareTag("Destructible");
+            if (!_manager.OnlyTower(Team) && _target.GetComponent<NPC>() == null)
+                TakeTarget();
         }
     }
 
@@ -83,7 +86,6 @@ public class NPC : MonoBehaviour
         if ((other.CompareTag("Attack") || other.CompareTag("Structure")) && other.GetComponentInParent<NPC>().Team != Team)
         {
             _InRange = false;
-            Debug.Log("Buala");
         }
     }
 
@@ -94,16 +96,13 @@ public class NPC : MonoBehaviour
         {
 //            Debug.Log(gameObject.name + " go for the attack");
             _path.enabled = false;
-            if(gameObject.name == "Giant (1)")
-                Debug.Log("On attack");
+            _controller.SetBool("Attacking", true);
             if (_hardOponent)
             {
-                _controller.SetBool("Attacking", true);
                 StartCoroutine(Attack(_target.GetComponent<NPC>()));
             }
             else
             {
-                _controller.SetBool("Attacking", true);
                 StartCoroutine(AttackTower(_target.GetComponent<Tower>()));
             }
 
@@ -126,9 +125,10 @@ public class NPC : MonoBehaviour
         if (Vector3.Distance(transform.position, _target.position) < atributes.attackRange / 2)
             _InRange = true;
         _path.enabled = true;
-        if(gameObject.name == "Giant (1)")
-            Debug.Log(_target.name);
-//        Debug.Log("Target for:" + _target.name);
+        if(_hardOponent)
+            Debug.Log("Target for:" + _target.name);
+        else
+            Debug.Log("Tower");
         return 1;
     }
     

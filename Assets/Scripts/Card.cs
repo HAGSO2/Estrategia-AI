@@ -22,7 +22,7 @@ public class Card : MonoBehaviour
     }
     private void Update()
     {
-        Debug.Log(name);
+//        Debug.Log(name);
     }
 
     private void OnMouseEnter()

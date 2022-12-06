@@ -41,6 +41,15 @@ public class EnemiesManager : MonoBehaviour
         Debug.Log("FIN");
     }
 
+    public bool OnlyTower(bool Team)
+    {
+        if (Team)
+            return TroopsB.Count == 1;
+        else
+            return TroopsA.Count == 1;
+
+    }
+
     public Transform SearchNearest(Vector3 pos,float mindist, bool team)
     {
         List<Transform> troops = !team ? TroopsA : TroopsB;

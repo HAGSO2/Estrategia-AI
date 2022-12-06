@@ -185,7 +185,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c5447dcb9e39fc45aaa1d6c826c5eee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DrawPath: 1
+  DrawPath: 0
   targetPos: {fileID: 0}
   s: {fileID: 0}
 --- !u!1 &6421318756739248749

@@ -6,7 +6,7 @@ using UnityEngine;
 public class Pathfinding : MonoBehaviour
 {
     Grid grid;
-    public bool DrawPath = true;
+    public bool DrawPath = false;
     public Transform targetPos;
     public List<Node> finalPath;
 
@@ -17,11 +17,15 @@ public class Pathfinding : MonoBehaviour
     }
 
     private void Update(){
-        FindPath(this.transform.position,targetPos.position);
-        if (DrawPath == true){
-            for (int i = 0; i < finalPath.Count; i++)
+        if (targetPos != null)
+        {
+            FindPath(transform.position, targetPos.position);
+            if (DrawPath)
             {
-                Instantiate(s, finalPath[i].position, Quaternion.identity);
+                for (int i = 0; i < finalPath.Count; i++)
+                {
+                    Instantiate(s, finalPath[i].position, Quaternion.identity);
+                }
             }
         }
     }
