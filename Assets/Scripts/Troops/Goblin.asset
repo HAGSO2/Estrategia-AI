@@ -17,8 +17,6 @@ MonoBehaviour:
   health: 10
   attacksPerSecond: 2
   damage: 3
+  visionRange: 1
   onlyAttacksBuildings: 0
   elixirCost: 1
-  walkingSprites: []
-  attackSprites: []
-  deathSprites: []

@@ -15,7 +15,9 @@ MonoBehaviour:
   speed: 5
   attackRange: 5
   health: 60
+  maxHealth: 60
   attacksPerSecond: 1.5
   damage: 5
+  visionRange: 1
   onlyAttacksBuildings: 0
   elixirCost: 3
