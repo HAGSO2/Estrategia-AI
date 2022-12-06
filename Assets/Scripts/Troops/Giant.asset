@@ -18,6 +18,6 @@ MonoBehaviour:
   maxHealth: 100
   attacksPerSecond: 0.5
   damage: 5
-  visionRange: 1
+  visionRange: 4
   onlyAttacksBuildings: 1
   elixirCost: 5

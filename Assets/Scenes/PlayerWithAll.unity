@@ -7239,6 +7239,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Archer
       objectReference: {fileID: 0}
+    - target: {fileID: 1623089779330718575, guid: 4dfc9ae35737cb648b5eca72ba5a93f5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6861284595649499384, guid: 4dfc9ae35737cb648b5eca72ba5a93f5, type: 3}
       propertyPath: s
       value: 
@@ -18934,6 +18938,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Archer
       objectReference: {fileID: 0}
+    - target: {fileID: 1623089779330718575, guid: 4dfc9ae35737cb648b5eca72ba5a93f5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6861284595649499384, guid: 4dfc9ae35737cb648b5eca72ba5a93f5, type: 3}
       propertyPath: s
       value: 
@@ -23288,6 +23296,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Goblin
       objectReference: {fileID: 0}
+    - target: {fileID: 435746806494400830, guid: 14b2537ae0380e0468cc85ea4baf256b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1023619078663518614, guid: 14b2537ae0380e0468cc85ea4baf256b, type: 3}
       propertyPath: s
       value: 
@@ -23824,6 +23836,10 @@ PrefabInstance:
     - target: {fileID: 5607865938419896785, guid: 6ff7d989db0c19b47b296d131476b46f, type: 3}
       propertyPath: m_Name
       value: Knight
+      objectReference: {fileID: 0}
+    - target: {fileID: 5607865938419896785, guid: 6ff7d989db0c19b47b296d131476b46f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5607865938419896786, guid: 6ff7d989db0c19b47b296d131476b46f, type: 3}
       propertyPath: m_RootOrder
