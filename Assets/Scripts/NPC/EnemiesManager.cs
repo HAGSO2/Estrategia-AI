@@ -24,6 +24,7 @@ public class EnemiesManager : MonoBehaviour
             TroopsA.Add(en);
         else
             TroopsB.Add(en);
+        //DebugEnemies();
     }
 
     public void DeleteTroop(Transform en, bool team)
@@ -32,6 +33,7 @@ public class EnemiesManager : MonoBehaviour
             TroopsA.Remove(en);
         else
             TroopsB.Remove(en);
+        //DebugEnemies();
     }
 
     public void TowerDown()
@@ -41,9 +43,9 @@ public class EnemiesManager : MonoBehaviour
         Debug.Log("FIN");
     }
 
-    public bool OnlyTower(bool Team)
+    public bool OnlyTower(bool team)
     {
-        if (Team)
+        if (team)
             return TroopsB.Count == 1;
         else
             return TroopsA.Count == 1;
@@ -66,5 +68,15 @@ public class EnemiesManager : MonoBehaviour
         }
 
         return troops[j];
+    }
+
+    private void DebugEnemies()
+    {
+        string allTransforms = "";
+        for (int i = 0; i < TroopsA.Count; i++){allTransforms += TroopsA[i].name + "\t";}
+
+        allTransforms += "\n";
+        for (int i = 0; i < TroopsB.Count; i++){allTransforms += TroopsB[i].name + "\t";}
+        Debug.Log(allTransforms);
     }
 }

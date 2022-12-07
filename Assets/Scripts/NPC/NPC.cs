@@ -21,6 +21,7 @@ public class NPC : MonoBehaviour
     public bool Team;
     public bool doStart;
     public EnemiesManager manualManager;
+    private float acumulatedDamage;
 
     private void Start()
     {
@@ -96,17 +97,18 @@ public class NPC : MonoBehaviour
         {
 //            Debug.Log(gameObject.name + " go for the attack");
             _path.enabled = false;
+            _attackMutex = false;
             _controller.SetBool("Attacking", true);
             if (_hardOponent)
             {
+//                if(_target.name == "Mini-Pekka")
+//                    Debug.Log("To mini-Pekka: "+transform.name);
                 StartCoroutine(Attack(_target.GetComponent<NPC>()));
             }
             else
             {
                 StartCoroutine(AttackTower(_target.GetComponent<Tower>()));
             }
-
-            _attackMutex = false;
         }
 
 
@@ -116,6 +118,8 @@ public class NPC : MonoBehaviour
     private void FixedUpdate()
     {
         _behaviour.DoStep();
+        if (_target != null && Vector3.Distance(transform.position, _target.position) < atributes.attackRange / 2)
+            _InRange = true;
     }
 
     private int TakeTarget()
@@ -125,10 +129,6 @@ public class NPC : MonoBehaviour
         if (Vector3.Distance(transform.position, _target.position) < atributes.attackRange / 2)
             _InRange = true;
         _path.enabled = true;
-        if(_hardOponent)
-            Debug.Log("Target for:" + _target.name);
-        else
-            Debug.Log("Tower");
         return 1;
     }
     
@@ -153,6 +153,7 @@ public class NPC : MonoBehaviour
         try
         {
             other.Hurt(atributes.damage);
+            acumulatedDamage += atributes.damage;
         }
         catch
         {
@@ -170,6 +171,7 @@ public class NPC : MonoBehaviour
         try
         {
             other.Hurt(atributes.damage);
+            acumulatedDamage += atributes.damage;
         }
         catch
         {
@@ -194,8 +196,16 @@ public class NPC : MonoBehaviour
     public void Die()
     {
         Debug.Log("I've died, i'm an " + gameObject.name);
+//        if(!Team)
+//            Debug.Log("I've caused " + acumulatedDamage + " damage");
         _manager.DeleteTroop(transform,Team);
         Destroy(gameObject);
+    }
+
+    private void OnApplicationQuit()
+    {
+        if(!Team)
+            Debug.Log("I've caused " + acumulatedDamage + " damage");
     }
 
     public void Stop()
