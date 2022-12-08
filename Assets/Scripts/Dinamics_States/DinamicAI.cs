@@ -17,14 +17,3 @@ public class DinamicAI : MonoBehaviour
     }
 }
 
-struct PlayResult
-{
-    private int best;
-    private int[] results;
-
-    public PlayResult(int num)
-    {
-        best = -1;
-        results = new int[num];
-    }
-}
