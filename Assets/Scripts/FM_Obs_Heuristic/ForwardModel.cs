@@ -6,8 +6,6 @@ using UnityEngine;
 
 public class ForwardModel : MonoBehaviour
 {
-
-    [SerializeField] private static NPC[] _troops;
     [SerializeField] private EnemiesManager enemiesManager;
     //[SerializeField] private CardSystem _gameCards;
     public Observer _simulationObserver;
@@ -18,14 +16,15 @@ public class ForwardModel : MonoBehaviour
     [SerializeField] private  Vector3[] posP1 = new Vector3[8];
     [SerializeField] private  Vector3[] posP2 = new Vector3[8];
     
-    private static int _speedMultiplier = 1;
+    private static int _speedMultiplier = 10;
     public bool finished = false;
 
     private Observer obs;
+    private List<NPC> _troops = new List<NPC>(); // no funciona, no guarda referencias?
 
     private void Start()
     {
-        _simulationObserver.timeLeft = 100;
+        _simulationObserver.timeLeft = 10000;
         _simulationObserver.player1Elixir = 5;
         _simulationObserver.player2Elixir = 5;
         _simulationObserver.TroopsInField(0);
@@ -34,7 +33,7 @@ public class ForwardModel : MonoBehaviour
         TroopsToDeploy player1Parameters = new TroopsToDeploy(cardsP1, timesP1, posP1);
         TroopsToDeploy player2Parameters = new TroopsToDeploy(cardsP2, timesP2, posP2);
 
-        Simulate(obs, 100, player1Parameters, player2Parameters);
+        Simulate(obs, 10000, player1Parameters, player2Parameters);
     }
 
     private void Update()
@@ -94,12 +93,14 @@ public class ForwardModel : MonoBehaviour
         else { enemy = Instantiate(troop.enemy, position, Quaternion.identity, _simulationObserver.player2TroopsParent.transform).GetComponent<NPC>(); }
         enemy.Team = isPlayer1;
         enemy.Set(enemiesManager);
+        _troops.Add(enemy);
     }
     private void DeployTroop(GameObject troop, Vector3 position, bool isPlayer1)
     {
         NPC enemy = Instantiate(troop, position, Quaternion.identity).GetComponent<NPC>();
         enemy.Team = isPlayer1;
         enemy.Set(enemiesManager);
+        _troops.Add(enemy);
     }
 
     private IEnumerator SimulationEnded(float maxSimulationTime)
@@ -123,6 +124,11 @@ public class ForwardModel : MonoBehaviour
             _simulationObserver.TroopsInField(0);
             _simulationObserver.TroopsInField(1);
             finished = true;
+            foreach (NPC troop in _troops)
+            {
+                Debug.Log("Destroying: " + troop);
+                Destroy(troop);
+            }
         }
     }
 
