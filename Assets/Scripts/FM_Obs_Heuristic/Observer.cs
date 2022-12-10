@@ -2,31 +2,60 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using JetBrains.Annotations;
 using UnityEngine;
 
 public class Observer : MonoBehaviour
 {
+    [SerializeField] private CardSystem CSP1;
+    [SerializeField] private CardSystem CSP2;
     
-    public Card[] player1Hand = new Card[4];
-    public Card[] player2Hand = new Card[4];
+    public Card[] player1Hand
+    {
+        get { return CSP1.hand; }
+        set { CSP1.hand = value; }
+    }
+    public Card[] player2Hand
+    {
+        get { return CSP1.hand; }
+        set { CSP2.hand = value; }
+    }
     private List<Card[]> _playersHand = new List<Card[]>(2);
 
-    public Queue<Card> player1Deck = new Queue<Card>(4);
-    public Queue<Card> player2Deck = new Queue<Card>(4);
+    public Queue<Card> player1Deck
+    {
+        get { return CSP1.deck; }
+        set { CSP1.deck = value; }
+    }
+    public Queue<Card> player2Deck
+    {
+        get { return CSP2.deck; }
+        set { CSP2.deck = value; }
+    }
     private List<Queue<Card>> _playersDeck = new List<Queue<Card>>(2);
 
     // Make sure that the spawned troops will have the NPC component
-    public GameObject[] player1Troops;
-    public GameObject[] player2Troops;
-    private List<GameObject[]> _playersTroops = new List<GameObject[]>(2);
+    private GameObject[] player1Troops;
+    private GameObject[] player2Troops;
+    public List<GameObject[]> playersTroops = new List<GameObject[]>(2);
+    
     public GameObject player1TroopsParent;
     public GameObject player2TroopsParent;
     private List<GameObject> _playersTroopsParents = new List<GameObject>(2);
 
-    // Probably the elixir here will need to be changed to adapt it to the ElixirSystem class
-    public float player1Elixir;
-    public float player2Elixir;
-    private List<float> _playersElixir = new List<float>(2);
+    [SerializeField] private ElixirSystem ESP1;
+    [SerializeField] private ElixirSystem ESP2;
+    public float player1Elixir
+    {
+        get { return ESP1.elixir; }
+        set { ESP1.elixir = value; }
+    }
+    public float player2Elixir
+    {
+        get { return ESP2.elixir; }
+        set { ESP2.elixir = value; }
+    }
+    public List<float> playersElixir = new List<float>(2);
     
     public float player1BurnedElixirInLastSimulation;
     public float player2BurnedElixirInLastSimulation;
@@ -41,29 +70,32 @@ public class Observer : MonoBehaviour
         // -------------------------------------------------------------------------------------- //
         // Make sure that what we are adding here are references and we don't need to update them //
         // -------------------------------------------------------------------------------------- //
+        /*
         _playersHand.Add(player1Hand);
         _playersHand.Add(player2Hand);
         
         _playersDeck.Add(player1Deck);
         _playersDeck.Add(player2Deck);
-        
-        _playersTroops.Add(player1Troops);
-        _playersTroops.Add(player2Troops);
+        */
+        playersTroops.Add(player1Troops);
+        playersTroops.Add(player2Troops);
         
         _playersTroopsParents.Add(player1TroopsParent);
         _playersTroopsParents.Add(player2TroopsParent);
         
+/*
         _playersElixir.Add(player1Elixir);
         _playersElixir.Add(player2Elixir);
+        */
     }
 
     // Returns a List with the cards that can be played when called, the int player must be 0 or 1
     public List<Card> AviableTroops(int player)
     {
-        if (player < 0) player = 0;
-        else if (player > 1) player = 1;
+        player = player <= 0 ? 0 : 1;
         var aviableTroops = new List<Card>();
 
+        _playersHand[player] = player == 0 ? player1Hand : player2Hand;
         aviableTroops.AddRange(_playersHand[player].Where(troop => troop.cost <= player1Elixir));
         return aviableTroops;
     }
@@ -81,7 +113,7 @@ public class Observer : MonoBehaviour
             childs[i] = child.gameObject;
             i++;
         }
-        _playersTroops[player] = childs;
+        playersTroops[player] = childs;
     }
 /*
     public Observer Clone()

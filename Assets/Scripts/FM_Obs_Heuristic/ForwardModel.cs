@@ -55,13 +55,15 @@ public class ForwardModel : MonoBehaviour
         BurnedAndFinalElixir(observation, false, player2Parameters);
         //Deploy all troops in the game field (the ones at the observation)
         observation.TroopsInField(0);
-        foreach (GameObject troop in observation.player1Troops)
+        //Debug.Log("Obs: " + observation.playersTroops[0][0].name);
+        foreach (GameObject troop in observation.playersTroops[0])
         {
+            //Debug.Log("Troop: " + troop.name);
             DeployTroop(troop, troop.transform.position, true);
         }
         
         observation.TroopsInField(1);
-        foreach (GameObject troop in observation.player2Troops)
+        foreach (GameObject troop in observation.playersTroops[1])
         {
             DeployTroop(troop, troop.transform.position, false);
         }
