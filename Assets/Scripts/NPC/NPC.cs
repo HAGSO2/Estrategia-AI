@@ -21,7 +21,8 @@ public class NPC : MonoBehaviour
     public bool Team;
     public bool doStart;
     public EnemiesManager manualManager;
-    private float acumulatedDamage;
+    private float _acumulatedDamage;
+    public float simulatedMultiplier = 1;
 
     private void Start()
     {
@@ -122,6 +123,16 @@ public class NPC : MonoBehaviour
             _InRange = true;
     }
 
+    public void SimulateUpdate()
+    {
+        for (int i = 0; i < 20; i++)
+        {
+            _behaviour.DoStep();
+            if (_target != null && Vector3.Distance(transform.position, _target.position) < atributes.attackRange / 2)
+                _InRange = true;
+        }
+    }
+
     private int TakeTarget()
     {
         _target = _manager.SearchNearest(transform.position,atributes.visionRange, Team);
@@ -139,7 +150,7 @@ public class NPC : MonoBehaviour
             Vector3 desired = _path.finalPath[1].position - transform.position;
             if (desired.magnitude > 0.1f)
             {
-                desired = desired.normalized * atributes.speed * Time.deltaTime * Time.timeScale;
+                desired = desired.normalized * atributes.speed * Time.deltaTime * simulatedMultiplier;
                 _body.MovePosition(transform.position + desired);
             }
         }
@@ -149,11 +160,11 @@ public class NPC : MonoBehaviour
     
     public IEnumerator Attack(NPC other)
     {
-        yield return new WaitForSeconds(1 / atributes.attacksPerSecond);
+        yield return new WaitForSeconds(1 / (atributes.attacksPerSecond*simulatedMultiplier));
         try
         {
             other.Hurt(atributes.damage);
-            acumulatedDamage += atributes.damage;
+            _acumulatedDamage += atributes.damage;
         }
         catch
         {
@@ -171,7 +182,7 @@ public class NPC : MonoBehaviour
         try
         {
             other.Hurt(atributes.damage);
-            acumulatedDamage += atributes.damage;
+            _acumulatedDamage += atributes.damage;
         }
         catch
         {
@@ -205,7 +216,7 @@ public class NPC : MonoBehaviour
     private void OnApplicationQuit()
     {
         if(!Team)
-            Debug.Log("I've caused " + acumulatedDamage + " damage");
+            Debug.Log("I've caused " + _acumulatedDamage + " damage");
     }
 
     public void Stop()

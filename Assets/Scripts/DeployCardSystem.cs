@@ -6,6 +6,8 @@ public class DeployCardSystem : MonoBehaviour
 {
     [SerializeField] ElixirSystem elixirSystem;
     [SerializeField] EnemiesManager enemiesManager;
+    [SerializeField] private Transform _player1TroopsParent;
+    [SerializeField] private Transform _player2TroopsParent;
 
     public void DeployCard(Card card, Vector3 pos)
     {
@@ -14,7 +16,7 @@ public class DeployCardSystem : MonoBehaviour
 
         elixirSystem.elixir -= card.cost;
         elixirSystem.UpdateText();
-        NPC enemy = Instantiate(card.enemy, pos, Quaternion.identity).GetComponent<NPC>();
+        NPC enemy = Instantiate(card.enemy, pos, Quaternion.identity, _player1TroopsParent).GetComponent<NPC>();
         enemy.Team = true;
         enemy.Set(enemiesManager);
 
@@ -27,7 +29,7 @@ public class DeployCardSystem : MonoBehaviour
         pos.z = -1;
 
         elixirSystem.elixir -= card.cost;
-        NPC enemy = Instantiate(card.enemy, pos, Quaternion.identity).GetComponent<NPC>();
+        NPC enemy = Instantiate(card.enemy, pos, Quaternion.identity, _player2TroopsParent).GetComponent<NPC>();
         enemy.Team = false;
         enemy.Set(enemiesManager);
 

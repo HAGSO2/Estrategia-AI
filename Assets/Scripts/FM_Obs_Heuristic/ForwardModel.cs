@@ -6,8 +6,6 @@ using UnityEngine;
 
 public class ForwardModel : MonoBehaviour
 {
-
-    [SerializeField] private static NPC[] _troops;
     [SerializeField] private EnemiesManager enemiesManager;
     //[SerializeField] private CardSystem _gameCards;
     public Observer _simulationObserver;
@@ -18,14 +16,15 @@ public class ForwardModel : MonoBehaviour
     [SerializeField] private  Vector3[] posP1 = new Vector3[8];
     [SerializeField] private  Vector3[] posP2 = new Vector3[8];
     
-    private static int _speedMultiplier = 1;
+    private static int _speedMultiplier = 10;
     public bool finished = false;
 
     private Observer obs;
+    private List<NPC> _troops = new List<NPC>(); // no funciona, no guarda referencias?
 
     private void Start()
     {
-        _simulationObserver.timeLeft = 100;
+        _simulationObserver.timeLeft = 10000;
         _simulationObserver.player1Elixir = 5;
         _simulationObserver.player2Elixir = 5;
         _simulationObserver.TroopsInField(0);
@@ -34,7 +33,12 @@ public class ForwardModel : MonoBehaviour
         TroopsToDeploy player1Parameters = new TroopsToDeploy(cardsP1, timesP1, posP1);
         TroopsToDeploy player2Parameters = new TroopsToDeploy(cardsP2, timesP2, posP2);
 
-        Simulate(obs, 100, player1Parameters, player2Parameters);
+        Simulate(obs, 10000, player1Parameters, player2Parameters,JokeEnd);
+    }
+
+    int JokeEnd()
+    {
+        return 1;
     }
 
     private void Update()
@@ -48,7 +52,7 @@ public class ForwardModel : MonoBehaviour
     }
 
     public void Simulate(Observer observation, float maxSimulationTime,
-                                    TroopsToDeploy player1Parameters,TroopsToDeploy player2Parameters)
+                                    TroopsToDeploy player1Parameters,TroopsToDeploy player2Parameters, Func<int> end)
     {
         finished = false;
         _simulationObserver.timeLeft = observation.timeLeft / _speedMultiplier;
@@ -56,13 +60,15 @@ public class ForwardModel : MonoBehaviour
         BurnedAndFinalElixir(observation, false, player2Parameters);
         //Deploy all troops in the game field (the ones at the observation)
         observation.TroopsInField(0);
-        foreach (GameObject troop in observation.player1Troops)
+        //Debug.Log("Obs: " + observation.playersTroops[0][0].name);
+        foreach (GameObject troop in observation.playersTroops[0])
         {
+            //Debug.Log("Troop: " + troop.name);
             DeployTroop(troop, troop.transform.position, true);
         }
         
         observation.TroopsInField(1);
-        foreach (GameObject troop in observation.player2Troops)
+        foreach (GameObject troop in observation.playersTroops[1])
         {
             DeployTroop(troop, troop.transform.position, false);
         }
@@ -74,7 +80,7 @@ public class ForwardModel : MonoBehaviour
         
         // Coroutine that manages when simulation arrived to an ending point
 
-        StartCoroutine(SimulationEnded(maxSimulationTime));
+        StartCoroutine(SimulationEnded(maxSimulationTime,end));
     }
     
     private IEnumerator PlayerDeploys(int n, bool isPlayer1, TroopsToDeploy playerTroops)
@@ -94,15 +100,17 @@ public class ForwardModel : MonoBehaviour
         else { enemy = Instantiate(troop.enemy, position, Quaternion.identity, _simulationObserver.player2TroopsParent.transform).GetComponent<NPC>(); }
         enemy.Team = isPlayer1;
         enemy.Set(enemiesManager);
+        _troops.Add(enemy);
     }
     private void DeployTroop(GameObject troop, Vector3 position, bool isPlayer1)
     {
         NPC enemy = Instantiate(troop, position, Quaternion.identity).GetComponent<NPC>();
         enemy.Team = isPlayer1;
         enemy.Set(enemiesManager);
+        _troops.Add(enemy);
     }
 
-    private IEnumerator SimulationEnded(float maxSimulationTime)
+    private IEnumerator SimulationEnded(float maxSimulationTime, Func<int> end)
     {
         // If simulation not ended due to conditions
         // ------ Make sure conditions are 0K ------
@@ -116,13 +124,20 @@ public class ForwardModel : MonoBehaviour
             yield return new WaitForSeconds(comprobationInterval);
             _simulationObserver.timeLeft -= comprobationInterval;
             maxSimulationTime -= comprobationInterval;
-            yield return SimulationEnded(maxSimulationTime);
+            yield return SimulationEnded(maxSimulationTime,end);
         }
         else
         {
             _simulationObserver.TroopsInField(0);
             _simulationObserver.TroopsInField(1);
             finished = true;
+            foreach (NPC troop in _troops)
+            {
+                Debug.Log("Destroying: " + troop);
+                Destroy(troop);
+            }
+
+            end.Invoke();
         }
     }
 

@@ -27,13 +27,15 @@ public static class Heuristic
         elixirDifference += observation.player1Elixir;
         elixirDifference -= observation.player2Elixir;
 
-        foreach (GameObject troop in observation.player1Troops)
+        observation.TroopsInField(0);
+        observation.TroopsInField(1);
+        foreach (GameObject troop in observation.playersTroops[0])
         {
             NPC troopNPC = troop.GetComponent<NPC>();
             
             elixirDifference += troopNPC.atributes.elixirCost * (troopNPC.atributes.health / troopNPC.atributes.maxHealth);
         }
-        foreach (GameObject troop in observation.player2Troops)
+        foreach (GameObject troop in observation.playersTroops[1])
         {
             NPC troopNPC = troop.GetComponent<NPC>();
             
