@@ -33,7 +33,12 @@ public class ForwardModel : MonoBehaviour
         TroopsToDeploy player1Parameters = new TroopsToDeploy(cardsP1, timesP1, posP1);
         TroopsToDeploy player2Parameters = new TroopsToDeploy(cardsP2, timesP2, posP2);
 
-        Simulate(obs, 10000, player1Parameters, player2Parameters);
+        Simulate(obs, 10000, player1Parameters, player2Parameters,JokeEnd);
+    }
+
+    int JokeEnd()
+    {
+        return 1;
     }
 
     private void Update()
@@ -47,7 +52,7 @@ public class ForwardModel : MonoBehaviour
     }
 
     public void Simulate(Observer observation, float maxSimulationTime,
-                                    TroopsToDeploy player1Parameters,TroopsToDeploy player2Parameters)
+                                    TroopsToDeploy player1Parameters,TroopsToDeploy player2Parameters, Func<int> end)
     {
         finished = false;
         _simulationObserver.timeLeft = observation.timeLeft / _speedMultiplier;
@@ -75,7 +80,7 @@ public class ForwardModel : MonoBehaviour
         
         // Coroutine that manages when simulation arrived to an ending point
 
-        StartCoroutine(SimulationEnded(maxSimulationTime));
+        StartCoroutine(SimulationEnded(maxSimulationTime,end));
     }
     
     private IEnumerator PlayerDeploys(int n, bool isPlayer1, TroopsToDeploy playerTroops)
@@ -105,7 +110,7 @@ public class ForwardModel : MonoBehaviour
         _troops.Add(enemy);
     }
 
-    private IEnumerator SimulationEnded(float maxSimulationTime)
+    private IEnumerator SimulationEnded(float maxSimulationTime, Func<int> end)
     {
         // If simulation not ended due to conditions
         // ------ Make sure conditions are 0K ------
@@ -119,7 +124,7 @@ public class ForwardModel : MonoBehaviour
             yield return new WaitForSeconds(comprobationInterval);
             _simulationObserver.timeLeft -= comprobationInterval;
             maxSimulationTime -= comprobationInterval;
-            yield return SimulationEnded(maxSimulationTime);
+            yield return SimulationEnded(maxSimulationTime,end);
         }
         else
         {
@@ -131,6 +136,8 @@ public class ForwardModel : MonoBehaviour
                 Debug.Log("Destroying: " + troop);
                 Destroy(troop);
             }
+
+            end.Invoke();
         }
     }
 
