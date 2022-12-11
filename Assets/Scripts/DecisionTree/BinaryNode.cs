@@ -20,6 +20,14 @@ public class BinaryNode : MonoBehaviour
         Test = f;
     }
 
+    public BinaryNode(string title, Func<bool> f)
+    {
+        Title = title;
+        leftChild = null;
+        rightChild = null;
+        Test = f;
+    }
+
     public BinaryNode LeftChild()
     {
         return leftChild;

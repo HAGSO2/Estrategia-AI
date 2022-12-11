@@ -23,6 +23,7 @@ public class DecisionTreeAI : MonoBehaviour, IAI
         id = "DecisionTreeAI"; 
         CreateDecisionTree();
 
+        StartCoroutine(UpdateAI());
     }
 
     BinaryNode notEnoughElixir;
@@ -34,17 +35,20 @@ public class DecisionTreeAI : MonoBehaviour, IAI
     BinaryNode root;
     private void CreateDecisionTree()
     {
-        attackAnywhere = new BinaryNode("Attacking Anywhehre", null, null, AttackingAnywhere);
+        // LEAFS
+        attackAnywhere = new BinaryNode("Attacking Anywhere", AttackingAnywhere);
 
-        defenseDown = new BinaryNode("Defending Down", null, null, DefendingDown);
+        defenseDown = new BinaryNode("Defending Down", DefendingDown);
+
+        defenseUp = new BinaryNode("Defending up", DefendingUp);
+
+        notEnoughElixir = new BinaryNode("Not Enough Elixir", NotEnoughElixir);
+
+        // NOT LEAFS
 
         attackedDown = new BinaryNode("Attacked Down?", defenseDown, attackAnywhere, AttackedDownF);
 
-        defenseUp = new BinaryNode("Defending up", null, null, DefendingUp);
-
         attackedUp = new BinaryNode("Attacked Up?", defenseUp, attackedDown, AttackedUpF);
-
-        notEnoughElixir = new BinaryNode("Not Enough Elixir", null, null, NotEnoughElixir);
 
         root = new BinaryNode("Enough Elixir?", attackedUp, notEnoughElixir, EnoughElixirF);
     }
@@ -105,20 +109,32 @@ public class DecisionTreeAI : MonoBehaviour, IAI
         return simpleObserver.ActualElixir() >= simpleObserver.lowestCardCost;
     }
 
-    void Update()
+    IEnumerator UpdateAI()
     {
-        int index = think(null, 10f);
-
-        // Cuidado cuando pos es Vector3.zero
-        cardSystem.TryToPlayCardAI(index, pos);
+        // Revisar el notTerminal, cuando cambia??
+        bool notTerminal = true;
+        while (notTerminal)
+        {
+            int index = think(null, 10f);
+            // Cuidado cuando pos es Vector3.zero
+            if (pos != Vector3.zero)
+            {
+                cardSystem.TryToPlayCardAI(index, pos);
+                yield return new WaitForSeconds(1f);
+            }
+        }
     }
 
     public int think(Observer observer, float budget)
     {
         root.Evaluate();
 
-        string cardName = "A";
+        // Pensar que carta jugar no se 
+
+        string cardName = "Pepe";
         FindObjectsOfType<DataGameCollector>()[0].RegisterNewEntryData(id, id, cardName);
+
+        // return pos and index
         return 0;
     }
 }
