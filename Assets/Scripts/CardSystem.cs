@@ -66,6 +66,21 @@ public class CardSystem : MonoBehaviour
         }
     }
 
+    public void TryToPlayCardAI(int playedCardIndex, Vector3 pos)
+    {
+        Card playedCard = hand[playedCardIndex];
+
+        if (deployCardSystem.CanDeploy(playedCard))
+        {
+            PlayCardAI(playedCard);
+            deployCardSystem.DeployCardAI(playedCard, pos);
+        }
+        else
+        {
+            Debug.Log("AI --> Not enough elixir");
+        }
+    }
+
     public void TryToPlayCard(int playedCardIndex, Vector3 pos)
     {
         Card playedCard = hand[playedCardIndex];
