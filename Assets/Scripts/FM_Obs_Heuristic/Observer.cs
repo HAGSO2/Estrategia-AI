@@ -63,7 +63,7 @@ public class Observer : MonoBehaviour
     public Tower Player1KingTower;
     public Tower Player2KingTower;
 
-    public float timeLeft;
+    public float timeLeft = 180;
 
     private void Awake()
     {
@@ -82,7 +82,9 @@ public class Observer : MonoBehaviour
         
         _playersTroopsParents.Add(player1TroopsParent);
         _playersTroopsParents.Add(player2TroopsParent);
-        
+
+        StartCoroutine("ClashTimer");
+
 /*
         _playersElixir.Add(player1Elixir);
         _playersElixir.Add(player2Elixir);
@@ -90,7 +92,7 @@ public class Observer : MonoBehaviour
     }
 
     // Returns a List with the cards that can be played when called, the int player must be 0 or 1
-    public List<Card> AviableTroops(int player)
+    public List<Card> AvailableTroops(int player)
     {
         player = player <= 0 ? 0 : 1;
         var aviableTroops = new List<Card>();
@@ -115,6 +117,16 @@ public class Observer : MonoBehaviour
         }
         playersTroops[player] = childs;
     }
+    
+    // Control time
+    IEnumerator ClashTimer()
+    {
+        while (timeLeft-- >= 0)
+        {
+            yield return new WaitForSeconds(1f);
+        }
+    }
+    
 /*
     public Observer Clone()
     {
