@@ -63,7 +63,7 @@ public class ForwardModel : MonoBehaviour
         //Debug.Log("Obs: " + observation.playersTroops[0][0].name);
         foreach (GameObject troop in observation.playersTroops[0])
         {
-            //Debug.Log("Troop: " + troop.name);
+            Debug.Log("Troop: " + troop.name);
             DeployTroop(troop, troop.transform.position, true);
         }
         
