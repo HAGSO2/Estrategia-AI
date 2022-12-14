@@ -14366,7 +14366,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1111563531}
   - component: {fileID: 1111563533}
-  - component: {fileID: 1111563532}
   m_Layer: 0
   m_Name: SimulationSpace
   m_TagString: Untagged
@@ -14395,30 +14394,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1111563532
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1111563530}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bb8115b8dfc069a48a36bad8a889d81e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CSP1: {fileID: 862888572}
-  CSP2: {fileID: 2084767521}
-  player1TroopsParent: {fileID: 381549601}
-  player2TroopsParent: {fileID: 312848303}
-  ESP1: {fileID: 862888571}
-  ESP2: {fileID: 2084767520}
-  playersElixir: []
-  player1BurnedElixirInLastSimulation: 0
-  player2BurnedElixirInLastSimulation: 0
-  Player1KingTower: {fileID: 2056115033}
-  Player2KingTower: {fileID: 693821840}
-  timeLeft: 100
 --- !u!114 &1111563533
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14432,61 +14407,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemiesManager: {fileID: 1480999137}
-  _simulationObserver: {fileID: 1111563532}
-  cardsP1:
-  - {fileID: 1914977082}
-  - {fileID: 1914977077}
-  - {fileID: 1914977080}
-  - {fileID: 1914977077}
-  - {fileID: 1914977082}
-  - {fileID: 1914977081}
-  - {fileID: 1914977076}
-  - {fileID: 1914977081}
-  cardsP2:
-  - {fileID: 1914977079}
-  - {fileID: 1914977082}
-  - {fileID: 1914977078}
-  - {fileID: 1914977078}
-  - {fileID: 1914977076}
-  - {fileID: 1914977081}
-  - {fileID: 1914977076}
-  - {fileID: 1914977080}
-  timesP1:
-  - 5
-  - 5
-  - 5
-  - 5
-  - 5
-  - 5
-  - 5
-  - 5
-  timesP2:
-  - 5
-  - 5
-  - 1
-  - 0
-  - 5
-  - 5
-  - 5
-  - 5
-  posP1:
-  - {x: -6, y: 0, z: 0}
-  - {x: -6, y: 0, z: 0}
-  - {x: -6, y: 0, z: 0}
-  - {x: -6, y: 0, z: 0}
-  - {x: -6, y: 0, z: 0}
-  - {x: -6, y: 0, z: 0}
-  - {x: -6, y: 0, z: 0}
-  - {x: -6, y: 0, z: 0}
-  posP2:
-  - {x: 5, y: 0, z: 0}
-  - {x: 5, y: 0, z: 0}
-  - {x: 5, y: 0, z: 0}
-  - {x: 5, y: 0, z: 0}
-  - {x: 5, y: 0, z: 0}
-  - {x: 5, y: 0, z: 0}
-  - {x: 5, y: 0, z: 0}
-  - {x: 5, y: 0, z: 0}
+  simulationObserver: {fileID: 1480999139}
   finished: 0
 --- !u!1 &1145372842
 GameObject:
@@ -23261,6 +23182,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1480999138}
   - component: {fileID: 1480999137}
+  - component: {fileID: 1480999139}
   m_Layer: 0
   m_Name: Manager (Simulated)
   m_TagString: Untagged
@@ -23297,6 +23219,30 @@ Transform:
   m_Father: {fileID: 1111563531}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1480999139
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1480999136}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb8115b8dfc069a48a36bad8a889d81e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CSP1: {fileID: 0}
+  CSP2: {fileID: 0}
+  player1TroopsParent: {fileID: 381549601}
+  player2TroopsParent: {fileID: 312848303}
+  ESP1: {fileID: 0}
+  ESP2: {fileID: 0}
+  playersElixir: []
+  player1BurnedElixirInLastSimulation: 0
+  player2BurnedElixirInLastSimulation: 0
+  Player1KingTower: {fileID: 2056115033}
+  Player2KingTower: {fileID: 693821840}
+  timeLeft: 180
 --- !u!1001 &1561949901
 PrefabInstance:
   m_ObjectHideFlags: 0
