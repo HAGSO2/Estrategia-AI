@@ -41,9 +41,9 @@ public class DataGameCollector : MonoBehaviour
         TextWriter tw = new StreamWriter(finarRecordPath, false);
 
         //Creates the table with the data
-        tw.WriteLine(".;Archers;Barbarian;Gigant;Goblin;Knight;Mini-pekka");
-        tw.WriteLine("=$A$4;\"=CONTAR.SI(B4:B20004;\"\"\"*Archer*\");\"=CONTAR.SI(B4:B20004;\"\"\"*Barbarian*\");\"=CONTAR.SI(B4:B20004;\"\"\"*Gigant*\");\"=CONTAR.SI(B4:B20004;\"\"\"*Goblin*\");\"=CONTAR.SI(B4:B20004;\"\"\"*Knight*\");\"=CONTAR.SI(B4:B20004;\"\"\"*Mini-pekka*\")");
-        tw.WriteLine("=$C$4;\"=CONTAR.SI(D4:D20004;\"\"\"*Archer*\");\"=CONTAR.SI(D4:D20004;\"\"\"*Barbarian*\");\"=CONTAR.SI(D4:D20004;\"\"\"*Gigant*\");\"=CONTAR.SI(D4:D20004;\"\"\"*Goblin*\");\"=CONTAR.SI(D4:D20004;\"\"\"*Knight*\");\"=CONTAR.SI(D4:D20004;\"\"\"*Mini-pekka*\")");
+        tw.WriteLine(".;Archers;Barbarian;Giant;Goblin;Knight;Mini-Pekka");
+        tw.WriteLine("=$A$4;\"=CONTAR.SI(B4:B20004;\"\"\"*Archer*\");\"=CONTAR.SI(B4:B20004;\"\"\"*Barbarian*\");\"=CONTAR.SI(B4:B20004;\"\"\"*Giant*\");\"=CONTAR.SI(B4:B20004;\"\"\"*Goblin*\");\"=CONTAR.SI(B4:B20004;\"\"\"*Knight*\");\"=CONTAR.SI(B4:B20004;\"\"\"*Mini-Pekka*\")");
+        tw.WriteLine("=$C$4;\"=CONTAR.SI(D4:D20004;\"\"\"*Archer*\");\"=CONTAR.SI(D4:D20004;\"\"\"*Barbarian*\");\"=CONTAR.SI(D4:D20004;\"\"\"*Giant*\");\"=CONTAR.SI(D4:D20004;\"\"\"*Goblin*\");\"=CONTAR.SI(D4:D20004;\"\"\"*Knight*\");\"=CONTAR.SI(D4:D20004;\"\"\"*Mini-Pekka*\")");
 
         //Write the data of the temporal files
         while (!eof1 && !eof2)

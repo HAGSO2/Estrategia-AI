@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -109,6 +109,18 @@ TextureImporter:
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 1
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
@@ -988,9 +1000,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      SpriteSheet-Treant-Attack_28: 174013285
       SpriteSheet-Treant-Attack_9: -411952476
       SpriteSheet-Treant-Attack_14: 31217905
-      SpriteSheet-Treant-Attack_29: 744076288
+      SpriteSheet-Treant-Attack_18: 286753876
       SpriteSheet-Treant-Attack_22: 1564994776
       SpriteSheet-Treant-Attack_36: 1630568795
       SpriteSheet-Treant-Attack_20: -716680492
@@ -998,7 +1011,6 @@ TextureImporter:
       SpriteSheet-Treant-Attack_15: -753448687
       SpriteSheet-Treant-Attack_23: -377261101
       SpriteSheet-Treant-Attack_38: 1843762196
-      SpriteSheet-Treant-Attack_3: -502988524
       SpriteSheet-Treant-Attack_1: -677960721
       SpriteSheet-Treant-Attack_0: -2026391268
       SpriteSheet-Treant-Attack_17: 102116292
@@ -1016,19 +1028,19 @@ TextureImporter:
       SpriteSheet-Treant-Attack_40: -209344522
       SpriteSheet-Treant-Attack_30: 1695968205
       SpriteSheet-Treant-Attack_27: 1934617153
+      SpriteSheet-Treant-Attack_12: 1564574686
       SpriteSheet-Treant-Attack_2: -922852025
-      SpriteSheet-Treant-Attack_5: 980899791
       SpriteSheet-Treant-Attack_19: -1779212157
       SpriteSheet-Treant-Attack_24: -370693743
-      SpriteSheet-Treant-Attack_37: -1508890088
+      SpriteSheet-Treant-Attack_5: 980899791
       SpriteSheet-Treant-Attack_26: -1010959952
       SpriteSheet-Treant-Attack_35: 1633955221
-      SpriteSheet-Treant-Attack_28: 174013285
-      SpriteSheet-Treant-Attack_7: 1751527702
+      SpriteSheet-Treant-Attack_37: -1508890088
+      SpriteSheet-Treant-Attack_3: -502988524
       SpriteSheet-Treant-Attack_21: 805332418
-      SpriteSheet-Treant-Attack_12: 1564574686
+      SpriteSheet-Treant-Attack_7: 1751527702
       SpriteSheet-Treant-Attack_8: 1984733137
-      SpriteSheet-Treant-Attack_18: 286753876
+      SpriteSheet-Treant-Attack_29: 744076288
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
