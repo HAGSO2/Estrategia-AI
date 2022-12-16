@@ -158,10 +158,12 @@ public class ForwardModel : MonoBehaviour
     public void SimulateInP2(Observer observation, float maxSimulationTime,
         TroopsToDeploy player2Parameters)
     {
+        Debug.Log("Simulando...");
         if (!finished) return;
         finished = false;
         CopyNecesaryObserverData(observation);
         
+        Debug.Log("Simulando 2...");
         //BurnedAndFinalElixir(observation, true, player1Parameters);
         BurnedAndFinalElixir(observation, false, player2Parameters);
         

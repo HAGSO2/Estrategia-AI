@@ -3,12 +3,15 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using JetBrains.Annotations;
+using TMPro;
 using UnityEngine;
 
 public class Observer : MonoBehaviour
 {
     [SerializeField] private CardSystem CSP1;
     [SerializeField] private CardSystem CSP2;
+
+    #region VariablesDeclarations
     
     public Card[] player1Hand
     {
@@ -64,28 +67,33 @@ public class Observer : MonoBehaviour
     public Tower Player2KingTower;
 
     public float timeLeft = 180;
+    [SerializeField] private TextMeshProUGUI timeLeftTMP;
+
+    public bool isSimulator;
+    
+    #endregion
 
     private void Awake()
     {
         // -------------------------------------------------------------------------------------- //
         // Make sure that what we are adding here are references and we don't need to update them //
         // -------------------------------------------------------------------------------------- //
-        /*
+        
         _playersHand.Add(player1Hand);
         _playersHand.Add(player2Hand);
         
         _playersDeck.Add(player1Deck);
         _playersDeck.Add(player2Deck);
-        */
+        
         playersTroops.Add(player1Troops);
         playersTroops.Add(player2Troops);
         
         _playersTroopsParents.Add(player1TroopsParent);
         _playersTroopsParents.Add(player2TroopsParent);
 
-        StartCoroutine("ClashTimer");
+        if(!isSimulator) StartCoroutine("ClashTimer");
 
-/*
+        /*
         _playersElixir.Add(player1Elixir);
         _playersElixir.Add(player2Elixir);
         */
@@ -97,6 +105,7 @@ public class Observer : MonoBehaviour
         player = player <= 0 ? 0 : 1;
         var aviableTroops = new List<Card>();
 
+        Debug.Log("Player 2 Hand: " + player2Hand[2].name);
         _playersHand[player] = player == 0 ? player1Hand : player2Hand;
         aviableTroops.AddRange(_playersHand[player].Where(troop => troop.cost <= player1Elixir));
         return aviableTroops;
@@ -123,8 +132,18 @@ public class Observer : MonoBehaviour
     {
         while (timeLeft-- >= 0)
         {
+            timeLeftTMP.text = "Time left: " + SecondsToMinutesFormat(timeLeft);
             yield return new WaitForSeconds(1f);
         }
+    }
+
+    private string SecondsToMinutesFormat(float timeInSeconds)
+    {
+        int minutes = (int)timeInSeconds / 60;
+        int seconds = (int)timeInSeconds % 60;
+
+        if(seconds < 10) return minutes + ":0" + seconds;
+        return minutes + ":" + seconds;
     }
     
 /*

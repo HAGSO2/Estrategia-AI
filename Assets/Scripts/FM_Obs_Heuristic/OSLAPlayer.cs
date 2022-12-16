@@ -14,7 +14,7 @@ public class OSLAPlayer : MonoBehaviour, IAI
     [SerializeField] private Transform downAttackTransform;
     [SerializeField] private Transform downDefenseTransform;
 
-    private List<Vector3> _positions;
+    private List<Vector3> _positions = new List<Vector3>();
     private bool _thinking = false;
 
     public int player;
@@ -46,25 +46,24 @@ public class OSLAPlayer : MonoBehaviour, IAI
     {
         List<Card> availableCards = _observer.AvailableTroops(player);
 
-        int bestScore = -1000000;
-        int best_action;
+        float bestScore = -1000000;
         foreach (Card troop in availableCards)
         {
-            _forwardModel.Simulate(_observer, 30, think2);
-            /*
-            score = self.heuristic.get_score(obs)
-            if score > best_score
+            _forwardModel.Simulate(_observer, 30, Think2);
+            
+            float score = Heuristic.GetScore(_observer, _forwardModel.simulationObserver);
+            if (score > bestScore)
             {
-                best_score = score
+                bestScore = score;
             }
-            */
+            
         }
-        best_action = 1;
+        var bestAction = 1;
 
-        return best_action;
+        return bestAction;
     }
 
-    private int think2()
+    private int Think2()
     {
         Debug.Log("Heuristic: " + Heuristic.GetScore(_observer, _forwardModel.simulationObserver));
         return 1;
@@ -74,19 +73,21 @@ public class OSLAPlayer : MonoBehaviour, IAI
     {
         _thinking = true;
         if(!_forwardModel.finished) yield break;
-        
+        Debug.Log("Pre Pensando");
         List<Card> availableCards = _observer.AvailableTroops(player);
-
+        Debug.Log("Pensando");
         if (availableCards.Count == 0) yield break;
         
         float bestScore = -1000000;
         Card bestCard = availableCards[0];
         Vector3 bestPos = _positions[0];
 
+        
         foreach (Card troop in availableCards)
         {
             foreach (Vector3 position in _positions)
             {
+                Debug.Log("Voy a simular");
                 if(player == 0) _forwardModel.SimulateInP1(_observer, 30, Build1Troop2Deploy(troop, position));
                 else _forwardModel.SimulateInP2(_observer, 30, Build1Troop2Deploy(troop, position));
 
@@ -105,6 +106,7 @@ public class OSLAPlayer : MonoBehaviour, IAI
         }
         _deployCardSystem.DeployCard(bestCard, bestPos);
         _thinking = false;
+        Debug.Log("Terminé de pensar");
     }
 
     private TroopsToDeploy Build1Troop2Deploy(Card troop, Vector3 position)
