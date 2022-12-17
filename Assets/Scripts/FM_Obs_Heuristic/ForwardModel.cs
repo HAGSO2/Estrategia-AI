@@ -121,7 +121,7 @@ public class ForwardModel : MonoBehaviour
     }
     
     public void SimulateInP1(Observer observation, float maxSimulationTime,
-        TroopsToDeploy player1Parameters)
+        TroopsToDeploy player1Parameters, Func<int> end)
     {
         if (!finished) return;
         finished = false;
@@ -152,11 +152,11 @@ public class ForwardModel : MonoBehaviour
         
         // Coroutine that manages when simulation arrived to an ending point
 
-        StartCoroutine(SimulationEnded(maxSimulationTime, JokeEnd));
+        StartCoroutine(SimulationEnded(maxSimulationTime, end));
     }
     
     public void SimulateInP2(Observer observation, float maxSimulationTime,
-        TroopsToDeploy player2Parameters)
+        TroopsToDeploy player2Parameters, Func<int> end)
     {
         Debug.Log("Simulando...");
         if (!finished) return;
@@ -189,7 +189,7 @@ public class ForwardModel : MonoBehaviour
         
         // Coroutine that manages when simulation arrived to an ending point
 
-        StartCoroutine(SimulationEnded(maxSimulationTime, JokeEnd));
+        StartCoroutine(SimulationEnded(maxSimulationTime, end));
     }
     
     private void CopyNecesaryObserverData(Observer observation)
