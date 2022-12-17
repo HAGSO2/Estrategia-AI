@@ -4807,7 +4807,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4598063425562281033}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &283515620
 GameObject:
@@ -4838,7 +4838,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4598063425562281033}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &312848303
 GameObject:
@@ -4872,6 +4872,37 @@ Transform:
   - {fileID: 687112035}
   m_Father: {fileID: 1111563531}
   m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &318192208
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 318192209}
+  m_Layer: 0
+  m_Name: EnemiesPlayer1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &318192209
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 318192208}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1670241916}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &339811826
 GameObject:
@@ -4934,7 +4965,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CSP1: {fileID: 862888572}
   CSP2: {fileID: 4598063425562281015}
-  player1TroopsParent: {fileID: 862888570}
+  player1TroopsParent: {fileID: 0}
   player2TroopsParent: {fileID: 2084767519}
   ESP1: {fileID: 862888571}
   ESP2: {fileID: 2084767520}
@@ -5249,6 +5280,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &519736200
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 519736201}
+  m_Layer: 0
+  m_Name: EnemiesPlayer2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &519736201
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519736200}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1670241916}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &583940724
 GameObject:
@@ -9571,11 +9633,11 @@ PrefabInstance:
     - target: {fileID: 3193646538401605080, guid: a1696c39a69b8b74b8804ff861702fb4, type: 3}
       propertyPath: _player1TroopsParent
       value: 
-      objectReference: {fileID: 862888573}
+      objectReference: {fileID: 318192209}
     - target: {fileID: 3193646538401605080, guid: a1696c39a69b8b74b8804ff861702fb4, type: 3}
       propertyPath: _player2TroopsParent
       value: 
-      objectReference: {fileID: 3271033521494769807}
+      objectReference: {fileID: 519736201}
     - target: {fileID: 3193646538401605082, guid: a1696c39a69b8b74b8804ff861702fb4, type: 3}
       propertyPath: deckTransform
       value: 
@@ -9743,11 +9805,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3193646538401605083, guid: a1696c39a69b8b74b8804ff861702fb4, type: 3}
   m_PrefabInstance: {fileID: 862888568}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &862888570 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5324793316674113979, guid: a1696c39a69b8b74b8804ff861702fb4, type: 3}
-  m_PrefabInstance: {fileID: 862888568}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &862888571 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3193646538401605081, guid: a1696c39a69b8b74b8804ff861702fb4, type: 3}
@@ -9770,11 +9827,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b57a6c3a9efe4e149a1822af43fa8be3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!4 &862888573 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2181987444335526090, guid: a1696c39a69b8b74b8804ff861702fb4, type: 3}
-  m_PrefabInstance: {fileID: 862888568}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &902858823
 GameObject:
   m_ObjectHideFlags: 0
@@ -23607,7 +23659,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4598063425562281033}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1561949901
 PrefabInstance:
@@ -23716,7 +23768,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4598063425562281033}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1670241915
 GameObject:
@@ -23748,6 +23800,8 @@ Transform:
   m_Children:
   - {fileID: 1707604008}
   - {fileID: 412756297}
+  - {fileID: 318192209}
+  - {fileID: 519736201}
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -24712,21 +24766,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!4 &3271033521494769807
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9155059829004472412}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 4598063425562281033}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4598063425562281012
 GameObject:
   m_ObjectHideFlags: 0
@@ -24761,8 +24800,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elixirSystem: {fileID: 4598063425562281014}
   enemiesManager: {fileID: 339811827}
-  _player1TroopsParent: {fileID: 0}
-  _player2TroopsParent: {fileID: 0}
+  _player1TroopsParent: {fileID: 318192209}
+  _player2TroopsParent: {fileID: 519736201}
 --- !u!114 &4598063425562281014
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24820,7 +24859,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 3271033521494769807}
   - {fileID: 1655560686}
   - {fileID: 168082646}
   - {fileID: 1556853024}
@@ -24848,19 +24886,3 @@ MonoBehaviour:
   downAttackTransform: {fileID: 1556853024}
   downDefenseTransform: {fileID: 283515621}
   player: 1
---- !u!1 &9155059829004472412
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 3271033521494769807}
-  m_Layer: 0
-  m_Name: EnemiesDeployed
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
