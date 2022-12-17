@@ -76,6 +76,7 @@ public class NPC : MonoBehaviour
     {
         if ((col.CompareTag("Destructible") && col.GetComponentInParent<NPC>().Team != Team) || (col.CompareTag("Structure") && col.GetComponentInParent<Tower>().Team != Team))
         {
+            Debug.Log(col.gameObject.name);
             _InRange = true;
             _hardOponent = col.CompareTag("Destructible");
             if (!_manager.OnlyTower(Team) && _target.GetComponent<NPC>() == null)
@@ -119,8 +120,11 @@ public class NPC : MonoBehaviour
     private void FixedUpdate()
     {
         _behaviour.DoStep();
-        if (_target != null && Vector3.Distance(transform.position, _target.position) < atributes.attackRange / 2)
+        /*if (_target != null && Vector3.Distance(transform.position, _target.position) < atributes.attackRange)
+        {
             _InRange = true;
+            Debug.Log(_InRange);
+        }*/
     }
 
     public void SimulateUpdate()
@@ -137,7 +141,7 @@ public class NPC : MonoBehaviour
     {
         _target = _manager.SearchNearest(transform.position,atributes.visionRange, Team);
         _path.targetPos = _target;
-        if (Vector3.Distance(transform.position, _target.position) < atributes.attackRange / 2)
+        if (Vector3.Distance(transform.position, _target.position) < (atributes.attackRange / 2))
             _InRange = true;
         _path.enabled = true;
         return 1;
@@ -164,11 +168,11 @@ public class NPC : MonoBehaviour
         try
         {
             other.Hurt(atributes.damage);
-            _acumulatedDamage += atributes.damage;
         }
         catch
         {
             _attackMutex = true;
+            _target = null;
             _InRange = false;
             _controller.SetBool("Attacking",false);
             yield break;
@@ -182,7 +186,6 @@ public class NPC : MonoBehaviour
         try
         {
             other.Hurt(atributes.damage);
-            _acumulatedDamage += atributes.damage;
         }
         catch
         {
