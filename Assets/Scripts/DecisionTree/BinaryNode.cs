@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BinaryNode : MonoBehaviour
+public class BinaryNode
 {
 
     private string Title;
@@ -40,10 +40,10 @@ public class BinaryNode : MonoBehaviour
 
     public void Evaluate()
     {
+        bool result = Test();
+
         if (leftChild == null)
             return;
-
-        bool result = Test();
 
         if (result) leftChild.Evaluate();
         else rightChild.Evaluate();

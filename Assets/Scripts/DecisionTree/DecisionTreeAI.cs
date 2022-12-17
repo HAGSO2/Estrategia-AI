@@ -16,15 +16,15 @@ public class DecisionTreeAI : MonoBehaviour, IAI
 
     public string id { get; set; }
 
-    Vector3 pos;
+    Vector3 pos = Vector3.zero;
 
     void Start()
     {
         id = "DecisionTreeAI"; 
         CreateDecisionTree();
-
-        StartCoroutine(UpdateAI());
     }
+
+    
 
     BinaryNode notEnoughElixir;
     BinaryNode attackAnywhere;
@@ -44,8 +44,8 @@ public class DecisionTreeAI : MonoBehaviour, IAI
 
         notEnoughElixir = new BinaryNode("Not Enough Elixir", NotEnoughElixir);
 
-        // NOT LEAFS
 
+        // NOT LEAFS
         attackedDown = new BinaryNode("Attacked Down?", defenseDown, attackAnywhere, AttackedDownF);
 
         attackedUp = new BinaryNode("Attacked Up?", defenseUp, attackedDown, AttackedUpF);
@@ -84,47 +84,79 @@ public class DecisionTreeAI : MonoBehaviour, IAI
         return true;
     }
 
+    ///////////////////////////////////////////////////////////////////////////////////////////////////////
+
     bool AttackedUpF()
     {
         bool isUpSide;
 
+        // If it's empty --> false
         if (!simpleObserver.sides.TryPeek(out isUpSide))
+        {
             return false;
+        }
 
-        return isUpSide;
+        if (isUpSide)
+        {
+            simpleObserver.Defended();
+            return true;
+        }
+
+        return false;
     }
 
     bool AttackedDownF()
     {
         bool isDownSide;
 
+        // If it's empty --> false
         if (!simpleObserver.sides.TryPeek(out isDownSide))
+        {
             return false;
+        }
 
-        return !isDownSide;
+        if (!isDownSide)
+        {
+            simpleObserver.Defended();
+            return true;
+        }
+
+        return false;
     }
 
     bool EnoughElixirF()
     {
-        return simpleObserver.ActualElixir() >= simpleObserver.lowestCardCost;
+        return simpleObserver.ActualElixir() >= simpleObserver.lowestCardCost + 1;
     }
 
-    IEnumerator UpdateAI()
+    ///////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    float timer = 0f;
+    float maxTime = 5f;
+    void Update()
     {
         // Revisar el notTerminal, cuando cambia??
-        bool notTerminal = true;
-        while (notTerminal)
+        timer += Time.deltaTime;
+        if (timer >= maxTime && !simpleObserver.IsTerminal())
         {
-            int index = think(null, 10f);
-            // Cuidado cuando pos es Vector3.zero
+            timer = 0f;
+            //int index = think(null, 10f);
+
+            // Probando funcionamiento sin usar think() --> FALTA EL CRITERIO PARA SABE QUÉ CARTA JUGAR
+            root.Evaluate();
+
+            int index = 0;
             if (pos != Vector3.zero)
             {
                 cardSystem.TryToPlayCardAI(index, pos);
-                yield return new WaitForSeconds(1f);
+                simpleObserver.SortCards();
+            }
+            else
+            {
+                Debug.Log("Poco elixir: " + simpleObserver.ActualElixir() + " < " + (simpleObserver.lowestCardCost + 1));
             }
         }
     }
-
     public int think(Observer observer, float budget)
     {
         root.Evaluate();
