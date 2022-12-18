@@ -9,11 +9,15 @@ public class SimpleObserver : MonoBehaviour
     [SerializeField] int enemyLayer;
 
     [HideInInspector] public Queue<bool> sides = new Queue<bool>();
+    [HideInInspector] public Queue<string> names = new Queue<string>();
+    [HideInInspector] public Queue<int> costs = new Queue<int>();
     [HideInInspector] public List<Card> cardsByCost = new List<Card>(4);
 
     [HideInInspector] public int lowestCardCost;
 
     [HideInInspector] public bool terminal = false;
+
+    [HideInInspector] public string playedCardName;
 
     private void Start()
     {
@@ -21,7 +25,6 @@ public class SimpleObserver : MonoBehaviour
             cardsByCost.Add(cardSystem.hand[i]);
 
         SortCards();
-        lowestCardCost = cardsByCost[0].cost;
 
         /*
         //DEBUGGING
@@ -30,23 +33,35 @@ public class SimpleObserver : MonoBehaviour
         */
     }
 
+    public int CheckForCard(string card_name)
+    {
+        for (int i = 0; i < cardSystem.hand.Length; i++)
+        {
+            if (cardSystem.hand[i].name == card_name)
+            {
+                playedCardName = card_name;
+                return i;
+            }
+        }
+
+        int cardIndex = Random.Range(0, cardSystem.hand.Length);
+        playedCardName = cardSystem.hand[cardIndex].name;
+
+        return cardIndex;
+    }
+
     public bool IsTerminal()
     {
         return terminal;
     }
 
-    // Falta gestionar la entrada de booleanos a la cola!!
-    // ¿Cómo detectar que el enemigo ha jugado?
-    // ¿Dónde ha jugado? --> Posicion y respecto 0
     void EnemyUpSide()
     {
-        //Debug.Log("Enemy up side");
         sides.Enqueue(true);
     }
 
     void EnemyDownSide()
     {
-        //Debug.Log("Enemy down side");
         sides.Enqueue(false);
     }
 
@@ -66,9 +81,14 @@ public class SimpleObserver : MonoBehaviour
         return elixirSystem.elixir;
     }
 
-    public void Defended()
+    public void PositionDefended()
     {
         sides.Dequeue();
+    }
+
+    public void NamesDefended()
+    {
+        names.Dequeue();
     }
 
     static int CompareCardByCost(Card c1, Card c2)
@@ -83,6 +103,10 @@ public class SimpleObserver : MonoBehaviour
     {
         if (collision.gameObject.layer == enemyLayer)
         {
+            NPC enemy = collision.GetComponent<NPC>();
+            Debug.Log(enemy.atributes.name);
+            names.Enqueue(enemy.atributes.name);
+            costs.Enqueue(enemy.atributes.elixirCost);
             if (collision.transform.position.y > 0)
                 EnemyUpSide();
             else
