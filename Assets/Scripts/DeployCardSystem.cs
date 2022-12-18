@@ -33,7 +33,7 @@ public class DeployCardSystem : MonoBehaviour
         enemy.Team = false;
         enemy.Set(enemiesManager);
 
-        Destroy(enemy.gameObject, 3f);
+        //Destroy(enemy.gameObject, 3f);
     }
     
     public void DeployCardGeneral(Card card, Vector3 pos, bool team)

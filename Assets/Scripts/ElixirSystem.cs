@@ -8,8 +8,8 @@ public class ElixirSystem : MonoBehaviour
     [SerializeField] GameObject elixirGameObject;
     TextMeshProUGUI elixirTMP;
 
-    public float elixir = 6;
-    float maxElixir = 10;
+    public int elixir = 6;
+    int maxElixir = 10;
 
     bool isAI = false;
 
