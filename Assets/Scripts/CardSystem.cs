@@ -51,7 +51,7 @@ public class CardSystem : MonoBehaviour
         }
     }
 
-    public void TryToPlayCardAI(int playedCardIndex)
+    public void TryToPlayCardAI(int playedCardIndex, bool t)
     {
         Card playedCard = hand[playedCardIndex];
 
@@ -60,7 +60,7 @@ public class CardSystem : MonoBehaviour
         if (deployCardSystem.CanDeploy(playedCard))
         {
             PlayCardAI(playedCard);
-            deployCardSystem.DeployCardAI(playedCard, pos);
+            deployCardSystem.DeployCardAI(playedCard, pos, t);
         }
         else
         {
@@ -68,14 +68,14 @@ public class CardSystem : MonoBehaviour
         }
     }
 
-    public void TryToPlayCardAI(int playedCardIndex, Vector3 pos)
+    public void TryToPlayCardAI(int playedCardIndex, Vector3 pos, bool t)
     {
         Card playedCard = hand[playedCardIndex];
 
         if (deployCardSystem.CanDeploy(playedCard))
         {
             PlayCardAI(playedCard);
-            deployCardSystem.DeployCardAI(playedCard, pos);
+            deployCardSystem.DeployCardAI(playedCard, pos, t);
         }
         else
         {
@@ -83,14 +83,14 @@ public class CardSystem : MonoBehaviour
         }
     }
 
-    public void TryToPlayCard(int playedCardIndex, Vector3 pos)
+    public void TryToPlayCard(int playedCardIndex, Vector3 pos, bool t)
     {
         Card playedCard = hand[playedCardIndex];
 
         if (IsPosBetween(pos, minCardPosToBePlayed.position, maxCardPosToBePlayed.position) && deployCardSystem.CanDeploy(playedCard))
         {
             PlayCard(playedCard);
-            deployCardSystem.DeployCard(playedCard, pos);
+            deployCardSystem.DeployCard(playedCard, pos, t);
         }
         else
         {

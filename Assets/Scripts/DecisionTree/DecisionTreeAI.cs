@@ -29,6 +29,7 @@ public class DecisionTreeAI : MonoBehaviour, IAI
     [SerializeField] Transform downDefenseTransform;
 
     public string id { get; set; }
+    public bool isLeftSide = false;
 
     int indexToPlay = -1;
     Vector3 pos = Vector3.zero;
@@ -322,7 +323,7 @@ public class DecisionTreeAI : MonoBehaviour, IAI
 
             if (pos != Vector3.zero)
             {
-                cardSystem.TryToPlayCardAI(index, pos);
+                cardSystem.TryToPlayCardAI(index, pos, isLeftSide);
                 simpleObserver.SortCards();
             }
             else

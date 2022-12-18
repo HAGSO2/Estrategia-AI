@@ -21,7 +21,7 @@ public class AIPlayer : MonoBehaviour
 
         if (timer >= maxTime)
         {
-            cardSystem.TryToPlayCardAI(Random.Range(0, 3));
+            cardSystem.TryToPlayCardAI(Random.Range(0, 3), false);
             timer = 0f;
         }
     }

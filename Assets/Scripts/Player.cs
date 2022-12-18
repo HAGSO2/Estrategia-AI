@@ -8,6 +8,9 @@ public class Player : MonoBehaviour
 
     bool IsCardMoving = false;
     bool rightClickSelection = false;
+
+    public bool isLeftSide = true; 
+
     Transform selectedCard;
     void Start()
     {
@@ -41,7 +44,7 @@ public class Player : MonoBehaviour
             {
                 rightClickSelection = false;
                 Card card = selectedCard.GetComponent<Card>();
-                cardSystem.TryToPlayCard(card.handIndex, Camera.main.ScreenToWorldPoint(Input.mousePosition));
+                cardSystem.TryToPlayCard(card.handIndex, Camera.main.ScreenToWorldPoint(Input.mousePosition), isLeftSide);
             }
             else if(!IsCardMoving)
             {
@@ -57,7 +60,7 @@ public class Player : MonoBehaviour
         else if (Input.GetMouseButtonUp(0) && IsCardMoving) // Left click up
         {
             IsCardMoving = false;
-            cardSystem.TryToPlayCard(selectedCard.GetComponent<Card>().handIndex, Camera.main.ScreenToWorldPoint(Input.mousePosition));
+            cardSystem.TryToPlayCard(selectedCard.GetComponent<Card>().handIndex, Camera.main.ScreenToWorldPoint(Input.mousePosition), isLeftSide);
         }
     }
 }

@@ -9,7 +9,7 @@ public class DeployCardSystem : MonoBehaviour
     [SerializeField] private Transform _player1TroopsParent;
     [SerializeField] private Transform _player2TroopsParent;
 
-    public void DeployCard(Card card, Vector3 pos)
+    public void DeployCard(Card card, Vector3 pos, bool t)
     {
         //Vector3 pos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         pos.z = -1;
@@ -17,20 +17,20 @@ public class DeployCardSystem : MonoBehaviour
         elixirSystem.elixir -= card.cost;
         elixirSystem.UpdateText();
         NPC enemy = Instantiate(card.enemy, pos, Quaternion.identity, _player1TroopsParent).GetComponent<NPC>();
-        enemy.Team = true;
+        enemy.Team = t;
         enemy.Set(enemiesManager);
 
         //Destroy(enemy.gameObject, 3f);
     }
 
-    public void DeployCardAI(Card card, Vector3 pos)
+    public void DeployCardAI(Card card, Vector3 pos, bool t)
     {
         //Vector3 pos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         pos.z = -1;
 
         elixirSystem.elixir -= card.cost;
         NPC enemy = Instantiate(card.enemy, pos, Quaternion.identity, _player2TroopsParent).GetComponent<NPC>();
-        enemy.Team = false;
+        enemy.Team = t;
         enemy.Set(enemiesManager);
 
         //Destroy(enemy.gameObject, 3f);
