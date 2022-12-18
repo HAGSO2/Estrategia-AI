@@ -29,19 +29,27 @@ public static class Heuristic
 
         observation.TroopsInField(0);
         observation.TroopsInField(1);
-        foreach (GameObject troop in observation.playersTroops[0])
+        Debug.Log("Troops: " + observation.playersTroops[0].Length);
+        if (observation.playersTroops[0].Length < 1)
         {
-            NPC troopNPC = troop.GetComponent<NPC>();
+            foreach (GameObject troop in observation.playersTroops[0])
+            {
+                NPC troopNPC = troop.GetComponent<NPC>();
             
-            elixirDifference += troopNPC.atributes.elixirCost * (troopNPC.atributes.health / troopNPC.atributes.maxHealth);
+                elixirDifference += troopNPC.atributes.elixirCost * (troopNPC.atributes.health / troopNPC.atributes.maxHealth);
+            }
         }
-        foreach (GameObject troop in observation.playersTroops[1])
+        if (observation.playersTroops[1].Length < 1)
         {
-            NPC troopNPC = troop.GetComponent<NPC>();
-            
-            elixirDifference -= troopNPC.atributes.elixirCost * (troopNPC.atributes.health / troopNPC.atributes.maxHealth);
+            foreach (GameObject troop in observation.playersTroops[1])
+            {
+                NPC troopNPC = troop.GetComponent<NPC>();
+
+                elixirDifference -= troopNPC.atributes.elixirCost *
+                                    (troopNPC.atributes.health / troopNPC.atributes.maxHealth);
+            }
         }
-        
+
         elixirDifference += _elixirValueOfkingTower * (observation.Player1KingTower.health / observation.Player1KingTower.maxHealth);
         elixirDifference -= _elixirValueOfkingTower * (observation.Player2KingTower.health / observation.Player2KingTower.maxHealth);
 

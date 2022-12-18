@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class OSLAPlayer : MonoBehaviour, IAI
 {
-    //[SerializeField] private CardSystem _cardSystem;
+    [SerializeField] private CardSystem _cardSystem;
     [SerializeField] private DeployCardSystem _deployCardSystem;
     [SerializeField] private Observer _observer;
     [SerializeField] private ForwardModel _forwardModel;
@@ -88,8 +88,8 @@ public class OSLAPlayer : MonoBehaviour, IAI
             foreach (Vector3 position in _positions)
             {
                 Debug.Log("Voy a simular");
-                if(player == 0) _forwardModel.SimulateInP1(_observer, 30, Build1Troop2Deploy(troop, position));
-                else _forwardModel.SimulateInP2(_observer, 30, Build1Troop2Deploy(troop, position));
+                if(player == 0) _forwardModel.SimulateInP1(_observer, 30, Build1Troop2Deploy(troop, position), JokeEnd);
+                else _forwardModel.SimulateInP2(_observer, 30, Build1Troop2Deploy(troop, position), JokeEnd);
 
                 yield return new WaitUntil(() => _forwardModel.finished);
 
@@ -97,6 +97,7 @@ public class OSLAPlayer : MonoBehaviour, IAI
                 if(player == 0) { score = Heuristic.GetScore(_observer, _forwardModel.simulationObserver); }
                 else { score = -Heuristic.GetScore(_observer, _forwardModel.simulationObserver); }
 
+                //Debug.Log("Score: " + score + ". BestScore: " + bestScore);
                 if (score <= bestScore) continue;
                 
                 bestScore = score;
@@ -104,7 +105,8 @@ public class OSLAPlayer : MonoBehaviour, IAI
                 bestPos = position;
             }
         }
-        _deployCardSystem.DeployCard(bestCard, bestPos);
+        
+        _cardSystem.AlejandroTryToPlayCard(bestCard, bestPos, player == 0);
         _thinking = false;
         Debug.Log("Terminé de pensar");
     }
@@ -117,5 +119,19 @@ public class OSLAPlayer : MonoBehaviour, IAI
         
         return new TroopsToDeploy(card, time, pos);
     }
+    
+    int JokeEnd()
+    {
+        return 1;
+    }
+    
+    public const int MINIPEKKAC = 0;
+    public const int GOBLIN = 1;
+    public const int ARCHER = 2;
+    public const int KNIGHT = 3;
+    public const int BARBARIAN = 4;
+    public const int GIANT = 5;
+    public const int MINIPEKKA = 4;
+    public const int MINIPEKKAE = 5;
     
 }

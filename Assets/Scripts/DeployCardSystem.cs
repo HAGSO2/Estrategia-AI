@@ -35,6 +35,20 @@ public class DeployCardSystem : MonoBehaviour
 
         Destroy(enemy.gameObject, 3f);
     }
+    
+    public void DeployCardGeneral(Card card, Vector3 pos, bool team)
+    {
+        pos.z = -1;
+
+        elixirSystem.elixir -= card.cost;
+        
+        NPC enemy = team ?  Instantiate(card.enemy, pos, Quaternion.identity, _player1TroopsParent).GetComponent<NPC>() :
+                            Instantiate(card.enemy, pos, Quaternion.identity, _player2TroopsParent).GetComponent<NPC>() ;
+        enemy.Team = team;
+        enemy.Set(enemiesManager);
+
+        //Destroy(enemy.gameObject, 3f);
+    }
 
     public bool CanDeploy(Card card)
     {

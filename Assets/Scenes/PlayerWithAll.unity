@@ -4965,8 +4965,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CSP1: {fileID: 862888572}
   CSP2: {fileID: 4598063425562281015}
-  player1TroopsParent: {fileID: 0}
-  player2TroopsParent: {fileID: 2084767519}
+  player1TroopsParent: {fileID: 318192208}
+  player2TroopsParent: {fileID: 519736200}
   ESP1: {fileID: 862888571}
   ESP2: {fileID: 2084767520}
   playersElixir: []
@@ -23616,12 +23616,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb8115b8dfc069a48a36bad8a889d81e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CSP1: {fileID: 0}
-  CSP2: {fileID: 0}
+  CSP1: {fileID: 862888572}
+  CSP2: {fileID: 4598063425562281015}
   player1TroopsParent: {fileID: 381549601}
   player2TroopsParent: {fileID: 312848303}
-  ESP1: {fileID: 0}
-  ESP2: {fileID: 0}
+  ESP1: {fileID: 862888571}
+  ESP2: {fileID: 4598063425562281014}
   playersElixir: []
   player1BurnedElixirInLastSimulation: 0
   player2BurnedElixirInLastSimulation: 0
@@ -24132,6 +24132,38 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 348990891}
     m_Modifications:
+    - target: {fileID: 2923253698535999886, guid: bb1a92b0ac9553e42a320134b9480d01, type: 3}
+      propertyPath: ID
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2923253698535999886, guid: bb1a92b0ac9553e42a320134b9480d01, type: 3}
+      propertyPath: enemy
+      value: 
+      objectReference: {fileID: 3253452878247755613, guid: 3b0b88df8c33ecc4285dd21b50910a78, type: 3}
+    - target: {fileID: 2923253699157252729, guid: bb1a92b0ac9553e42a320134b9480d01, type: 3}
+      propertyPath: ID
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2923253699198592248, guid: bb1a92b0ac9553e42a320134b9480d01, type: 3}
+      propertyPath: ID
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2923253699212921174, guid: bb1a92b0ac9553e42a320134b9480d01, type: 3}
+      propertyPath: ID
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2923253699388865940, guid: bb1a92b0ac9553e42a320134b9480d01, type: 3}
+      propertyPath: ID
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2923253699578807865, guid: bb1a92b0ac9553e42a320134b9480d01, type: 3}
+      propertyPath: ID
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2923253699765233244, guid: bb1a92b0ac9553e42a320134b9480d01, type: 3}
+      propertyPath: ID
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 7521169454349327190, guid: bb1a92b0ac9553e42a320134b9480d01, type: 3}
       propertyPath: m_Name
       value: Deck
@@ -24180,6 +24212,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7521169454696156899, guid: bb1a92b0ac9553e42a320134b9480d01, type: 3}
+      propertyPath: enemy
+      value: 
+      objectReference: {fileID: 3253452878247755613, guid: 3b0b88df8c33ecc4285dd21b50910a78, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb1a92b0ac9553e42a320134b9480d01, type: 3}
 --- !u!4 &1914977075 stripped
@@ -24589,11 +24625,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5098682920786463117, guid: 6ac8ae94c0322db45a148fa8e26a3b2d, type: 3}
   m_PrefabInstance: {fileID: 2084767517}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &2084767519 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 432623880151866776, guid: 6ac8ae94c0322db45a148fa8e26a3b2d, type: 3}
-  m_PrefabInstance: {fileID: 2084767517}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &2084767520 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5098682920786463218, guid: 6ac8ae94c0322db45a148fa8e26a3b2d, type: 3}
@@ -24878,6 +24909,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed5112c0475b48b4587a40b33e4d2e9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _cardSystem: {fileID: 4598063425562281015}
   _deployCardSystem: {fileID: 4598063425562281013}
   _observer: {fileID: 339811829}
   _forwardModel: {fileID: 1111563533}

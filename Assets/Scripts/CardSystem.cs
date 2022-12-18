@@ -118,4 +118,22 @@ public class CardSystem : MonoBehaviour
 
         return result;
     }
+    
+    public void AlejandroTryToPlayCard(Card card, Vector3 pos, bool team)
+    {
+        if (deployCardSystem.CanDeploy(card))
+        {
+            Card nextCard = deck.Dequeue();
+            deck.Enqueue(card);
+
+            hand[card.handIndex] = nextCard;
+            nextCard.handIndex = card.handIndex;
+            
+            deployCardSystem.DeployCardGeneral(card, pos, team);
+        }
+        else
+        {
+            Debug.Log("AI --> Not enough elixir");
+        }
+    }
 }

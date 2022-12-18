@@ -20,7 +20,7 @@ public class ForwardModel : MonoBehaviour
     [SerializeField] private  Vector3[] posP2 = new Vector3[8];
     */
     
-    private static int _speedMultiplier = 10;
+    private static int _speedMultiplier = 20;
     public bool finished = true;
 
     private Observer obs;
@@ -158,6 +158,12 @@ public class ForwardModel : MonoBehaviour
     public void SimulateInP2(Observer observation, float maxSimulationTime,
         TroopsToDeploy player2Parameters, Func<int> end)
     {
+        foreach (NPC troop in _troops)
+        {
+            Debug.Log("Destroying: " + troop);
+            if(troop != null) Destroy(troop.gameObject);
+        }
+        _troops.Clear();
         Debug.Log("Simulando...");
         if (!finished) return;
         finished = false;
@@ -189,7 +195,7 @@ public class ForwardModel : MonoBehaviour
         
         // Coroutine that manages when simulation arrived to an ending point
 
-        StartCoroutine(SimulationEnded(maxSimulationTime, end));
+        StartCoroutine(SimulationEnded(maxSimulationTime/_speedMultiplier, end));
     }
     
     private void CopyNecesaryObserverData(Observer observation)
@@ -214,6 +220,13 @@ public class ForwardModel : MonoBehaviour
         NPC enemy;
         if (isPlayer1){ enemy = Instantiate(troop.enemy, position, Quaternion.identity, simulationObserver.player1TroopsParent.transform).GetComponent<NPC>(); }
         else { enemy = Instantiate(troop.enemy, position, Quaternion.identity, simulationObserver.player2TroopsParent.transform).GetComponent<NPC>(); }
+
+        SpriteRenderer render = enemy.GetComponent<SpriteRenderer>();
+
+        Color color = render.color;
+        color.a = 0.5f;
+        render.color = color;
+        
         enemy.Team = isPlayer1;
         enemy.simulatedMultiplier = _speedMultiplier;
         enemy.Set(enemiesManager);
@@ -221,7 +234,16 @@ public class ForwardModel : MonoBehaviour
     }
     private void DeployTroop(GameObject troop, Vector3 position, bool isPlayer1)
     {
-        NPC enemy = Instantiate(troop, position, Quaternion.identity).GetComponent<NPC>();
+        NPC enemy;
+        if (isPlayer1){ enemy = Instantiate(troop, position, Quaternion.identity, simulationObserver.player1TroopsParent.transform).GetComponent<NPC>(); }
+        else { enemy = Instantiate(troop, position, Quaternion.identity, simulationObserver.player2TroopsParent.transform).GetComponent<NPC>(); }
+
+        SpriteRenderer render = enemy.GetComponent<SpriteRenderer>();
+
+        Color color = render.color;
+        color.a = 0.5f;
+        render.color = color;
+        
         enemy.Team = isPlayer1;
         enemy.simulatedMultiplier = _speedMultiplier;
         enemy.Set(enemiesManager);
@@ -249,11 +271,12 @@ public class ForwardModel : MonoBehaviour
             simulationObserver.TroopsInField(0);
             simulationObserver.TroopsInField(1);
             finished = true;
+            /*
             foreach (NPC troop in _troops)
             {
                 Debug.Log("Destroying: " + troop);
                 Destroy(troop);
-            }
+            }*/
 
             end.Invoke();
         }
