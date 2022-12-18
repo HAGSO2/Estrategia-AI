@@ -4964,11 +4964,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CSP1: {fileID: 862888572}
-  CSP2: {fileID: 4598063425562281015}
+  CSP2: {fileID: 900228708}
   player1TroopsParent: {fileID: 318192208}
   player2TroopsParent: {fileID: 519736200}
   ESP1: {fileID: 862888571}
-  ESP2: {fileID: 2084767520}
+  ESP2: {fileID: 900228707}
   playersElixir: []
   player1BurnedElixirInLastSimulation: 0
   player2BurnedElixirInLastSimulation: 0
@@ -5010,6 +5010,7 @@ Transform:
   - {fileID: 2084767518}
   - {fileID: 1877544355}
   - {fileID: 4598063425562281033}
+  - {fileID: 900228705}
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5250,7 +5251,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 6.155129
+  orthographic size: 7.384002
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -5274,7 +5275,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 489488961}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 0, y: -0.65, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9827,6 +9828,125 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b57a6c3a9efe4e149a1822af43fa8be3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &900228704
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 900228705}
+  - component: {fileID: 900228709}
+  - component: {fileID: 900228708}
+  - component: {fileID: 900228707}
+  - component: {fileID: 900228706}
+  m_Layer: 0
+  m_Name: SRP Player
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &900228705
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 900228704}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1146367687}
+  - {fileID: 1440539068}
+  - {fileID: 1293213002}
+  - {fileID: 1738720738}
+  m_Father: {fileID: 348990891}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &900228706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 900228704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 529be450bdb30174b8b16c3be32ecea0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  elixirSystem: {fileID: 900228707}
+  enemiesManager: {fileID: 339811827}
+  _player1TroopsParent: {fileID: 318192209}
+  _player2TroopsParent: {fileID: 519736201}
+--- !u!114 &900228707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 900228704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 702e43cecf5289e4289196778fd1dd93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  elixirGameObject: {fileID: 0}
+  elixir: 6
+--- !u!114 &900228708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 900228704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b57a6c3a9efe4e149a1822af43fa8be3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initialDeck:
+  - {fileID: 1877544361}
+  - {fileID: 1877544361}
+  - {fileID: 1877544361}
+  - {fileID: 1877544360}
+  - {fileID: 1877544359}
+  - {fileID: 1877544358}
+  - {fileID: 1877544357}
+  - {fileID: 1877544357}
+  deckTransform: {fileID: 1914977075}
+  minCardPosToBePlayed: {fileID: 970006439}
+  maxCardPosToBePlayed: {fileID: 2104726842}
+  hand:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  cardPositions: []
+  deployCardSystem: {fileID: 900228706}
+--- !u!114 &900228709
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 900228704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 426c525fb1c9b044c8545d62a8d8249b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _observer: {fileID: 339811829}
+  _cardSystem: {fileID: 900228708}
+  upAttackTransform: {fileID: 1146367687}
+  upDefenseTransform: {fileID: 1440539068}
+  downAttackTransform: {fileID: 1293213002}
+  downDefenseTransform: {fileID: 1738720738}
+  player: 1
 --- !u!1 &902858823
 GameObject:
   m_ObjectHideFlags: 0
@@ -14922,6 +15042,37 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!1 &1146367686
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1146367687}
+  m_Layer: 0
+  m_Name: UpAttack
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1146367687
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1146367686}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.5, y: 3, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 900228705}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1166841292
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14935,11 +15086,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1623089779330718570, guid: 4dfc9ae35737cb648b5eca72ba5a93f5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.0458374
+      value: -3.78
       objectReference: {fileID: 0}
     - target: {fileID: 1623089779330718570, guid: 4dfc9ae35737cb648b5eca72ba5a93f5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.876213
+      value: -0.11
       objectReference: {fileID: 0}
     - target: {fileID: 1623089779330718570, guid: 4dfc9ae35737cb648b5eca72ba5a93f5, type: 3}
       propertyPath: m_LocalPosition.z
@@ -19323,6 +19474,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1623089779330718570, guid: 4dfc9ae35737cb648b5eca72ba5a93f5, type: 3}
   m_PrefabInstance: {fileID: 1237477309}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1293213001
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1293213002}
+  m_Layer: 0
+  m_Name: DownAttack
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1293213002
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1293213001}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.5, y: -3, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 900228705}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1351560728
 GameObject:
   m_ObjectHideFlags: 0
@@ -23557,6 +23739,37 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &1440539067
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1440539068}
+  m_Layer: 0
+  m_Name: UpDefense
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1440539068
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1440539067}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 5, y: 1, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 900228705}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1480999136
 GameObject:
   m_ObjectHideFlags: 0
@@ -23940,6 +24153,37 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1738720737
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1738720738}
+  m_Layer: 0
+  m_Name: DownDefense
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1738720738
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1738720737}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 5, y: -1, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 900228705}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1877544354
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24006,17 +24250,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 362700629933202713, guid: f173207188d2b3a42b23a4b494b19b64, type: 3}
   m_PrefabInstance: {fileID: 1877544354}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1877544356 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5042173718205157312, guid: f173207188d2b3a42b23a4b494b19b64, type: 3}
-  m_PrefabInstance: {fileID: 1877544354}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aefdf3bbfe3bd7e49baaf9101599176b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1877544357 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5042173718825360439, guid: f173207188d2b3a42b23a4b494b19b64, type: 3}
@@ -24083,17 +24316,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aefdf3bbfe3bd7e49baaf9101599176b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1877544363 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 362700629989574829, guid: f173207188d2b3a42b23a4b494b19b64, type: 3}
-  m_PrefabInstance: {fileID: 1877544354}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aefdf3bbfe3bd7e49baaf9101599176b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1884466113
 GameObject:
   m_ObjectHideFlags: 0
@@ -24135,6 +24357,14 @@ PrefabInstance:
     - target: {fileID: 2923253698535999886, guid: bb1a92b0ac9553e42a320134b9480d01, type: 3}
       propertyPath: ID
       value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2923253698535999886, guid: bb1a92b0ac9553e42a320134b9480d01, type: 3}
+      propertyPath: cost
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2923253698535999886, guid: bb1a92b0ac9553e42a320134b9480d01, type: 3}
+      propertyPath: name
+      value: Mini-Pekka
       objectReference: {fileID: 0}
     - target: {fileID: 2923253698535999886, guid: bb1a92b0ac9553e42a320134b9480d01, type: 3}
       propertyPath: enemy
@@ -24211,6 +24441,14 @@ PrefabInstance:
     - target: {fileID: 7521169454349327191, guid: bb1a92b0ac9553e42a320134b9480d01, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7521169454696156899, guid: bb1a92b0ac9553e42a320134b9480d01, type: 3}
+      propertyPath: cost
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7521169454696156899, guid: bb1a92b0ac9553e42a320134b9480d01, type: 3}
+      propertyPath: name
+      value: Mini-Pekka
       objectReference: {fileID: 0}
     - target: {fileID: 7521169454696156899, guid: bb1a92b0ac9553e42a320134b9480d01, type: 3}
       propertyPath: enemy
@@ -24589,7 +24827,7 @@ PrefabInstance:
     - target: {fileID: 5098682920786463219, guid: 6ac8ae94c0322db45a148fa8e26a3b2d, type: 3}
       propertyPath: initialDeck.Array.data[0]
       value: 
-      objectReference: {fileID: 1877544363}
+      objectReference: {fileID: 0}
     - target: {fileID: 5098682920786463219, guid: 6ac8ae94c0322db45a148fa8e26a3b2d, type: 3}
       propertyPath: initialDeck.Array.data[1]
       value: 
@@ -24617,7 +24855,7 @@ PrefabInstance:
     - target: {fileID: 5098682920786463219, guid: 6ac8ae94c0322db45a148fa8e26a3b2d, type: 3}
       propertyPath: initialDeck.Array.data[7]
       value: 
-      objectReference: {fileID: 1877544356}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6ac8ae94c0322db45a148fa8e26a3b2d, type: 3}
 --- !u!4 &2084767518 stripped
@@ -24625,17 +24863,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5098682920786463117, guid: 6ac8ae94c0322db45a148fa8e26a3b2d, type: 3}
   m_PrefabInstance: {fileID: 2084767517}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2084767520 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5098682920786463218, guid: 6ac8ae94c0322db45a148fa8e26a3b2d, type: 3}
-  m_PrefabInstance: {fileID: 2084767517}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 702e43cecf5289e4289196778fd1dd93, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2104726841
 GameObject:
   m_ObjectHideFlags: 0
@@ -24816,7 +25043,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &4598063425562281013
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24860,14 +25087,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   initialDeck:
-  - {fileID: 1877544363}
+  - {fileID: 0}
   - {fileID: 1877544362}
   - {fileID: 1877544361}
   - {fileID: 1877544360}
   - {fileID: 1877544359}
   - {fileID: 1877544358}
   - {fileID: 1877544357}
-  - {fileID: 1877544356}
+  - {fileID: 0}
   deckTransform: {fileID: 1914977075}
   minCardPosToBePlayed: {fileID: 970006439}
   maxCardPosToBePlayed: {fileID: 2104726842}
