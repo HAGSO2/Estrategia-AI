@@ -51,6 +51,14 @@ public class CardSystem : MonoBehaviour
         }
     }
 
+    public void PlayCardAI(int playedCardIndex, Vector3 pos, bool t)
+    {
+        Card playedCard = hand[playedCardIndex];
+
+        PlayCardAI(playedCard);
+        deployCardSystem.DeployCardAI(playedCard, pos, t);
+    }
+
     public void TryToPlayCardAI(int playedCardIndex, bool t)
     {
         Card playedCard = hand[playedCardIndex];

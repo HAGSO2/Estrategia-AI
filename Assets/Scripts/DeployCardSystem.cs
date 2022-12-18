@@ -6,12 +6,11 @@ public class DeployCardSystem : MonoBehaviour
 {
     [SerializeField] ElixirSystem elixirSystem;
     [SerializeField] EnemiesManager enemiesManager;
-    [SerializeField] private Transform _player1TroopsParent;
-    [SerializeField] private Transform _player2TroopsParent;
+    [SerializeField] Transform _player1TroopsParent;
+    [SerializeField] Transform _player2TroopsParent;
 
     public void DeployCard(Card card, Vector3 pos, bool t)
     {
-        //Vector3 pos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         pos.z = -1;
 
         elixirSystem.elixir -= card.cost;
@@ -19,21 +18,16 @@ public class DeployCardSystem : MonoBehaviour
         NPC enemy = Instantiate(card.enemy, pos, Quaternion.identity, _player1TroopsParent).GetComponent<NPC>();
         enemy.Team = t;
         enemy.Set(enemiesManager);
-
-        //Destroy(enemy.gameObject, 3f);
     }
 
     public void DeployCardAI(Card card, Vector3 pos, bool t)
     {
-        //Vector3 pos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         pos.z = -1;
 
         elixirSystem.elixir -= card.cost;
         NPC enemy = Instantiate(card.enemy, pos, Quaternion.identity, _player2TroopsParent).GetComponent<NPC>();
         enemy.Team = t;
         enemy.Set(enemiesManager);
-
-        //Destroy(enemy.gameObject, 3f);
     }
     
     public void DeployCardGeneral(Card card, Vector3 pos, bool team)
@@ -46,8 +40,6 @@ public class DeployCardSystem : MonoBehaviour
                             Instantiate(card.enemy, pos, Quaternion.identity, _player2TroopsParent).GetComponent<NPC>() ;
         enemy.Team = team;
         enemy.Set(enemiesManager);
-
-        //Destroy(enemy.gameObject, 3f);
     }
 
     public bool CanDeploy(Card card)

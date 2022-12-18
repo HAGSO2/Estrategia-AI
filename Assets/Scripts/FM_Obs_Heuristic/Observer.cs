@@ -51,12 +51,12 @@ public class Observer : MonoBehaviour
     public float player1Elixir
     {
         get { return ESP1.elixir; }
-        set { ESP1.elixir = value; }
+        set { ESP1.elixir = (int)value; }
     }
     public float player2Elixir
     {
         get { return ESP2.elixir; }
-        set { ESP2.elixir = value; }
+        set { ESP2.elixir = (int)value; }
     }
     public List<float> playersElixir = new List<float>(2);
     

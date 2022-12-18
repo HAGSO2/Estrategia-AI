@@ -311,7 +311,7 @@ public class DecisionTreeAI : MonoBehaviour, IAI
     ///////////////////////////////////////////////////////////////////////////////////////////////////////
 
     float timer = 0f;
-    public float maxTime = 5f;
+    public float maxTime = 1f;
     void Update()
     {
         // Revisar el notTerminal, cuando cambia??
@@ -323,7 +323,7 @@ public class DecisionTreeAI : MonoBehaviour, IAI
 
             if (pos != Vector3.zero)
             {
-                cardSystem.TryToPlayCardAI(index, pos, isLeftSide);
+                cardSystem.PlayCardAI(index, pos, isLeftSide);
                 simpleObserver.SortCards();
             }
             else
