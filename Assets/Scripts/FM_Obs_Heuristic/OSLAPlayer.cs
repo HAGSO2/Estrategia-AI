@@ -88,8 +88,8 @@ public class OSLAPlayer : MonoBehaviour, IAI
             foreach (Vector3 position in _positions)
             {
                 Debug.Log("Voy a simular");
-                if(player == 0) _forwardModel.SimulateInP1(_observer, 30, Build1Troop2Deploy(troop, position));
-                else _forwardModel.SimulateInP2(_observer, 30, Build1Troop2Deploy(troop, position));
+                if(player == 0) _forwardModel.SimulateInP1(_observer, 30, Build1Troop2Deploy(troop, position),()=>1);
+                else _forwardModel.SimulateInP2(_observer, 30, Build1Troop2Deploy(troop, position),()=> 1);
 
                 yield return new WaitUntil(() => _forwardModel.finished);
 

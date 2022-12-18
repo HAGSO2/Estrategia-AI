@@ -209,9 +209,6 @@ public class NPC : MonoBehaviour
 
     public void Die()
     {
-//        Debug.Log("I've died, i'm an " + gameObject.name);
-        if(!Team)
-            Debug.Log("I've caused " + acumulatedDamage + " damage");
         _manager.DeleteTroop(transform,Team);
         Destroy(gameObject);
     }

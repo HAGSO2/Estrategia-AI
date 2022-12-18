@@ -40,11 +40,11 @@ public class Observer : MonoBehaviour
     // Make sure that the spawned troops will have the NPC component
     private GameObject[] player1Troops;
     private GameObject[] player2Troops;
-    public List<GameObject[]> playersTroops = new List<GameObject[]>(2);
+    public List<GameObject[]> playersTroops;
     
     public GameObject player1TroopsParent;
     public GameObject player2TroopsParent;
-    private List<GameObject> _playersTroopsParents = new List<GameObject>(2);
+    private List<GameObject> _playersTroopsParents;
 
     [SerializeField] private ElixirSystem ESP1;
     [SerializeField] private ElixirSystem ESP2;
@@ -79,6 +79,7 @@ public class Observer : MonoBehaviour
         // Make sure that what we are adding here are references and we don't need to update them //
         // -------------------------------------------------------------------------------------- //
         
+/*        
         _playersHand.Add(player1Hand);
         _playersHand.Add(player2Hand);
         
@@ -99,6 +100,16 @@ public class Observer : MonoBehaviour
         */
     }
 
+    private void Start()
+    {
+        _playersTroopsParents = new List<GameObject>();
+        _playersTroopsParents.Add(player1TroopsParent);
+        _playersTroopsParents.Add(player2TroopsParent);
+        playersTroops = new List<GameObject[]>();
+        playersTroops.Add(new GameObject[0]);
+        playersTroops.Add(new GameObject[0]);
+    }
+
     // Returns a List with the cards that can be played when called, the int player must be 0 or 1
     public List<Card> AvailableTroops(int player)
     {
@@ -116,15 +127,18 @@ public class Observer : MonoBehaviour
     {
         if (player < 0) player = 0;
         else if (player > 1) player = 1;
-
-        GameObject[] childs = new GameObject[_playersTroopsParents[player].transform.childCount];
-        int i = 0;
-        foreach (NPC child in _playersTroopsParents[player].GetComponentsInChildren<NPC>())
+        if (_playersTroopsParents[player].transform.childCount > 0)
         {
-            childs[i] = child.gameObject;
-            i++;
+            GameObject[] childs = new GameObject[_playersTroopsParents[player].transform.childCount];
+            int i = 0;
+            foreach (NPC child in _playersTroopsParents[player].GetComponentsInChildren<NPC>())
+            {
+                childs[i] = child.gameObject;
+                i++;
+            }
+
+            playersTroops[player] = childs;
         }
-        playersTroops[player] = childs;
     }
     
     // Control time

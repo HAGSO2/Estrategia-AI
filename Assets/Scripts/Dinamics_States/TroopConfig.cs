@@ -1,115 +1,150 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using Unity;
+using UnityEngine;
 
 public class TroopConfig
 {
-    enum myTroop
+    public static Vector3 UpForward;
+    public static Vector3 UpBackward;
+    public static Vector3 DownForwad;
+    public static Vector3 DownBackWard;
+    private List<Plays> _disponible;
+    private Queue<Plays> _waitingToPlay;
+    private int[,] _realTable;
+    private ForwardModel _fm;
+    private float _temporalH;
+    
+    public TroopConfig(){}
+    public TroopConfig(Card[] cards, ForwardModel fm)
     {
-        Archer = 2,
-        Barbarian = 4,
-        Giant = 5,
-        Goblin = 1,
-        Knight = 3,
-        MiniPekka = 4
-        /*AtqWall = 6,
-        Barbarity = 7,
-        SlowHit = 8,
-        Support = 9,
-        BigPlay = 10,*/
-    }
-    enum spawnPosition
-    {
-        For = 0,
-        Back = 1,
-        Any = 2
-    }
-    struct Plays
-    {
-        private myTroop[] _implicated;
-        private spawnPosition[] _sided;
-
-        public Plays(myTroop[] t, spawnPosition[] s)
+        _fm = fm;
+        _disponible = new List<Plays>();
+        _realTable = new int[4, 4]; // row col
+        foreach (Card card in cards)
         {
-            _implicated = t;
-            _sided = s;
+            AddCard(ref _disponible,card);
         }
     }
-    struct PlaysWeight
-    {
-        private Plays _required;
-        private int _elixir;
-        private float _hValue;
-    }
 
-    private Plays[] _disponible;
-    private PlaysWeight[] _info;
-    public TroopConfig(string[] cards)
+    private void AddCard(ref List<Plays> table, Card card)
     {
-        List<Plays> _pls = new List<Plays>();
-        int[] already = new int[5];   
-        foreach (string card in cards)
-        {
-            switch (card)
+        switch (card.name)
             {
                 case "Archer":
                     //Archer
-                    _pls.Add(new Plays(new [] { myTroop.Archer },new [] { spawnPosition.Any }));
-                    already[0]++;
+                    table.Add(new Plays(card,spawnPosition.Any ));
                     break;
                 case "Barbarian":
                     //Barbarian
-                    _pls.Add(new Plays(new [] { myTroop.Barbarian },new [] { spawnPosition.Any }));
-                    already[1]++;
+                    table.Add(new Plays(card ,spawnPosition.Any ));
                     break;
                 case "Giant":
                     //Giant
-                    _pls.Add(new Plays(new [] { myTroop.Giant },new [] { spawnPosition.For }));
-                    already[2]++;
+                    table.Add(new Plays(card ,spawnPosition.For ));
                     break;
                 case "Goblin":
                     //Goblin
-                    _pls.Add(new Plays(new [] { myTroop.Goblin },new [] { spawnPosition.Back }));
-                    already[3]++;
+                    table.Add(new Plays(card ,spawnPosition.Back ));
                     break;
                 case "Knight":
-                    _pls.Add(new Plays(new [] { myTroop.Knight },new [] { spawnPosition.For }));
-                    already[4]++;
+                    table.Add(new Plays(card ,spawnPosition.For ));
                     break;
                 case "Mini-Pekka":
-                    _pls.Add(new Plays(new [] { myTroop.MiniPekka },new [] { spawnPosition.For }));
+                    table.Add(new Plays(card ,spawnPosition.For ));
                     break;
             }
-            if (already[0] != 0 && already[1] != 0)
-            {
-                _pls.Add(new Plays(new [] { myTroop.Archer ,myTroop.Giant},new [] { spawnPosition.Back ,spawnPosition.For}));
-                already[0]--;
-                already[1]--;
-            }
+    }
 
-            if (already[1] != 0 && already[3] != 0)
+    private TroopsToDeploy CreateTroopsToDeploy(Plays[] plays)
+    {
+        Vector3[] positions = new Vector3[plays.Length];
+        Card[] cards = new Card[plays.Length];
+        float[] times = new float[plays.Length];
+        for (int i = 0; i < plays.Length; i++)
+        {
+            switch (plays[i].Sided)
             {
-                _pls.Add(new Plays(new [] { myTroop.Goblin ,myTroop.Giant},new [] { spawnPosition.Back ,spawnPosition.For}));
-                already[3]--;
-                already[1]--;
+                case spawnPosition.For:
+                    positions[i] = UpForward;
+                    break;
+                case spawnPosition.Back:
+                    positions[i] = UpBackward;
+                    break;
             }
-
-            if (already[2] >= 2)
-            {
-                _pls.Add(new Plays(new [] { myTroop.Barbarian ,myTroop.Barbarian},new [] { spawnPosition.Back ,spawnPosition.Back}));
-                already[2] -= 2;
-            }
-
-            if (already[4] >= 2)
-            {
-                _pls.Add(new Plays(new [] { myTroop.Knight ,myTroop.Knight},new [] { spawnPosition.For ,spawnPosition.For}));
-                already[4] -= 2;
-            }
+            cards[i] = plays[i].Implicated;
+            times[i] = 1;
+        }
+        TroopsToDeploy joderQueTropa = new TroopsToDeploy(cards, times, positions);
+        return joderQueTropa;
+    }
+    public IEnumerator DoFirstPlays(Observer obs)
+    {
+        List<Plays> allPlays = new List<Plays>();
+        for (int i = 0; i < 4; i++)
+        {
+            allPlays.Add(_disponible[i]);
+            Observer obs2 = obs;
+            _temporalH = -1;
+            _fm.SimulateInP2(obs2, 1, CreateTroopsToDeploy(new[] { allPlays[i] }),()=>SetH(obs,obs2));
+            yield return new WaitWhile(() => _temporalH == -1);
+            _realTable[i, 0] = (int)_temporalH;
+            Debug.Log(_temporalH);
         }
     }
 
-    public void DoPlays(Observer obs,ForwardModel fm)
+    private int SetH(Observer obs,Observer obs2)
     {
+        _temporalH = Heuristic.GetScore(obs, obs2);
+        return 1;
     }
+
+    private Plays PlayRow(Plays theOneBefore,List<Plays> row, Observer obs)
+    {
+        int i = 0;
+        int j = 0;
+        foreach (Plays plays in row)
+        {
+            if (plays.Heuristic > row[j].Heuristic)
+                j = i;
+            i++;
+        }
+        return row[j];
+    }
+
+    public void SetTableValues()
+    {
+        
+    }
+
+    public void Whatever(List<Plays> pls,int row, int col)
+    {
+        
+    }
+}
+
+public enum spawnPosition
+{
+    For = 0,
+    Back = 1,
+    Any = 2
+}
+public struct Plays
+{
+    public Card Implicated { get; set; }
+    public spawnPosition Sided { get; set; }
+    public float Heuristic;
+
+    public Plays(Card t, spawnPosition s)
+    {
+        Implicated = t;
+        Sided = s;
+        Heuristic = 0;
+    }
+
+    public void SetHeuristic(float h)
+    {
+        Heuristic = h;
+    }
+
 }
