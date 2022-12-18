@@ -24273,26 +24273,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 173839422}
     m_Modifications:
-    - target: {fileID: 2539297325344101147, guid: f38cb86e75c2df545b4bb6d114b704ee, type: 3}
-      propertyPath: m_Offset.x
-      value: 3.53
-      objectReference: {fileID: 0}
-    - target: {fileID: 3209510968564650687, guid: f38cb86e75c2df545b4bb6d114b704ee, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -6.37
-      objectReference: {fileID: 0}
-    - target: {fileID: 3209510968564650687, guid: f38cb86e75c2df545b4bb6d114b704ee, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -1.04
-      objectReference: {fileID: 0}
-    - target: {fileID: 5684621968744860817, guid: f38cb86e75c2df545b4bb6d114b704ee, type: 3}
-      propertyPath: enemyLayer
-      value: 11
-      objectReference: {fileID: 0}
-    - target: {fileID: 5917555430259406672, guid: f38cb86e75c2df545b4bb6d114b704ee, type: 3}
-      propertyPath: isLeftSide
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 6166319402837539076, guid: f38cb86e75c2df545b4bb6d114b704ee, type: 3}
       propertyPath: enemiesManager
       value: 
@@ -24308,11 +24288,11 @@ PrefabInstance:
     - target: {fileID: 6166319402837539078, guid: f38cb86e75c2df545b4bb6d114b704ee, type: 3}
       propertyPath: maxCardPosToBePlayed
       value: 
-      objectReference: {fileID: 2104726842}
+      objectReference: {fileID: 1884466114}
     - target: {fileID: 6166319402837539078, guid: f38cb86e75c2df545b4bb6d114b704ee, type: 3}
       propertyPath: minCardPosToBePlayed
       value: 
-      objectReference: {fileID: 970006439}
+      objectReference: {fileID: 595391315}
     - target: {fileID: 6166319402837539078, guid: f38cb86e75c2df545b4bb6d114b704ee, type: 3}
       propertyPath: initialDeck.Array.data[0]
       value: 
@@ -24380,14 +24360,6 @@ PrefabInstance:
     - target: {fileID: 6166319402837539192, guid: f38cb86e75c2df545b4bb6d114b704ee, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7162576550034938828, guid: f38cb86e75c2df545b4bb6d114b704ee, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -6.44
-      objectReference: {fileID: 0}
-    - target: {fileID: 7162576550034938828, guid: f38cb86e75c2df545b4bb6d114b704ee, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.79
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f38cb86e75c2df545b4bb6d114b704ee, type: 3}
