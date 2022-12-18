@@ -29,20 +29,23 @@ public static class Heuristic
 
         observation.TroopsInField(0);
         observation.TroopsInField(1);
-        Debug.Log("Troops: " + observation.playersTroops[0].Length);
-        if (observation.playersTroops[0].Length < 1)
+        
+        if (observation.playersTroops[0].Length >= 1)
         {
             foreach (GameObject troop in observation.playersTroops[0])
             {
+                if (troop == null) continue;
                 NPC troopNPC = troop.GetComponent<NPC>();
-            
                 elixirDifference += troopNPC.atributes.elixirCost * (troopNPC.atributes.health / troopNPC.atributes.maxHealth);
+
+
             }
         }
-        if (observation.playersTroops[1].Length < 1)
+        if (observation.playersTroops[1].Length >= 1)
         {
             foreach (GameObject troop in observation.playersTroops[1])
             {
+                if (troop == null) continue;
                 NPC troopNPC = troop.GetComponent<NPC>();
 
                 elixirDifference -= troopNPC.atributes.elixirCost *
