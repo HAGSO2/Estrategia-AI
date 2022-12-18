@@ -104,7 +104,6 @@ public class SimpleObserver : MonoBehaviour
         if (collision.gameObject.layer == enemyLayer)
         {
             NPC enemy = collision.GetComponent<NPC>();
-            Debug.Log(enemy.atributes.name);
             names.Enqueue(enemy.atributes.name);
             costs.Enqueue(enemy.atributes.elixirCost);
             if (collision.transform.position.y > 0)
