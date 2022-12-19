@@ -148,12 +148,7 @@ public class CardSystem : MonoBehaviour
     {
         if (deployCardSystem.CanDeploy(card))
         {
-            Card nextCard = deck.Dequeue();
-            deck.Enqueue(card);
-
-            hand[card.handIndex] = nextCard;
-            nextCard.handIndex = card.handIndex;
-            
+            PlayCardAI(card);
             deployCardSystem.DeployCardAI(card, pos, team);
         }
         else
