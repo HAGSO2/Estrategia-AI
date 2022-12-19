@@ -5,7 +5,7 @@ using UnityEngine;
 public class SimpleObserver : MonoBehaviour
 {
     [SerializeField] ElixirSystem elixirSystem;
-    [SerializeField] CardSystem cardSystem;
+    [SerializeField] public CardSystem cardSystem;
     [SerializeField] DeployCardSystem deployCardSystem;
     [SerializeField] Tower leftTower;
     [SerializeField] Tower rightTower;
@@ -19,8 +19,6 @@ public class SimpleObserver : MonoBehaviour
     [HideInInspector] public int lowestCardCost;
 
     [HideInInspector] public bool terminal = false;
-
-    [HideInInspector] public string playedCardName;
 
     private void Start()
     {
@@ -42,7 +40,6 @@ public class SimpleObserver : MonoBehaviour
         {
             if (cardSystem.hand[i].name == cardName && deployCardSystem.CanDeploy(cardSystem.hand[i]))
             {
-                playedCardName = cardName;
                 return i;
             }
         }
@@ -51,7 +48,6 @@ public class SimpleObserver : MonoBehaviour
         {
             if (deployCardSystem.CanDeploy(cardSystem.hand[i]))
             {
-                playedCardName = cardName;
                 return i;
             }
         }

@@ -340,7 +340,7 @@ public class DecisionTreeAI : MonoBehaviour, IAI
         if (indexToPlay == -1)
             return -1;
 
-        string cardName = simpleObserver.playedCardName;
+        string cardName = simpleObserver.cardSystem.hand[indexToPlay].name;
         FindObjectsOfType<DataGameCollector>()[0].RegisterNewEntryData(id, id, cardName);
 
         return indexToPlay;
