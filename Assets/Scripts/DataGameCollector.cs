@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class DataGameCollector : MonoBehaviour
 {
+    /*
     Dictionary<string, string> temporalFileDictionary = new Dictionary<string, string>();
     List<string> idsList = new List<string>();
 
@@ -111,4 +112,5 @@ public class DataGameCollector : MonoBehaviour
         //Refresh the content browser
         UnityEditor.AssetDatabase.Refresh();
     }
+    */
 }

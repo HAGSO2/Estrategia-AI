@@ -19,7 +19,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &7745395279740233371
 Transform:
   m_ObjectHideFlags: 0
@@ -27,7 +27,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7745395279740233372}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.6392553, y: -0.005166896, z: -0.89608896}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -68,8 +68,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elixirSystem: {fileID: 7745395279740233369}
   enemiesManager: {fileID: 0}
-  _player1TroopsParent: {fileID: 0}
-  _player2TroopsParent: {fileID: 0}
+  _playerTroopsParent: {fileID: 0}
 --- !u!114 &7745395279740233369
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -104,8 +103,6 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   deckTransform: {fileID: 0}
   minCardPosToBePlayed: {fileID: 0}
   maxCardPosToBePlayed: {fileID: 0}
@@ -114,9 +111,5 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  cardPositions:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  cardPositions: []
   deployCardSystem: {fileID: 7745395279740233368}

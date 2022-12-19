@@ -149,7 +149,7 @@ public class NPC : MonoBehaviour
     
     public int MoveTo()
     {
-        if (_path.finalPath.Count > 1)
+        if (_path.finalPath != null && _path.finalPath.Count > 1)
         {
             Vector3 desired = _path.finalPath[1].position - transform.position;
             if (desired.magnitude > 0.1f)

@@ -271,7 +271,7 @@ public class AI_GNB : MonoBehaviour,IAI
 
         //Registry the final action in the data collector and returns it
         if(found == true){
-            FindObjectsOfType<DataGameCollector>()[0].RegisterNewEntryData(id,"GNB",actions[0]+"_"+actions[1]);
+            //FindObjectsOfType<DataGameCollector>()[0].RegisterNewEntryData(id,"GNB",actions[0]+"_"+actions[1]);
             return index;
         }
         return -1;
@@ -401,9 +401,9 @@ public class AI_GNB : MonoBehaviour,IAI
     }
 
 
-    void BuildDataSet(){
-        string filePath = Path.Combine(Application.dataPath, "DataSet");
-        StreamReader sr = new StreamReader(Path.Combine(filePath, "DataSetGNB.csv"));
+    void BuildDataSet()
+    {
+        StreamReader sr = new StreamReader(Path.Combine(Application.streamingAssetsPath, "DataSetGNB.csv"));
         bool eof = false;
         List<SituationData> situationData = new List<SituationData>();
         while (!eof)

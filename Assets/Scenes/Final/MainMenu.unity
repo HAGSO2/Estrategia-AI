@@ -834,7 +834,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 93236342}
         m_TargetAssemblyTypeName: OptionsManager, Assembly-CSharp
-        m_MethodName: SelctAI2
+        m_MethodName: SelctAI1
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

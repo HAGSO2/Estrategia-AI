@@ -7,10 +7,10 @@ public class OptionsSetter : MonoBehaviour
 {
     [Tooltip("Add the AIs in the same order as the settings page:" +
         "\nHuman \nDecisionTree \nGNB ")]
-    public GameObject[] rightPlayer;
+    public GameObject[] leftPlayer;
     [Tooltip("Add the AIs in the same order as the settings page:" +
         "\nDecisionTree \nGNB ")]
-    public GameObject[] leftPlayer;
+    public GameObject[] rightPlayer;
 
     [SerializeField] TextMeshProUGUI player1;
     [SerializeField] TextMeshProUGUI player2;
@@ -18,10 +18,13 @@ public class OptionsSetter : MonoBehaviour
     // Activate the AIs according to the settings of the player
     void Awake()
     {
-        rightPlayer[OptionsSettings.SelectedAI1].SetActive(true);
-        leftPlayer[OptionsSettings.SelectedAI2].SetActive(true);
+        Debug.Log("LEFT: " + OptionsSettings.SelectedAI1);
+        Debug.Log("DERECHA " + OptionsSettings.SelectedAI2);
 
-        player1.text = " " + rightPlayer[OptionsSettings.SelectedAI1].name;
-        player2.text = leftPlayer[OptionsSettings.SelectedAI2].name;
+        leftPlayer[OptionsSettings.SelectedAI1].SetActive(true);
+        rightPlayer[OptionsSettings.SelectedAI2].SetActive(true);
+
+        player1.text = " " + leftPlayer[OptionsSettings.SelectedAI1].name;
+        player2.text = rightPlayer[OptionsSettings.SelectedAI2].name;
     }
 }

@@ -139,7 +139,7 @@ public class Observer : MonoBehaviour
     // Control time
     IEnumerator ClashTimer()
     {
-        while (timeLeft-- >= 0)
+        while (--timeLeft > 0)
         {
             timeLeftTMP.text = "Time left: " + SecondsToMinutesFormat(timeLeft);
             yield return new WaitForSeconds(1f);

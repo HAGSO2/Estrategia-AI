@@ -142,7 +142,7 @@ public class SimpleRuleAIPlayer : MonoBehaviour, IAI
 
     private void DondeCaemosGente(Card card, bool Attack, bool Up)
     {
-        FindObjectsOfType<DataGameCollector>()[0].RegisterNewEntryData(id, id, card.name);
+        //FindObjectsOfType<DataGameCollector>()[0].RegisterNewEntryData(id, id, card.name);
 
         if (Attack)
         {

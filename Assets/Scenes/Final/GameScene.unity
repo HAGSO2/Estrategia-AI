@@ -5141,13 +5141,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1de9883b765e61243b3b1d83616354af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rightPlayer:
+  leftPlayer:
   - {fileID: 862888570}
   - {fileID: 7871728642448191658}
   - {fileID: 800634160}
   - {fileID: 2061956880}
   - {fileID: 8674464172016887262}
-  leftPlayer:
+  rightPlayer:
   - {fileID: 2472096451290406706}
   - {fileID: 1808767838}
   - {fileID: 6918960693997026865}
@@ -5178,7 +5178,7 @@ MonoBehaviour:
   player2BurnedElixirInLastSimulation: 0
   Player1KingTower: {fileID: 2128104933}
   Player2KingTower: {fileID: 1145372845}
-  timeLeft: 184
+  timeLeft: 180
   timeLeftTMP: {fileID: 959833351}
   isSimulator: 0
 --- !u!114 &339811831
@@ -8296,14 +8296,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 595391315}
     - target: {fileID: 7745395279740233370, guid: 834bd4d54251c2340b4b362e854be388, type: 3}
-      propertyPath: initialDeck.Array.size
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 7745395279740233370, guid: 834bd4d54251c2340b4b362e854be388, type: 3}
-      propertyPath: cardPositions.Array.size
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7745395279740233370, guid: 834bd4d54251c2340b4b362e854be388, type: 3}
       propertyPath: initialDeck.Array.data[0]
       value: 
       objectReference: {fileID: 1914977082}
@@ -8374,10 +8366,6 @@ PrefabInstance:
     - target: {fileID: 7745395279740233372, guid: 834bd4d54251c2340b4b362e854be388, type: 3}
       propertyPath: m_Name
       value: GNBPlayer
-      objectReference: {fileID: 0}
-    - target: {fileID: 7745395279740233372, guid: 834bd4d54251c2340b4b362e854be388, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7745395279740233383, guid: 834bd4d54251c2340b4b362e854be388, type: 3}
       propertyPath: _observer
@@ -10430,17 +10418,9 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 173839422}
     m_Modifications:
-    - target: {fileID: 3193646538178455649, guid: a1696c39a69b8b74b8804ff861702fb4, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -3.34
-      objectReference: {fileID: 0}
     - target: {fileID: 3193646538401605077, guid: a1696c39a69b8b74b8804ff861702fb4, type: 3}
       propertyPath: m_Name
       value: Human
-      objectReference: {fileID: 0}
-    - target: {fileID: 3193646538401605077, guid: a1696c39a69b8b74b8804ff861702fb4, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3193646538401605080, guid: a1696c39a69b8b74b8804ff861702fb4, type: 3}
       propertyPath: enemiesManager
@@ -10462,10 +10442,6 @@ PrefabInstance:
       propertyPath: minCardPosToBePlayed
       value: 
       objectReference: {fileID: 595391315}
-    - target: {fileID: 3193646538401605082, guid: a1696c39a69b8b74b8804ff861702fb4, type: 3}
-      propertyPath: initialDeck.Array.size
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 3193646538401605082, guid: a1696c39a69b8b74b8804ff861702fb4, type: 3}
       propertyPath: initialDeck.Array.data[0]
       value: 
@@ -10490,14 +10466,6 @@ PrefabInstance:
       propertyPath: initialDeck.Array.data[5]
       value: 
       objectReference: {fileID: 1914977077}
-    - target: {fileID: 3193646538401605082, guid: a1696c39a69b8b74b8804ff861702fb4, type: 3}
-      propertyPath: initialDeck.Array.data[6]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 3193646538401605082, guid: a1696c39a69b8b74b8804ff861702fb4, type: 3}
-      propertyPath: initialDeck.Array.data[7]
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 3193646538401605083, guid: a1696c39a69b8b74b8804ff861702fb4, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -10540,34 +10508,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3193646538401605083, guid: a1696c39a69b8b74b8804ff861702fb4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3193646539621545316, guid: a1696c39a69b8b74b8804ff861702fb4, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3193646539674949659, guid: a1696c39a69b8b74b8804ff861702fb4, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 2.66
-      objectReference: {fileID: 0}
-    - target: {fileID: 3193646539682135492, guid: a1696c39a69b8b74b8804ff861702fb4, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3193646539695417374, guid: a1696c39a69b8b74b8804ff861702fb4, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.6600001
-      objectReference: {fileID: 0}
-    - target: {fileID: 3193646539917583153, guid: a1696c39a69b8b74b8804ff861702fb4, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -1.3399999
-      objectReference: {fileID: 0}
-    - target: {fileID: 4900414524568947162, guid: a1696c39a69b8b74b8804ff861702fb4, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6927575894642659584, guid: a1696c39a69b8b74b8804ff861702fb4, type: 3}
-      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -25133,10 +25073,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 970006439}
     - target: {fileID: 7745395279740233370, guid: 6cf29bd16de0b3440ab9a7f3a2c47521, type: 3}
-      propertyPath: initialDeck.Array.size
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 7745395279740233370, guid: 6cf29bd16de0b3440ab9a7f3a2c47521, type: 3}
       propertyPath: initialDeck.Array.data[0]
       value: 
       objectReference: {fileID: 1877544362}
@@ -25208,10 +25144,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GNBPlayer
       objectReference: {fileID: 0}
-    - target: {fileID: 7745395279740233372, guid: 6cf29bd16de0b3440ab9a7f3a2c47521, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
+    - target: {fileID: 7745395279740233383, guid: 6cf29bd16de0b3440ab9a7f3a2c47521, type: 3}
+      propertyPath: _observer
+      value: 
+      objectReference: {fileID: 339811830}
     - target: {fileID: 7745395279740233383, guid: 6cf29bd16de0b3440ab9a7f3a2c47521, type: 3}
       propertyPath: towerP1Pos
       value: 
@@ -26215,10 +26151,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 705340059}
     m_Modifications:
-    - target: {fileID: 7133917423770361737, guid: d0f4fa5dffb566b429699d8c373be0fd, type: 3}
-      propertyPath: maxTime
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7245323704781771169, guid: d0f4fa5dffb566b429699d8c373be0fd, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -26267,10 +26199,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: DecisionTreeAI
       objectReference: {fileID: 0}
-    - target: {fileID: 7245323704781771228, guid: d0f4fa5dffb566b429699d8c373be0fd, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7245323704781771229, guid: d0f4fa5dffb566b429699d8c373be0fd, type: 3}
       propertyPath: enemiesManager
       value: 
@@ -26279,18 +26207,6 @@ PrefabInstance:
       propertyPath: _playerTroopsParent
       value: 
       objectReference: {fileID: 333444559}
-    - target: {fileID: 7245323704781771229, guid: d0f4fa5dffb566b429699d8c373be0fd, type: 3}
-      propertyPath: _player1TroopsParent
-      value: 
-      objectReference: {fileID: 599113682}
-    - target: {fileID: 7245323704781771229, guid: d0f4fa5dffb566b429699d8c373be0fd, type: 3}
-      propertyPath: _player2TroopsParent
-      value: 
-      objectReference: {fileID: 333444559}
-    - target: {fileID: 7245323704781771230, guid: d0f4fa5dffb566b429699d8c373be0fd, type: 3}
-      propertyPath: elixirWaitTime
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7245323704781771231, guid: d0f4fa5dffb566b429699d8c373be0fd, type: 3}
       propertyPath: deckTransform
       value: 
@@ -26361,10 +26277,6 @@ PrefabInstance:
       propertyPath: _observer
       value: 
       objectReference: {fileID: 339811830}
-    - target: {fileID: 2538873894199787107, guid: 27c28d29a7e48f9438a931e9c26fb8e9, type: 3}
-      propertyPath: _elixirSystem
-      value: 
-      objectReference: {fileID: 2538873892494936439}
     - target: {fileID: 2538873894199787108, guid: 27c28d29a7e48f9438a931e9c26fb8e9, type: 3}
       propertyPath: deckTransform
       value: 
@@ -26404,10 +26316,6 @@ PrefabInstance:
     - target: {fileID: 2538873894199787110, guid: 27c28d29a7e48f9438a931e9c26fb8e9, type: 3}
       propertyPath: m_Name
       value: SRPPlayer
-      objectReference: {fileID: 0}
-    - target: {fileID: 2538873894199787110, guid: 27c28d29a7e48f9438a931e9c26fb8e9, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2538873894199787111, guid: 27c28d29a7e48f9438a931e9c26fb8e9, type: 3}
       propertyPath: m_RootOrder
@@ -26455,17 +26363,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 27c28d29a7e48f9438a931e9c26fb8e9, type: 3}
---- !u!114 &2538873892494936439 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2538873894199787109, guid: 27c28d29a7e48f9438a931e9c26fb8e9, type: 3}
-  m_PrefabInstance: {fileID: 2538873892494936438}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2061956880}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 702e43cecf5289e4289196778fd1dd93, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &4084436855185902033 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6166319402837539192, guid: f38cb86e75c2df545b4bb6d114b704ee, type: 3}
@@ -26481,10 +26378,6 @@ PrefabInstance:
     - target: {fileID: 6661831399135175697, guid: c78f32db1909c394b8745e7432a92e13, type: 3}
       propertyPath: m_Name
       value: SRPPlayer
-      objectReference: {fileID: 0}
-    - target: {fileID: 6661831399135175697, guid: c78f32db1909c394b8745e7432a92e13, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6661831399135175701, guid: c78f32db1909c394b8745e7432a92e13, type: 3}
       propertyPath: enemiesManager
@@ -26578,23 +26471,8 @@ PrefabInstance:
       propertyPath: _observer
       value: 
       objectReference: {fileID: 339811830}
-    - target: {fileID: 6661831399135175704, guid: c78f32db1909c394b8745e7432a92e13, type: 3}
-      propertyPath: _elixirSystem
-      value: 
-      objectReference: {fileID: 4356812949745818145}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c78f32db1909c394b8745e7432a92e13, type: 3}
---- !u!114 &4356812949745818145 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6661831399135175700, guid: c78f32db1909c394b8745e7432a92e13, type: 3}
-  m_PrefabInstance: {fileID: 4356812949745818144}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6918960693997026865}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 702e43cecf5289e4289196778fd1dd93, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &5098682920983793296 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7245323704781771169, guid: d0f4fa5dffb566b429699d8c373be0fd, type: 3}
@@ -26689,10 +26567,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 173839422}
     m_Modifications:
-    - target: {fileID: 1578865578162787755, guid: f38cb86e75c2df545b4bb6d114b704ee, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 3.12
-      objectReference: {fileID: 0}
     - target: {fileID: 5684621968744860817, guid: f38cb86e75c2df545b4bb6d114b704ee, type: 3}
       propertyPath: leftTower
       value: 
@@ -26701,10 +26575,6 @@ PrefabInstance:
       propertyPath: rightTower
       value: 
       objectReference: {fileID: 1145372845}
-    - target: {fileID: 5917555430259406672, guid: f38cb86e75c2df545b4bb6d114b704ee, type: 3}
-      propertyPath: maxTime
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 6166319402837539076, guid: f38cb86e75c2df545b4bb6d114b704ee, type: 3}
       propertyPath: enemiesManager
       value: 
@@ -26713,21 +26583,9 @@ PrefabInstance:
       propertyPath: _playerTroopsParent
       value: 
       objectReference: {fileID: 599113682}
-    - target: {fileID: 6166319402837539076, guid: f38cb86e75c2df545b4bb6d114b704ee, type: 3}
-      propertyPath: _player1TroopsParent
-      value: 
-      objectReference: {fileID: 599113682}
-    - target: {fileID: 6166319402837539076, guid: f38cb86e75c2df545b4bb6d114b704ee, type: 3}
-      propertyPath: _player2TroopsParent
-      value: 
-      objectReference: {fileID: 333444559}
     - target: {fileID: 6166319402837539077, guid: f38cb86e75c2df545b4bb6d114b704ee, type: 3}
       propertyPath: m_Name
       value: DecisionTreeAI
-      objectReference: {fileID: 0}
-    - target: {fileID: 6166319402837539077, guid: f38cb86e75c2df545b4bb6d114b704ee, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6166319402837539078, guid: f38cb86e75c2df545b4bb6d114b704ee, type: 3}
       propertyPath: deckTransform
@@ -26765,14 +26623,6 @@ PrefabInstance:
       propertyPath: initialDeck.Array.data[5]
       value: 
       objectReference: {fileID: 1914977077}
-    - target: {fileID: 6166319402837539079, guid: f38cb86e75c2df545b4bb6d114b704ee, type: 3}
-      propertyPath: elixirRatio
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 6166319402837539079, guid: f38cb86e75c2df545b4bb6d114b704ee, type: 3}
-      propertyPath: elixirWaitTime
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 6166319402837539192, guid: f38cb86e75c2df545b4bb6d114b704ee, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -26923,10 +26773,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: OSLAPlayer
       objectReference: {fileID: 0}
-    - target: {fileID: 2520612163443337630, guid: e1aec6d617370d04fae3a20b5ae528bb, type: 3}
-      propertyPath: _observer
-      value: 
-      objectReference: {fileID: 339811830}
     - target: {fileID: 7495132947792978727, guid: e1aec6d617370d04fae3a20b5ae528bb, type: 3}
       propertyPath: _observer
       value: 
@@ -27037,10 +26883,6 @@ PrefabInstance:
       propertyPath: _playerTroopsParent
       value: 
       objectReference: {fileID: 599113682}
-    - target: {fileID: 1409808762586962005, guid: e366c842d73d8f04c92171a3acb41b9c, type: 3}
-      propertyPath: _observer
-      value: 
-      objectReference: {fileID: 339811830}
     - target: {fileID: 7711004827631406739, guid: e366c842d73d8f04c92171a3acb41b9c, type: 3}
       propertyPath: _observer
       value: 
