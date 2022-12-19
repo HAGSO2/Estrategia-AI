@@ -26006,7 +26006,7 @@ PrefabInstance:
     - target: {fileID: 2538873894199787106, guid: 27c28d29a7e48f9438a931e9c26fb8e9, type: 3}
       propertyPath: _playerTroopsParent
       value: 
-      objectReference: {fileID: 333444559}
+      objectReference: {fileID: 599113682}
     - target: {fileID: 2538873894199787107, guid: 27c28d29a7e48f9438a931e9c26fb8e9, type: 3}
       propertyPath: _observer
       value: 
@@ -26014,39 +26014,39 @@ PrefabInstance:
     - target: {fileID: 2538873894199787108, guid: 27c28d29a7e48f9438a931e9c26fb8e9, type: 3}
       propertyPath: deckTransform
       value: 
-      objectReference: {fileID: 362700631310569659}
+      objectReference: {fileID: 7521169455660310629}
     - target: {fileID: 2538873894199787108, guid: 27c28d29a7e48f9438a931e9c26fb8e9, type: 3}
       propertyPath: maxCardPosToBePlayed
       value: 
-      objectReference: {fileID: 2104726842}
+      objectReference: {fileID: 1884466114}
     - target: {fileID: 2538873894199787108, guid: 27c28d29a7e48f9438a931e9c26fb8e9, type: 3}
       propertyPath: minCardPosToBePlayed
       value: 
-      objectReference: {fileID: 970006439}
+      objectReference: {fileID: 595391315}
     - target: {fileID: 2538873894199787108, guid: 27c28d29a7e48f9438a931e9c26fb8e9, type: 3}
       propertyPath: initialDeck.Array.data[0]
       value: 
-      objectReference: {fileID: 1877544362}
+      objectReference: {fileID: 1914977082}
     - target: {fileID: 2538873894199787108, guid: 27c28d29a7e48f9438a931e9c26fb8e9, type: 3}
       propertyPath: initialDeck.Array.data[1]
       value: 
-      objectReference: {fileID: 1877544361}
+      objectReference: {fileID: 1914977081}
     - target: {fileID: 2538873894199787108, guid: 27c28d29a7e48f9438a931e9c26fb8e9, type: 3}
       propertyPath: initialDeck.Array.data[2]
       value: 
-      objectReference: {fileID: 1877544360}
+      objectReference: {fileID: 1914977080}
     - target: {fileID: 2538873894199787108, guid: 27c28d29a7e48f9438a931e9c26fb8e9, type: 3}
       propertyPath: initialDeck.Array.data[3]
       value: 
-      objectReference: {fileID: 1877544359}
+      objectReference: {fileID: 1914977079}
     - target: {fileID: 2538873894199787108, guid: 27c28d29a7e48f9438a931e9c26fb8e9, type: 3}
       propertyPath: initialDeck.Array.data[4]
       value: 
-      objectReference: {fileID: 1877544358}
+      objectReference: {fileID: 1914977078}
     - target: {fileID: 2538873894199787108, guid: 27c28d29a7e48f9438a931e9c26fb8e9, type: 3}
       propertyPath: initialDeck.Array.data[5]
       value: 
-      objectReference: {fileID: 1877544357}
+      objectReference: {fileID: 1914977077}
     - target: {fileID: 2538873894199787110, guid: 27c28d29a7e48f9438a931e9c26fb8e9, type: 3}
       propertyPath: m_Name
       value: Left_SRPPlayer
