@@ -10,8 +10,8 @@ public class Observer : MonoBehaviour
 {
     [SerializeField] private OptionsSetter _optionsSetter;
     
-    private CardSystem CSP1;
-    private CardSystem CSP2;
+    [SerializeField] private CardSystem CSP1;
+    [SerializeField] private CardSystem CSP2;
 
     #region VariablesDeclarations
     
@@ -48,8 +48,8 @@ public class Observer : MonoBehaviour
     public GameObject player2TroopsParent;
     private List<GameObject> _playersTroopsParents = new List<GameObject>(2);
 
-    private ElixirSystem ESP1;
-    private ElixirSystem ESP2;
+    [SerializeField] private ElixirSystem ESP1;
+    [SerializeField] private ElixirSystem ESP2;
     
     public float player1Elixir
     {

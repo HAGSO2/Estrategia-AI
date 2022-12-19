@@ -9,6 +9,7 @@ public class SimpleRuleAIPlayer : MonoBehaviour, IAI
     
     [SerializeField] private Observer _observer;
     [SerializeField] private CardSystem _cardSystem;
+    [SerializeField] private ElixirSystem _elixirSystem;
 
     [SerializeField] private Transform upAttackTransform;
     [SerializeField] private Transform upDefenseTransform;
@@ -32,73 +33,129 @@ public class SimpleRuleAIPlayer : MonoBehaviour, IAI
     {
         while (_observer.timeLeft >=0 && _observer.Player1KingTower.health > 0 && _observer.Player2KingTower.health >0)
         {
+            Debug.Log("Pensando");
             int index = think(_observer, 1f);
-            yield return new WaitForSeconds(2f);
+            yield return new WaitForSeconds(1f);
         }
     }
     
     public int think(Observer observer, float budget)
     {
-        Card cardToDeploy;
-        if ((_observer.player1Elixir >= 10 && player == 0) || (_observer.player2Elixir >= 10 && player == 1))
-        {
-            Debug.Log("Límite Elixir");
-            cardToDeploy = MaxCardWithLimit(10);
-            _cardSystem.AlejandroTryToPlayCard(cardToDeploy, downDefenseTransform.position, player == 0);
-        }
-        
-        _observer.TroopsInField(rival);
-        if (_observer.playersTroops[rival].Length <= 0) return 1;
-        
-        foreach (GameObject enemyTroop in _observer.playersTroops[rival])
-        {
-            if (enemyTroop == null) continue;
-            
-            // Si hay una carta muy cerca tiramos una carta rápida de defensa
-            if (Math.Abs(Vector3.Distance(enemyTroop.transform.position, myTowerPos)) < 3)
-            {
-                Debug.Log("Muy CERCA ataca");
-                cardToDeploy = player == 0 ? MaxCardWithLimit(_observer.player1Elixir) : MaxCardWithLimit(_observer.player2Elixir);
-                Vector3 pos = enemyTroop.transform.position.y < 0 ? downDefenseTransform.position : upDefenseTransform.position;
-                _cardSystem.AlejandroTryToPlayCard(cardToDeploy, pos, player == 0);
-                return 1;
-            }
-            
-            //Rango corto, tirar carta de rango largo
-            if (enemyTroop.GetComponent<NPC>().atributes.attackRange < 7)
-            {
-                Debug.Log("Rango CORTO ataca");
-                Debug.Log("Nombre: " + enemyTroop.name + ", Rango: " + enemyTroop.GetComponent<NPC>().atributes.attackRange);
-                foreach (Card card in _cardSystem.hand)
-                {
-                    if (!(card.enemy.GetComponent<NPC>().atributes.visionRange > 7)) continue;
-                    cardToDeploy = card;
+        /*
+        Debug.Log("Hand: " + _cardSystem.hand[0].name +
+                  " : " + _cardSystem.hand[1].name +
+                  " : " + _cardSystem.hand[2].name +
+                  " : " + _cardSystem.hand[3].name +
+                  " Elixir: " + _observer.player2Elixir);
+                  */
 
-                    Vector3 pos = enemyTroop.transform.position.y < 0 ? downDefenseTransform.position : upDefenseTransform.position;
-                    _cardSystem.AlejandroTryToPlayCard(cardToDeploy, pos, player == 0);
-                    Debug.Log("Carta: " + cardToDeploy.name + "Pos: " + pos);
-                    return 1;
-                }
+        // Elixir 10, tirar (carta de mayor elixir) defensa
+        if (ElixirHigherOrEcuals(10))
+        {
+            DondeCaemosGente(MaxCardWithLimit(10), false, false);
+        }
+        else if (ThereIsAnEnemy())
+        {
+            Debug.Log("Hay Enemigo");
+            GameObject enemy = GetRivalEnemy();
+            bool enemyUp = IsRivalEnemyUp(enemy);
+            
+            // Enemigo muy cerca, (carta de mayor elixir) defensa 
+            if (EnemyCloserThan(enemy , 3))
+            {
+                DondeCaemosGente(MaxCardWithLimit(10), false, enemyUp);
             }
-            //Rango largo, tirar carta de rango corto
+            // Enemigo es rango largo -> tirar (la de menos rango) ataque
+            else if (EnemyRangeIsHigherThan(enemy, 7))
+            {
+                DondeCaemosGente(LessRangeCard(), true, enemyUp);
+            }
+            // Enemigo es rango corto -> tirar (la de más rango) defensa
             else
             {
-                Debug.Log("Rango LARGO ataca");
-                Debug.Log("Nombre: " + enemyTroop.name + ", Rango: " + enemyTroop.GetComponent<NPC>().atributes.attackRange);
-                foreach (Card card in _cardSystem.hand)
-                {
-                    if (!(card.enemy.GetComponent<NPC>().atributes.visionRange < 7)) continue;
-                    cardToDeploy = card;
-                    
-                    Debug.Log("La Y del enemigo: " + card.transform.position.y);
-                    Vector3 pos = card.transform.position.y < 0 ? downAttackTransform.position : upAttackTransform.position;
-                    _cardSystem.AlejandroTryToPlayCard(cardToDeploy, pos, player == 0);
-                    Debug.Log("Carta: " + cardToDeploy.name + "Pos: " + pos);
-                    return 1;
-                }
+                DondeCaemosGente(MostRangeCard(), false, enemyUp);
             }
         }
+        
         return 1;
+    }
+
+    private GameObject GetRivalEnemy()
+    {
+        _observer.TroopsInField(rival);
+        return _observer.playersTroops[rival][0];
+    }
+
+    private Card MostRangeCard()
+    {
+        Card finalCard = _cardSystem.hand[0];
+        float maxRange = 1;
+        foreach (Card card in _cardSystem.hand)
+        {
+            float newRange = card.enemy.GetComponent<NPC>().atributes.attackRange;
+            if (newRange <= maxRange) continue;
+            maxRange = newRange;
+            finalCard = card;
+        }
+
+        return finalCard;
+    }
+
+    private Card LessRangeCard()
+    {
+        Card finalCard = _cardSystem.hand[0];
+        float minRange = 10000;
+        foreach (Card card in _cardSystem.hand)
+        {
+            float newRange = card.enemy.GetComponent<NPC>().atributes.attackRange;
+            if (newRange > minRange) continue;
+            minRange = newRange;
+            finalCard = card;
+        }
+
+        return finalCard;
+    }
+
+    private bool EnemyRangeIsHigherThan(GameObject enemy, int range)
+    {
+        return enemy.GetComponent<NPC>().atributes.attackRange > range;
+    }
+
+    private bool EnemyCloserThan(GameObject enemy, int distance)
+    {
+        return Math.Abs(Vector3.Distance(enemy.transform.position, myTowerPos)) < distance;
+    }
+
+    private bool ThereIsAnEnemy()
+    {
+        _observer.TroopsInField(rival);
+        Debug.Log("Enemigos: " + _observer.playersTroops[rival].Length);
+        return _observer.playersTroops[rival].Length > 0;
+    }
+
+    private bool IsRivalEnemyUp(GameObject enemy)
+    {
+        return enemy.transform.position.y > 0;
+    }
+
+
+    private void DondeCaemosGente(Card card, bool Attack, bool Up)
+    {
+        if (Attack)
+        {
+            _cardSystem.AlejandroTryToPlayCard(card, Up ? upAttackTransform.position : downAttackTransform.position, 
+                player == 0);
+        }
+        else
+        {
+            _cardSystem.AlejandroTryToPlayCard(card, Up ? upDefenseTransform.position : downDefenseTransform.position,
+                player == 0);
+        }
+    }
+
+    private bool ElixirHigherOrEcuals(int elixir)
+    {
+        return _elixirSystem.elixir >= elixir;
     }
 
     private Card MaxCardWithLimit(float limit)
@@ -114,21 +171,5 @@ public class SimpleRuleAIPlayer : MonoBehaviour, IAI
         }
 
         return finalCard;
-    }
-
-    private Vector3 DondeCaemosGente(string troopName)
-    {
-        _observer.TroopsInField(rival);
-        if (_observer.playersTroops[rival].Length < 1) return Vector3.zero;
-        
-        foreach (GameObject troop in _observer.playersTroops[rival])
-        {
-            if (troop == null) continue;
-            if (troop.name == troopName)
-            {
-                return troop.transform.position;
-            }
-        }
-        return Vector3.zero;
     }
 }

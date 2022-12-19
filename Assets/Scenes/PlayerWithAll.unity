@@ -4915,6 +4915,7 @@ GameObject:
   - component: {fileID: 339811828}
   - component: {fileID: 339811827}
   - component: {fileID: 339811829}
+  - component: {fileID: 339811830}
   m_Layer: 0
   m_Name: Manager
   m_TagString: Untagged
@@ -4963,12 +4964,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb8115b8dfc069a48a36bad8a889d81e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CSP1: {fileID: 862888572}
-  CSP2: {fileID: 900228708}
+  _optionsSetter: {fileID: 339811830}
   player1TroopsParent: {fileID: 318192208}
   player2TroopsParent: {fileID: 519736200}
-  ESP1: {fileID: 862888571}
-  ESP2: {fileID: 900228707}
   playersElixir: []
   player1BurnedElixirInLastSimulation: 0
   player2BurnedElixirInLastSimulation: 0
@@ -4977,6 +4975,22 @@ MonoBehaviour:
   timeLeft: 184
   timeLeftTMP: {fileID: 1052327683}
   isSimulator: 0
+--- !u!114 &339811830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 339811826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1de9883b765e61243b3b1d83616354af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rightPlayer:
+  - {fileID: 2037581575}
+  leftPlayer:
+  - {fileID: 900228704}
 --- !u!1 &348990890
 GameObject:
   m_ObjectHideFlags: 0
@@ -9633,6 +9647,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 339811827}
     - target: {fileID: 3193646538401605080, guid: a1696c39a69b8b74b8804ff861702fb4, type: 3}
+      propertyPath: _playerTroopsParent
+      value: 
+      objectReference: {fileID: 318192209}
+    - target: {fileID: 3193646538401605080, guid: a1696c39a69b8b74b8804ff861702fb4, type: 3}
       propertyPath: _player1TroopsParent
       value: 
       objectReference: {fileID: 318192209}
@@ -9807,28 +9825,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3193646538401605083, guid: a1696c39a69b8b74b8804ff861702fb4, type: 3}
   m_PrefabInstance: {fileID: 862888568}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &862888571 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3193646538401605081, guid: a1696c39a69b8b74b8804ff861702fb4, type: 3}
-  m_PrefabInstance: {fileID: 862888568}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 702e43cecf5289e4289196778fd1dd93, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &862888572 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3193646538401605082, guid: a1696c39a69b8b74b8804ff861702fb4, type: 3}
-  m_PrefabInstance: {fileID: 862888568}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b57a6c3a9efe4e149a1822af43fa8be3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &900228704
 GameObject:
   m_ObjectHideFlags: 0
@@ -9848,7 +9844,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &900228705
 Transform:
   m_ObjectHideFlags: 0
@@ -9882,8 +9878,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elixirSystem: {fileID: 900228707}
   enemiesManager: {fileID: 339811827}
-  _player1TroopsParent: {fileID: 318192209}
-  _player2TroopsParent: {fileID: 519736201}
+  _playerTroopsParent: {fileID: 519736201}
 --- !u!114 &900228707
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9897,6 +9892,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   elixirGameObject: {fileID: 0}
+  elixirWaitTime: 1
   elixir: 6
 --- !u!114 &900228708
 MonoBehaviour:
@@ -9911,14 +9907,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   initialDeck:
+  - {fileID: 1914977082}
   - {fileID: 1877544361}
-  - {fileID: 1877544361}
-  - {fileID: 1877544361}
-  - {fileID: 1877544360}
-  - {fileID: 1877544359}
-  - {fileID: 1877544358}
-  - {fileID: 1877544357}
-  - {fileID: 1877544357}
+  - {fileID: 1914977080}
+  - {fileID: 1914977079}
+  - {fileID: 1914977078}
+  - {fileID: 1914977077}
   deckTransform: {fileID: 1914977075}
   minCardPosToBePlayed: {fileID: 970006439}
   maxCardPosToBePlayed: {fileID: 2104726842}
@@ -9943,6 +9937,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _observer: {fileID: 339811829}
   _cardSystem: {fileID: 900228708}
+  _elixirSystem: {fileID: 900228707}
   upAttackTransform: {fileID: 1146367687}
   upDefenseTransform: {fileID: 1440539068}
   downAttackTransform: {fileID: 1293213002}
@@ -14881,7 +14876,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1111563531
 Transform:
   m_ObjectHideFlags: 0
@@ -23892,12 +23887,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb8115b8dfc069a48a36bad8a889d81e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CSP1: {fileID: 862888572}
-  CSP2: {fileID: 4598063425562281015}
+  _optionsSetter: {fileID: 0}
   player1TroopsParent: {fileID: 381549601}
   player2TroopsParent: {fileID: 312848303}
-  ESP1: {fileID: 862888571}
-  ESP2: {fileID: 4598063425562281014}
   playersElixir: []
   player1BurnedElixirInLastSimulation: 0
   player2BurnedElixirInLastSimulation: 0
@@ -24686,6 +24678,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5607865938419896786, guid: 6ff7d989db0c19b47b296d131476b46f, type: 3}
   m_PrefabInstance: {fileID: 1935100295}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2037581575 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3193646538401605077, guid: a1696c39a69b8b74b8804ff861702fb4, type: 3}
+  m_PrefabInstance: {fileID: 862888568}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2056115031
 GameObject:
   m_ObjectHideFlags: 0
@@ -25121,8 +25118,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elixirSystem: {fileID: 4598063425562281014}
   enemiesManager: {fileID: 339811827}
-  _player1TroopsParent: {fileID: 318192209}
-  _player2TroopsParent: {fileID: 519736201}
+  _playerTroopsParent: {fileID: 0}
 --- !u!114 &4598063425562281014
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25136,6 +25132,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   elixirGameObject: {fileID: 0}
+  elixirWaitTime: 1
   elixir: 6
 --- !u!114 &4598063425562281015
 MonoBehaviour:
