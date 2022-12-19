@@ -314,9 +314,9 @@ public class DecisionTreeAI : MonoBehaviour, IAI
     public float maxTime;
     void Update()
     {
-        // Revisar el notTerminal, cuando cambia??
         timer += Time.deltaTime;
-        if (timer >= maxTime && !simpleObserver.IsTerminal())
+        Debug.Log(simpleObserver.NotTerminal());
+        if (timer >= maxTime && simpleObserver.NotTerminal())
         {
             timer = 0f;
             int index = think(null, 10f);

@@ -6,6 +6,8 @@ public class SimpleObserver : MonoBehaviour
 {
     [SerializeField] ElixirSystem elixirSystem;
     [SerializeField] CardSystem cardSystem;
+    [SerializeField] Tower leftTower;
+    [SerializeField] Tower rightTower;
     [SerializeField] int enemyLayer;
 
     [HideInInspector] public Queue<bool> sides = new Queue<bool>();
@@ -50,9 +52,9 @@ public class SimpleObserver : MonoBehaviour
         return cardIndex;
     }
 
-    public bool IsTerminal()
+    public bool NotTerminal()
     {
-        return terminal;
+        return leftTower.health > 0 && rightTower.health > 0;
     }
 
     void EnemyUpSide()

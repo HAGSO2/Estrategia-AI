@@ -6,6 +6,7 @@ using UnityEngine;
 public class ElixirSystem : MonoBehaviour
 {
     [SerializeField] GameObject elixirGameObject;
+    [SerializeField] float elixirWaitTime = 1f;
     TextMeshProUGUI elixirTMP;
 
     public int elixir = 6;
@@ -29,7 +30,7 @@ public class ElixirSystem : MonoBehaviour
         {
             if (!isAI)
                 UpdateText();
-            yield return new WaitForSeconds(1);
+            yield return new WaitForSeconds(elixirWaitTime);
             if (elixir < maxElixir)
                 elixir++;
         }
