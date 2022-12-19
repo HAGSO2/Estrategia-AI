@@ -319,7 +319,7 @@ public class DecisionTreeAI : MonoBehaviour, IAI
         if (timer >= maxTime && simpleObserver.NotTerminal())
         {
             timer = 0f;
-            int index = think(null, 10f);
+            int index = think(null, 0f);
 
             if (index != -1)
             {

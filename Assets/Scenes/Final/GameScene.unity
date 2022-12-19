@@ -25653,6 +25653,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 705340059}
     m_Modifications:
+    - target: {fileID: 7133917423770361737, guid: d0f4fa5dffb566b429699d8c373be0fd, type: 3}
+      propertyPath: maxTime
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 7245323704781771169, guid: d0f4fa5dffb566b429699d8c373be0fd, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -25721,6 +25725,10 @@ PrefabInstance:
       propertyPath: _player2TroopsParent
       value: 
       objectReference: {fileID: 333444559}
+    - target: {fileID: 7245323704781771230, guid: d0f4fa5dffb566b429699d8c373be0fd, type: 3}
+      propertyPath: elixirWaitTime
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7245323704781771231, guid: d0f4fa5dffb566b429699d8c373be0fd, type: 3}
       propertyPath: deckTransform
       value: 

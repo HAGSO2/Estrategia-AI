@@ -311,7 +311,7 @@ public class AI_GNB : MonoBehaviour,IAI
             //Thinks a action and spawn a card
             int action = think(_observer,0.0f);
             if(action != -1){
-                _cardSystem.PlayCardAI(action, _spawnPoint, isPlayer1);
+                _cardSystem.TryToPlayCardAI(action, _spawnPoint, isPlayer1);
             }
             
             //yield on a new YieldInstruction that waits for x
