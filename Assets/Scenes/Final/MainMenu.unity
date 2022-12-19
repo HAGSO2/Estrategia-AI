@@ -326,11 +326,13 @@ MonoBehaviour:
   - {fileID: 1590994951}
   - {fileID: 1791270744}
   - {fileID: 1995752559}
+  - {fileID: 331449299}
   - {fileID: 566208009}
   Player2Buttons:
   - {fileID: 977526339}
   - {fileID: 1419296663}
   - {fileID: 1754763073}
+  - {fileID: 331449299}
 --- !u!1 &100761711
 GameObject:
   m_ObjectHideFlags: 0

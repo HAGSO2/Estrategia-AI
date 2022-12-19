@@ -5145,10 +5145,12 @@ MonoBehaviour:
   - {fileID: 7871728642448191658}
   - {fileID: 800634160}
   - {fileID: 2061956880}
+  - {fileID: 2061956880}
   leftPlayer:
   - {fileID: 2472096451290406706}
   - {fileID: 2472096451290406706}
-  - {fileID: 0}
+  - {fileID: 7745395279740233372, guid: 6cf29bd16de0b3440ab9a7f3a2c47521, type: 3}
+  - {fileID: 6918960693997026865}
   - {fileID: 6918960693997026865}
 --- !u!114 &339811830
 MonoBehaviour:
