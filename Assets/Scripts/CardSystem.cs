@@ -154,7 +154,7 @@ public class CardSystem : MonoBehaviour
             hand[card.handIndex] = nextCard;
             nextCard.handIndex = card.handIndex;
             
-            deployCardSystem.DeployCardGeneral(card, pos, team);
+            deployCardSystem.DeployCardAI(card, pos, team);
         }
         else
         {

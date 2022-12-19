@@ -8,8 +8,10 @@ using UnityEngine;
 
 public class Observer : MonoBehaviour
 {
-    [SerializeField] private CardSystem CSP1;
-    [SerializeField] private CardSystem CSP2;
+    [SerializeField] private OptionsSetter _optionsSetter;
+    
+    private CardSystem CSP1;
+    private CardSystem CSP2;
 
     #region VariablesDeclarations
     
@@ -46,8 +48,9 @@ public class Observer : MonoBehaviour
     public GameObject player2TroopsParent;
     private List<GameObject> _playersTroopsParents = new List<GameObject>(2);
 
-    [SerializeField] private ElixirSystem ESP1;
-    [SerializeField] private ElixirSystem ESP2;
+    private ElixirSystem ESP1;
+    private ElixirSystem ESP2;
+    
     public float player1Elixir
     {
         get { return ESP1.elixir; }
@@ -60,8 +63,8 @@ public class Observer : MonoBehaviour
     }
     public List<float> playersElixir = new List<float>(2);
     
-    public float player1BurnedElixirInLastSimulation;
-    public float player2BurnedElixirInLastSimulation;
+    [HideInInspector] public float player1BurnedElixirInLastSimulation;
+    [HideInInspector] public float player2BurnedElixirInLastSimulation;
 
     public Tower Player1KingTower;
     public Tower Player2KingTower;
@@ -78,6 +81,12 @@ public class Observer : MonoBehaviour
         // -------------------------------------------------------------------------------------- //
         // Make sure that what we are adding here are references and we don't need to update them //
         // -------------------------------------------------------------------------------------- //
+
+        CSP1 = _optionsSetter.leftPlayer[OptionsSettings.SelectedAI1].GetComponent<CardSystem>();
+        CSP2 = _optionsSetter.rightPlayer[OptionsSettings.SelectedAI2].GetComponent<CardSystem>();
+        
+        ESP1 = _optionsSetter.leftPlayer[OptionsSettings.SelectedAI1].GetComponent<ElixirSystem>();
+        ESP2 = _optionsSetter.rightPlayer[OptionsSettings.SelectedAI2].GetComponent<ElixirSystem>();
         
         _playersHand.Add(player1Hand);
         _playersHand.Add(player2Hand);
