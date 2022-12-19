@@ -39,7 +39,7 @@ public class MenuManager : MonoBehaviour
         var antIndex = 0;
         while (true)
         {
-            yield return new WaitForSeconds(2f);
+            yield return new WaitForSeconds(2.75f);
             var random = new Random();
             var index = 0;
             do 
