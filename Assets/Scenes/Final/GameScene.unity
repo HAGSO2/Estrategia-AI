@@ -8055,6 +8055,46 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 173839422}
     m_Modifications:
+    - target: {fileID: 7745395279740233370, guid: 834bd4d54251c2340b4b362e854be388, type: 3}
+      propertyPath: deckTransform
+      value: 
+      objectReference: {fileID: 7521169455660310629}
+    - target: {fileID: 7745395279740233370, guid: 834bd4d54251c2340b4b362e854be388, type: 3}
+      propertyPath: maxCardPosToBePlayed
+      value: 
+      objectReference: {fileID: 1884466114}
+    - target: {fileID: 7745395279740233370, guid: 834bd4d54251c2340b4b362e854be388, type: 3}
+      propertyPath: minCardPosToBePlayed
+      value: 
+      objectReference: {fileID: 595391315}
+    - target: {fileID: 7745395279740233370, guid: 834bd4d54251c2340b4b362e854be388, type: 3}
+      propertyPath: initialDeck.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7745395279740233370, guid: 834bd4d54251c2340b4b362e854be388, type: 3}
+      propertyPath: initialDeck.Array.data[0]
+      value: 
+      objectReference: {fileID: 1914977082}
+    - target: {fileID: 7745395279740233370, guid: 834bd4d54251c2340b4b362e854be388, type: 3}
+      propertyPath: initialDeck.Array.data[1]
+      value: 
+      objectReference: {fileID: 1914977081}
+    - target: {fileID: 7745395279740233370, guid: 834bd4d54251c2340b4b362e854be388, type: 3}
+      propertyPath: initialDeck.Array.data[2]
+      value: 
+      objectReference: {fileID: 1914977080}
+    - target: {fileID: 7745395279740233370, guid: 834bd4d54251c2340b4b362e854be388, type: 3}
+      propertyPath: initialDeck.Array.data[3]
+      value: 
+      objectReference: {fileID: 1914977079}
+    - target: {fileID: 7745395279740233370, guid: 834bd4d54251c2340b4b362e854be388, type: 3}
+      propertyPath: initialDeck.Array.data[4]
+      value: 
+      objectReference: {fileID: 1914977078}
+    - target: {fileID: 7745395279740233370, guid: 834bd4d54251c2340b4b362e854be388, type: 3}
+      propertyPath: initialDeck.Array.data[5]
+      value: 
+      objectReference: {fileID: 1914977077}
     - target: {fileID: 7745395279740233371, guid: 834bd4d54251c2340b4b362e854be388, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -24341,6 +24381,46 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 705340059}
     m_Modifications:
+    - target: {fileID: 7745395279740233370, guid: 611a56f8cbfce5e4cac76c0db949eecf, type: 3}
+      propertyPath: deckTransform
+      value: 
+      objectReference: {fileID: 362700631310569659}
+    - target: {fileID: 7745395279740233370, guid: 611a56f8cbfce5e4cac76c0db949eecf, type: 3}
+      propertyPath: maxCardPosToBePlayed
+      value: 
+      objectReference: {fileID: 2104726842}
+    - target: {fileID: 7745395279740233370, guid: 611a56f8cbfce5e4cac76c0db949eecf, type: 3}
+      propertyPath: minCardPosToBePlayed
+      value: 
+      objectReference: {fileID: 970006439}
+    - target: {fileID: 7745395279740233370, guid: 611a56f8cbfce5e4cac76c0db949eecf, type: 3}
+      propertyPath: initialDeck.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7745395279740233370, guid: 611a56f8cbfce5e4cac76c0db949eecf, type: 3}
+      propertyPath: initialDeck.Array.data[0]
+      value: 
+      objectReference: {fileID: 1877544362}
+    - target: {fileID: 7745395279740233370, guid: 611a56f8cbfce5e4cac76c0db949eecf, type: 3}
+      propertyPath: initialDeck.Array.data[1]
+      value: 
+      objectReference: {fileID: 1877544361}
+    - target: {fileID: 7745395279740233370, guid: 611a56f8cbfce5e4cac76c0db949eecf, type: 3}
+      propertyPath: initialDeck.Array.data[2]
+      value: 
+      objectReference: {fileID: 1877544360}
+    - target: {fileID: 7745395279740233370, guid: 611a56f8cbfce5e4cac76c0db949eecf, type: 3}
+      propertyPath: initialDeck.Array.data[3]
+      value: 
+      objectReference: {fileID: 1877544359}
+    - target: {fileID: 7745395279740233370, guid: 611a56f8cbfce5e4cac76c0db949eecf, type: 3}
+      propertyPath: initialDeck.Array.data[4]
+      value: 
+      objectReference: {fileID: 1877544358}
+    - target: {fileID: 7745395279740233370, guid: 611a56f8cbfce5e4cac76c0db949eecf, type: 3}
+      propertyPath: initialDeck.Array.data[5]
+      value: 
+      objectReference: {fileID: 1877544357}
     - target: {fileID: 7745395279740233371, guid: 611a56f8cbfce5e4cac76c0db949eecf, type: 3}
       propertyPath: m_RootOrder
       value: 1
