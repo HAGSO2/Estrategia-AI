@@ -4127,7 +4127,7 @@ GameObject:
   - component: {fileID: 1754763074}
   - component: {fileID: 1754763073}
   m_Layer: 5
-  m_Name: OSLA
+  m_Name: FOSLA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4824,7 +4824,7 @@ GameObject:
   - component: {fileID: 1995752560}
   - component: {fileID: 1995752559}
   m_Layer: 5
-  m_Name: OSLA
+  m_Name: FOSLA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
