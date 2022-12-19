@@ -89,7 +89,8 @@ public class SimpleRuleAIPlayer : MonoBehaviour, IAI
                 {
                     if (!(card.enemy.GetComponent<NPC>().atributes.visionRange < 7)) continue;
                     cardToDeploy = card;
-                        
+                    
+                    Debug.Log("La Y del enemigo: " + card.transform.position.y);
                     Vector3 pos = card.transform.position.y < 0 ? downAttackTransform.position : upAttackTransform.position;
                     _cardSystem.AlejandroTryToPlayCard(cardToDeploy, pos, player == 0);
                     Debug.Log("Carta: " + cardToDeploy.name + "Pos: " + pos);

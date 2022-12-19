@@ -61,7 +61,7 @@ public class Observer : MonoBehaviour
         get { return ESP2.elixir; }
         set { ESP2.elixir = (int)value; }
     }
-    public List<float> playersElixir = new List<float>(2);
+    [HideInInspector] public List<float> playersElixir = new List<float>(2);
     
     [HideInInspector] public float player1BurnedElixirInLastSimulation;
     [HideInInspector] public float player2BurnedElixirInLastSimulation;
