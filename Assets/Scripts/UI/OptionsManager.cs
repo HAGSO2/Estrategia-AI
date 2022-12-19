@@ -70,8 +70,8 @@ public static class OptionsSettings
     public const int HUMAN = 0;
     public const int DECISIONTREE = 1;
     public const int GNB = 2;
-    public const int DINAMICSTATES = 3;
-    public const int OSLA = 4;
+    public const int OSLA = 3;
+    public const int RULES = 4;
     public const int FSM = 5;
     public static int SelectedAI1 { get; set; }
     public static int SelectedAI2 { get; set; }
