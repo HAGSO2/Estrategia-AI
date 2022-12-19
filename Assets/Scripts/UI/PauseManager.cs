@@ -14,12 +14,14 @@ public class PauseManager : MonoBehaviour
     
     void Update()
     {
+        /*
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             _pauseMenu.SetActive(!_pauseMenu.activeSelf); 
             _pauseButton.SetActive(!_pauseButton.activeSelf);
             IsPaused = !IsPaused;
         }
+        */
     }
     
     public void MainMenu()
