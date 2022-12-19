@@ -5145,12 +5145,9 @@ MonoBehaviour:
   - {fileID: 7871728642448191658}
   - {fileID: 800634160}
   - {fileID: 2061956880}
-  - {fileID: 2061956880}
   leftPlayer:
   - {fileID: 2472096451290406706}
-  - {fileID: 2472096451290406706}
-  - {fileID: 7745395279740233372, guid: 6cf29bd16de0b3440ab9a7f3a2c47521, type: 3}
-  - {fileID: 6918960693997026865}
+  - {fileID: 1808767838}
   - {fileID: 6918960693997026865}
 --- !u!114 &339811830
 MonoBehaviour:
@@ -24896,6 +24893,11 @@ PrefabInstance:
 --- !u!4 &1808767837 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7745395279740233371, guid: 6cf29bd16de0b3440ab9a7f3a2c47521, type: 3}
+  m_PrefabInstance: {fileID: 1808767836}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1808767838 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7745395279740233372, guid: 6cf29bd16de0b3440ab9a7f3a2c47521, type: 3}
   m_PrefabInstance: {fileID: 1808767836}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1831978085

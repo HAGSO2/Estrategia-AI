@@ -68,8 +68,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elixirSystem: {fileID: 7745395279740233369}
   enemiesManager: {fileID: 0}
-  _player1TroopsParent: {fileID: 0}
-  _player2TroopsParent: {fileID: 0}
+  _playerTroopsParent: {fileID: 0}
 --- !u!114 &7745395279740233369
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -83,6 +82,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   elixirGameObject: {fileID: 0}
+  elixirWaitTime: 1
   elixir: 6
 --- !u!114 &7745395279740233370
 MonoBehaviour:
