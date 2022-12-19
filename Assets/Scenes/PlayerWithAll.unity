@@ -4965,8 +4965,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _optionsSetter: {fileID: 339811830}
+  CSP1: {fileID: 0}
+  CSP2: {fileID: 0}
   player1TroopsParent: {fileID: 318192208}
   player2TroopsParent: {fileID: 519736200}
+  ESP1: {fileID: 0}
+  ESP2: {fileID: 0}
   playersElixir: []
   player1BurnedElixirInLastSimulation: 0
   player2BurnedElixirInLastSimulation: 0
@@ -4990,7 +4994,7 @@ MonoBehaviour:
   rightPlayer:
   - {fileID: 2037581575}
   leftPlayer:
-  - {fileID: 900228704}
+  - {fileID: 4598063425562281012}
 --- !u!1 &348990890
 GameObject:
   m_ObjectHideFlags: 0
@@ -5025,7 +5029,6 @@ Transform:
   - {fileID: 1877544355}
   - {fileID: 4598063425562281033}
   - {fileID: 900228705}
-  - {fileID: 1043850076}
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7505,6 +7508,9 @@ MonoBehaviour:
   Team: 0
   healthTMP: {fileID: 0}
   isSimulator: 1
+  towerDeath:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!61 &693821841
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9844,7 +9850,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &900228705
 Transform:
   m_ObjectHideFlags: 0
@@ -14718,11 +14724,6 @@ Transform:
   m_Father: {fileID: 412756297}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &1043850076 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7745395279740233371, guid: 611a56f8cbfce5e4cac76c0db949eecf, type: 3}
-  m_PrefabInstance: {fileID: 7745395280107832775}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1052327681
 GameObject:
   m_ObjectHideFlags: 0
@@ -14876,7 +14877,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1111563531
 Transform:
   m_ObjectHideFlags: 0
@@ -15017,6 +15018,9 @@ MonoBehaviour:
   Team: 0
   healthTMP: {fileID: 105900009}
   isSimulator: 0
+  towerDeath:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!61 &1145372846
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -23839,6 +23843,7 @@ GameObject:
   - component: {fileID: 1480999138}
   - component: {fileID: 1480999137}
   - component: {fileID: 1480999139}
+  - component: {fileID: 1480999140}
   m_Layer: 0
   m_Name: Manager (Simulated)
   m_TagString: Untagged
@@ -23887,9 +23892,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb8115b8dfc069a48a36bad8a889d81e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _optionsSetter: {fileID: 0}
+  _optionsSetter: {fileID: 1480999140}
+  CSP1: {fileID: 0}
+  CSP2: {fileID: 0}
   player1TroopsParent: {fileID: 381549601}
   player2TroopsParent: {fileID: 312848303}
+  ESP1: {fileID: 0}
+  ESP2: {fileID: 0}
   playersElixir: []
   player1BurnedElixirInLastSimulation: 0
   player2BurnedElixirInLastSimulation: 0
@@ -23898,6 +23907,22 @@ MonoBehaviour:
   timeLeft: 184
   timeLeftTMP: {fileID: 0}
   isSimulator: 1
+--- !u!114 &1480999140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1480999136}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1de9883b765e61243b3b1d83616354af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rightPlayer:
+  - {fileID: 2037581575}
+  leftPlayer:
+  - {fileID: 4598063425562281012}
 --- !u!1 &1556853023
 GameObject:
   m_ObjectHideFlags: 0
@@ -24735,6 +24760,9 @@ MonoBehaviour:
   Team: 1
   healthTMP: {fileID: 0}
   isSimulator: 1
+  towerDeath:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!61 &2056115034
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -25058,6 +25086,9 @@ MonoBehaviour:
   Team: 1
   healthTMP: {fileID: 381802024}
   isSimulator: 0
+  towerDeath:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!61 &2128104934
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -25103,7 +25134,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &4598063425562281013
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25118,7 +25149,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elixirSystem: {fileID: 4598063425562281014}
   enemiesManager: {fileID: 339811827}
-  _playerTroopsParent: {fileID: 0}
+  _playerTroopsParent: {fileID: 318192209}
 --- !u!114 &4598063425562281014
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25147,14 +25178,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   initialDeck:
-  - {fileID: 0}
   - {fileID: 1877544362}
   - {fileID: 1877544361}
   - {fileID: 1877544360}
   - {fileID: 1877544359}
   - {fileID: 1877544358}
   - {fileID: 1877544357}
-  - {fileID: 0}
   deckTransform: {fileID: 1914977075}
   minCardPosToBePlayed: {fileID: 970006439}
   maxCardPosToBePlayed: {fileID: 2104726842}
@@ -25205,132 +25234,3 @@ MonoBehaviour:
   downAttackTransform: {fileID: 1556853024}
   downDefenseTransform: {fileID: 283515621}
   player: 1
---- !u!1001 &7745395280107832775
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 348990891}
-    m_Modifications:
-    - target: {fileID: 7745395279740233368, guid: 611a56f8cbfce5e4cac76c0db949eecf, type: 3}
-      propertyPath: enemiesManager
-      value: 
-      objectReference: {fileID: 339811827}
-    - target: {fileID: 7745395279740233368, guid: 611a56f8cbfce5e4cac76c0db949eecf, type: 3}
-      propertyPath: _player1TroopsParent
-      value: 
-      objectReference: {fileID: 318192209}
-    - target: {fileID: 7745395279740233368, guid: 611a56f8cbfce5e4cac76c0db949eecf, type: 3}
-      propertyPath: _player2TroopsParent
-      value: 
-      objectReference: {fileID: 519736201}
-    - target: {fileID: 7745395279740233370, guid: 611a56f8cbfce5e4cac76c0db949eecf, type: 3}
-      propertyPath: deckTransform
-      value: 
-      objectReference: {fileID: 1914977075}
-    - target: {fileID: 7745395279740233370, guid: 611a56f8cbfce5e4cac76c0db949eecf, type: 3}
-      propertyPath: maxCardPosToBePlayed
-      value: 
-      objectReference: {fileID: 2104726842}
-    - target: {fileID: 7745395279740233370, guid: 611a56f8cbfce5e4cac76c0db949eecf, type: 3}
-      propertyPath: minCardPosToBePlayed
-      value: 
-      objectReference: {fileID: 970006439}
-    - target: {fileID: 7745395279740233370, guid: 611a56f8cbfce5e4cac76c0db949eecf, type: 3}
-      propertyPath: initialDeck.Array.data[0]
-      value: 
-      objectReference: {fileID: 1877544361}
-    - target: {fileID: 7745395279740233370, guid: 611a56f8cbfce5e4cac76c0db949eecf, type: 3}
-      propertyPath: initialDeck.Array.data[1]
-      value: 
-      objectReference: {fileID: 1877544361}
-    - target: {fileID: 7745395279740233370, guid: 611a56f8cbfce5e4cac76c0db949eecf, type: 3}
-      propertyPath: initialDeck.Array.data[2]
-      value: 
-      objectReference: {fileID: 1877544361}
-    - target: {fileID: 7745395279740233370, guid: 611a56f8cbfce5e4cac76c0db949eecf, type: 3}
-      propertyPath: initialDeck.Array.data[3]
-      value: 
-      objectReference: {fileID: 1877544360}
-    - target: {fileID: 7745395279740233370, guid: 611a56f8cbfce5e4cac76c0db949eecf, type: 3}
-      propertyPath: initialDeck.Array.data[4]
-      value: 
-      objectReference: {fileID: 1877544359}
-    - target: {fileID: 7745395279740233370, guid: 611a56f8cbfce5e4cac76c0db949eecf, type: 3}
-      propertyPath: initialDeck.Array.data[5]
-      value: 
-      objectReference: {fileID: 1877544358}
-    - target: {fileID: 7745395279740233370, guid: 611a56f8cbfce5e4cac76c0db949eecf, type: 3}
-      propertyPath: initialDeck.Array.data[6]
-      value: 
-      objectReference: {fileID: 1877544357}
-    - target: {fileID: 7745395279740233370, guid: 611a56f8cbfce5e4cac76c0db949eecf, type: 3}
-      propertyPath: initialDeck.Array.data[7]
-      value: 
-      objectReference: {fileID: 1877544357}
-    - target: {fileID: 7745395279740233371, guid: 611a56f8cbfce5e4cac76c0db949eecf, type: 3}
-      propertyPath: m_RootOrder
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 7745395279740233371, guid: 611a56f8cbfce5e4cac76c0db949eecf, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 1.6392553
-      objectReference: {fileID: 0}
-    - target: {fileID: 7745395279740233371, guid: 611a56f8cbfce5e4cac76c0db949eecf, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.005166896
-      objectReference: {fileID: 0}
-    - target: {fileID: 7745395279740233371, guid: 611a56f8cbfce5e4cac76c0db949eecf, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.89608896
-      objectReference: {fileID: 0}
-    - target: {fileID: 7745395279740233371, guid: 611a56f8cbfce5e4cac76c0db949eecf, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7745395279740233371, guid: 611a56f8cbfce5e4cac76c0db949eecf, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7745395279740233371, guid: 611a56f8cbfce5e4cac76c0db949eecf, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7745395279740233371, guid: 611a56f8cbfce5e4cac76c0db949eecf, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7745395279740233371, guid: 611a56f8cbfce5e4cac76c0db949eecf, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7745395279740233371, guid: 611a56f8cbfce5e4cac76c0db949eecf, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7745395279740233371, guid: 611a56f8cbfce5e4cac76c0db949eecf, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7745395279740233372, guid: 611a56f8cbfce5e4cac76c0db949eecf, type: 3}
-      propertyPath: m_Name
-      value: GNB Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 7745395279740233372, guid: 611a56f8cbfce5e4cac76c0db949eecf, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7745395279740233383, guid: 611a56f8cbfce5e4cac76c0db949eecf, type: 3}
-      propertyPath: _observer
-      value: 
-      objectReference: {fileID: 339811829}
-    - target: {fileID: 7745395279740233383, guid: 611a56f8cbfce5e4cac76c0db949eecf, type: 3}
-      propertyPath: towerP1Pos
-      value: 
-      objectReference: {fileID: 2128104932}
-    - target: {fileID: 7745395279740233383, guid: 611a56f8cbfce5e4cac76c0db949eecf, type: 3}
-      propertyPath: towerP2Pos
-      value: 
-      objectReference: {fileID: 1145372844}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 611a56f8cbfce5e4cac76c0db949eecf, type: 3}
