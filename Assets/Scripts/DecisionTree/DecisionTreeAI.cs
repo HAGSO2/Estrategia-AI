@@ -338,9 +338,8 @@ public class DecisionTreeAI : MonoBehaviour, IAI
         cardRoot.Evaluate();
 
         string cardName = simpleObserver.playedCardName;
-        //FindObjectsOfType<DataGameCollector>()[0].RegisterNewEntryData(id, id, cardName);
+        FindObjectsOfType<DataGameCollector>()[0].RegisterNewEntryData(id, id, cardName);
 
-        // return pos and index
         return indexToPlay;
     }
 }
