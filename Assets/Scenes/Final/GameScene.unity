@@ -5165,8 +5165,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _optionsSetter: {fileID: 339811829}
+  CSP1: {fileID: 0}
+  CSP2: {fileID: 0}
   player1TroopsParent: {fileID: 599113681}
   player2TroopsParent: {fileID: 333444558}
+  ESP1: {fileID: 0}
+  ESP2: {fileID: 0}
   playersElixir: []
   player1BurnedElixirInLastSimulation: 0
   player2BurnedElixirInLastSimulation: 0
@@ -10304,6 +10308,10 @@ PrefabInstance:
       propertyPath: enemiesManager
       value: 
       objectReference: {fileID: 339811827}
+    - target: {fileID: 3193646538401605080, guid: a1696c39a69b8b74b8804ff861702fb4, type: 3}
+      propertyPath: _playerTroopsParent
+      value: 
+      objectReference: {fileID: 599113682}
     - target: {fileID: 3193646538401605082, guid: a1696c39a69b8b74b8804ff861702fb4, type: 3}
       propertyPath: deckTransform
       value: 
@@ -15581,8 +15589,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _optionsSetter: {fileID: 339811829}
+  CSP1: {fileID: 0}
+  CSP2: {fileID: 0}
   player1TroopsParent: {fileID: 599113681}
   player2TroopsParent: {fileID: 333444558}
+  ESP1: {fileID: 0}
+  ESP2: {fileID: 0}
   playersElixir: []
   player1BurnedElixirInLastSimulation: 0
   player2BurnedElixirInLastSimulation: 0
@@ -26013,6 +26025,10 @@ PrefabInstance:
       propertyPath: _observer
       value: 
       objectReference: {fileID: 339811830}
+    - target: {fileID: 2538873894199787107, guid: 27c28d29a7e48f9438a931e9c26fb8e9, type: 3}
+      propertyPath: _elixirSystem
+      value: 
+      objectReference: {fileID: 2538873892494936439}
     - target: {fileID: 2538873894199787108, guid: 27c28d29a7e48f9438a931e9c26fb8e9, type: 3}
       propertyPath: deckTransform
       value: 
@@ -26103,6 +26119,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 27c28d29a7e48f9438a931e9c26fb8e9, type: 3}
+--- !u!114 &2538873892494936439 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2538873894199787109, guid: 27c28d29a7e48f9438a931e9c26fb8e9, type: 3}
+  m_PrefabInstance: {fileID: 2538873892494936438}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2061956880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 702e43cecf5289e4289196778fd1dd93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &4084436855185902033 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6166319402837539192, guid: f38cb86e75c2df545b4bb6d114b704ee, type: 3}
@@ -26215,8 +26242,23 @@ PrefabInstance:
       propertyPath: _observer
       value: 
       objectReference: {fileID: 339811830}
+    - target: {fileID: 6661831399135175704, guid: c78f32db1909c394b8745e7432a92e13, type: 3}
+      propertyPath: _elixirSystem
+      value: 
+      objectReference: {fileID: 4356812949745818145}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c78f32db1909c394b8745e7432a92e13, type: 3}
+--- !u!114 &4356812949745818145 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6661831399135175700, guid: c78f32db1909c394b8745e7432a92e13, type: 3}
+  m_PrefabInstance: {fileID: 4356812949745818144}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6918960693997026865}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 702e43cecf5289e4289196778fd1dd93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &5098682920983793296 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7245323704781771169, guid: d0f4fa5dffb566b429699d8c373be0fd, type: 3}
