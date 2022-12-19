@@ -6,6 +6,7 @@ public class SimpleObserver : MonoBehaviour
 {
     [SerializeField] ElixirSystem elixirSystem;
     [SerializeField] CardSystem cardSystem;
+    [SerializeField] DeployCardSystem deployCardSystem;
     [SerializeField] Tower leftTower;
     [SerializeField] Tower rightTower;
     [SerializeField] int enemyLayer;
@@ -35,21 +36,27 @@ public class SimpleObserver : MonoBehaviour
         */
     }
 
-    public int CheckForCard(string card_name)
+    public int CheckForCard(string cardName)
     {
         for (int i = 0; i < cardSystem.hand.Length; i++)
         {
-            if (cardSystem.hand[i].name == card_name)
+            if (cardSystem.hand[i].name == cardName && deployCardSystem.CanDeploy(cardSystem.hand[i]))
             {
-                playedCardName = card_name;
+                playedCardName = cardName;
                 return i;
             }
         }
 
-        int cardIndex = Random.Range(0, cardSystem.hand.Length);
-        playedCardName = cardSystem.hand[cardIndex].name;
+        for (int i = 0; i < cardSystem.hand.Length; i++)
+        {
+            if (deployCardSystem.CanDeploy(cardSystem.hand[i]))
+            {
+                playedCardName = cardName;
+                return i;
+            }
+        }
 
-        return cardIndex;
+        return -1;
     }
 
     public bool NotTerminal()
