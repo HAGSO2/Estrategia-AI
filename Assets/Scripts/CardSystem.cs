@@ -17,7 +17,7 @@ public class CardSystem : MonoBehaviour
     [HideInInspector] public Card[] hand = new Card[4];
     public Queue<Card> deck = new Queue<Card>(2);
 
-    [HideInInspector] public Transform[] cardPositions = new Transform[4];
+    public Transform[] cardPositions = new Transform[4];
 
     [SerializeField] DeployCardSystem deployCardSystem;
 

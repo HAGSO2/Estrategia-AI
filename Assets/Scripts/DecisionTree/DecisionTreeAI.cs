@@ -321,7 +321,7 @@ public class DecisionTreeAI : MonoBehaviour, IAI
             timer = 0f;
             int index = think(null, 10f);
 
-            if (pos != Vector3.zero && indexToPlay != -1)
+            if (index != -1)
             {
                 cardSystem.PlayCardAI(index, pos, isLeftSide);
                 simpleObserver.SortCards();
@@ -336,6 +336,9 @@ public class DecisionTreeAI : MonoBehaviour, IAI
             return -1;
             
         cardRoot.Evaluate();
+
+        if (indexToPlay == -1)
+            return -1;
 
         string cardName = simpleObserver.playedCardName;
         FindObjectsOfType<DataGameCollector>()[0].RegisterNewEntryData(id, id, cardName);
