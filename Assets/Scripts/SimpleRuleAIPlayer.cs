@@ -24,6 +24,7 @@ public class SimpleRuleAIPlayer : MonoBehaviour, IAI
     // Start is called before the first frame update
     void Start()
     {
+        id = "RuleAI";
         rival = player == 0 ? 1 : 0;
         myTowerPos = player == 0 ? _observer.Player1KingTower.transform.position : _observer.Player2KingTower.transform.position;
         StartCoroutine(nameof(UpdateAI));
@@ -141,6 +142,8 @@ public class SimpleRuleAIPlayer : MonoBehaviour, IAI
 
     private void DondeCaemosGente(Card card, bool Attack, bool Up)
     {
+        FindObjectsOfType<DataGameCollector>()[0].RegisterNewEntryData(id, id, card.name);
+
         if (Attack)
         {
             _cardSystem.AlejandroTryToPlayCard(card, Up ? upAttackTransform.position : downAttackTransform.position, 
