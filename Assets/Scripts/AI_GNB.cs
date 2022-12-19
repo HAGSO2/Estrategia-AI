@@ -66,6 +66,7 @@ struct TroopGaussianData {
 public class AI_GNB : MonoBehaviour,IAI
 {
     [SerializeField] private DeployCardSystem _deployCardSystem;
+    [SerializeField] private CardSystem _cardSystem;
     [SerializeField] private Observer _observer;
 
     SituationData[] _dataSet;
@@ -169,12 +170,12 @@ public class AI_GNB : MonoBehaviour,IAI
         List<string> keyList = new List<string>(troopGaussianData.Keys);
         foreach(string key in keyList){
             TroopGaussianData temporalGD = troopGaussianData[key];
-            temporalGD.gd_PotentialDPSTotalUp.standarDeviation = Math.Sqrt(temporalGD.gd_PotentialDPSTotalUp.standarDeviation / totalEachTroop[key]);
-            temporalGD.gd_PotentialDPSTotalDown.standarDeviation = Math.Sqrt(temporalGD.gd_PotentialDPSTotalDown.standarDeviation / totalEachTroop[key]);
-            temporalGD.gd_PotentialHealthTotalUp.standarDeviation = Math.Sqrt(temporalGD.gd_PotentialHealthTotalUp.standarDeviation / totalEachTroop[key]);
-            temporalGD.gd_PotentialHealthTotalDown.standarDeviation = Math.Sqrt(temporalGD.gd_PotentialHealthTotalDown.standarDeviation / totalEachTroop[key]);
-            temporalGD.gd_DistanceToTowerOwnUp.standarDeviation = Math.Sqrt(temporalGD.gd_DistanceToTowerOwnUp.standarDeviation / totalEachTroop[key]);
-            temporalGD.gd_DistanceToTowerOwnDown.standarDeviation = Math.Sqrt(temporalGD.gd_DistanceToTowerOwnDown.standarDeviation / totalEachTroop[key]);
+            temporalGD.gd_PotentialDPSTotalUp.standarDeviation = Math.Sqrt(temporalGD.gd_PotentialDPSTotalUp.standarDeviation / totalEachTroop[key])+1;
+            temporalGD.gd_PotentialDPSTotalDown.standarDeviation = Math.Sqrt(temporalGD.gd_PotentialDPSTotalDown.standarDeviation / totalEachTroop[key])+1;
+            temporalGD.gd_PotentialHealthTotalUp.standarDeviation = Math.Sqrt(temporalGD.gd_PotentialHealthTotalUp.standarDeviation / totalEachTroop[key])+1;
+            temporalGD.gd_PotentialHealthTotalDown.standarDeviation = Math.Sqrt(temporalGD.gd_PotentialHealthTotalDown.standarDeviation / totalEachTroop[key])+1;
+            temporalGD.gd_DistanceToTowerOwnUp.standarDeviation = Math.Sqrt(temporalGD.gd_DistanceToTowerOwnUp.standarDeviation / totalEachTroop[key])+1;
+            temporalGD.gd_DistanceToTowerOwnDown.standarDeviation = Math.Sqrt(temporalGD.gd_DistanceToTowerOwnDown.standarDeviation / totalEachTroop[key])+1;
             troopGaussianData[key] = temporalGD;
         }
     }
@@ -194,7 +195,7 @@ public class AI_GNB : MonoBehaviour,IAI
     }
 
     private double Likelihood(double m, double s, double x){
-        return 1/(Math.Sqrt(2*Mathf.PI * Math.Pow(s, 2)))*Math.Log(-((Math.Pow((x-m),2))/(2*Math.Pow(s,2))));
+        return (1/(s*Math.Sqrt(2*Mathf.PI)))*Math.Log(Math.Abs(((Math.Pow((x-m),2))/(2*Math.Pow(s,2)))));
     }
     
     public int think(Observer observer, float budget){
@@ -229,25 +230,43 @@ public class AI_GNB : MonoBehaviour,IAI
 
         //Gets the values and sort it from ist highest
         string action="";
+        string actionEqual ="";
+        string actionAlternative = "";
         double previousActionValue = -9999999999999999999.0;
         foreach(string key in totalProbbability.Keys){
+           actionAlternative = key;
            if(previousActionValue < totalProbbability[key]){
                 action = key;
                 previousActionValue = totalProbbability[key];
+           }if(previousActionValue == totalProbbability[key]){
+                actionEqual = key;
            }
         }
 
         //Gets the card index of the hand based on the name, and the position to spawn it
-        string[] actions =  action.Split(char.Parse(":"));
+        int actionIndex = Random.Range(0, 4);
+        string[] actions;
+        //Adds a random factor for a non previsible behaviour
+        if(actionIndex == 0){
+            actions =  actionAlternative.Split(char.Parse(":"));
+            actions[0] = _cardSystem.hand[Random.Range(0,_cardSystem.hand.Length-1)].name;
+        }else if(actionIndex == 1){
+            actions =  actionEqual.Split(char.Parse(":"));
+        }else{
+            actions =  action.Split(char.Parse(":"));
+        }
+        Debug.Log(actions[0]);
         int index= 0;
         bool found = false;
-        foreach(Card card in GetHand()){
-           if(card.name == actions[0]){
-                found = true;
-                _spawnPoint = GetSpawnPoint(actions[1]);
-                break;
-           }
-           index++;
+        if(actions.Length > 0){
+            foreach(Card card in _cardSystem.hand){
+                if(card.name == actions[0]){
+                        found = true;
+                        _spawnPoint = GetSpawnPoint(actions[1]);
+                        break;
+                }
+                index++;
+            }
         }
 
         //Registry the final action in the data collector and returns it
@@ -292,7 +311,7 @@ public class AI_GNB : MonoBehaviour,IAI
             //Thinks a action and spawn a card
             int action = think(_observer,0.0f);
             if(action != -1){
-                //_deployCardSystem.DeployCard(action, _spawnPoint);
+                _cardSystem.PlayCardAI(action, _spawnPoint, isPlayer1);
             }
             
             //yield on a new YieldInstruction that waits for x
@@ -301,7 +320,7 @@ public class AI_GNB : MonoBehaviour,IAI
     }
 
     void UpdateSituation(){
-        _situation = new SituationData("","",0,0,0,0,0,0);
+        _situation = new SituationData("","",1.0,1.0,1.0,1.0,13.0,13.0);
         int totalTroops = 0;
 
         Transform towerPos;
@@ -312,10 +331,10 @@ public class AI_GNB : MonoBehaviour,IAI
         }
 
         foreach(GameObject enemy in GetEnemiesUp()){
-            NPC npc = gameObject.GetComponent(typeof(NPC)) as NPC;
+            NPC npc = enemy.GetComponent(typeof(NPC)) as NPC;
             //Checks just in case the enemy is still alive
             if(npc.atributes.health > 0){
-                _situation.potentialDPSTotalUp += npc.atributes.attacksPerSecond;
+                _situation.potentialDPSTotalUp += (npc.atributes.attacksPerSecond * npc.atributes.damage);
                 _situation.potentialHealthTotalUp += npc.atributes.health;
                 _situation.DistanceToTowerOwnUp += Mathf.Abs(Vector3.Distance(towerPos.position, enemy.transform.position));
                 totalTroops++;  
@@ -325,10 +344,10 @@ public class AI_GNB : MonoBehaviour,IAI
 
         totalTroops = 0;
         foreach(GameObject enemy in GetEnemiesDown()){
-            NPC npc = gameObject.GetComponent(typeof(NPC)) as NPC;
+            NPC npc = enemy.GetComponent(typeof(NPC)) as NPC;
             //Checks just in case the enemy is still alive
             if(npc.atributes.health > 0){
-                _situation.potentialDPSTotalDown += npc.atributes.attacksPerSecond;
+                _situation.potentialDPSTotalDown += (npc.atributes.attacksPerSecond * npc.atributes.damage);
                 _situation.potentialHealthTotalDown += npc.atributes.health;
                 _situation.DistanceToTowerOwnDown += Mathf.Abs(Vector3.Distance(towerPos.position, enemy.transform.position));   
                 totalTroops++;     
@@ -396,19 +415,9 @@ public class AI_GNB : MonoBehaviour,IAI
                 break;
             }
             string[] data =  data_string.Split(char.Parse(";"));
-            Debug.Log(data_string);
             situationData.Add(new SituationData(data[0], data[1], Convert.ToDouble(data[2]), Convert.ToDouble(data[3]), Convert.ToDouble(data[4]), Convert.ToDouble(data[5]), Convert.ToDouble(data[6]), Convert.ToDouble(data[7])));
         }
         sr.Close();
         _dataSet = situationData.ToArray();
     }
 }
-
-
-    //-1ºCrear el dataset(que lo lea de un excel? o primero provar que lo lea de la lista y despues lo construya de un excel?)
-    //0ºCalcular media, desviacion estandar y verosimilitud de cada categoria(tropa) por cada parametro (media de los gigantes, su daño, vida, distancia a la torre cada uno etc y desviacion estandar)
-    //1º calcular la probabilidad prior de cada grupo p(grupo) = nºTotalGrupo/TotalDeMuestras
-    //2º Calcular la propapilidad de cada grupo tal que -> ln(p(grupo)) + ln(Likelihood(dps = x | grupo)) + ln(Likelihood(vida = x | grupo)) .......
-    //3º Comparar quien tiene el valor mas grande y quedarse con ese (junto con el nombre de la carta y posicion)
-    //4º Iterar por toda la mano hasta encontrar una carta con el mismo nombre, guardar su indice y la posicion donde spawnear
-    //5º Escribir el nombre en el excel y retornar el indice
