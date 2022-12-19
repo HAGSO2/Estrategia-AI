@@ -5158,7 +5158,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb8115b8dfc069a48a36bad8a889d81e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _optionsSetter: {fileID: 0}
+  _optionsSetter: {fileID: 339811829}
   player1TroopsParent: {fileID: 599113681}
   player2TroopsParent: {fileID: 333444558}
   playersElixir: []
