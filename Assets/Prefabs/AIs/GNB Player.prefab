@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7745395279740233369}
   - component: {fileID: 7745395279740233370}
   m_Layer: 0
-  m_Name: GNBPlayer_Right
+  m_Name: GNB Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

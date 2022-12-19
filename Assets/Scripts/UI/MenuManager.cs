@@ -20,7 +20,7 @@ public class MenuManager : MonoBehaviour
 
     public void PlayGame()
     {
-        SceneManager.LoadScene("GameScene");
+        SceneManager.LoadScene("PlayerWithAll");
     }
 
     public void QuitGame()
