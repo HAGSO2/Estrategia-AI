@@ -1,0 +1,7 @@
+.;Archers;Barbarian;Giant;Goblin;Knight;Mini-Pekka
+=$A$4;"=CONTAR.SI(B4:B20004;"""*Archer*");"=CONTAR.SI(B4:B20004;"""*Barbarian*");"=CONTAR.SI(B4:B20004;"""*Giant*");"=CONTAR.SI(B4:B20004;"""*Goblin*");"=CONTAR.SI(B4:B20004;"""*Knight*");"=CONTAR.SI(B4:B20004;"""*Mini-Pekka*")
+=$C$4;"=CONTAR.SI(D4:D20004;"""*Archer*");"=CONTAR.SI(D4:D20004;"""*Barbarian*");"=CONTAR.SI(D4:D20004;"""*Giant*");"=CONTAR.SI(D4:D20004;"""*Goblin*");"=CONTAR.SI(D4:D20004;"""*Knight*");"=CONTAR.SI(D4:D20004;"""*Mini-Pekka*")
+DecisionTreeAI;Archer;FOSLAAI;Knight;
+DecisionTreeAI;Mini-Pekka;FOSLAAI;Mini-Pekka;
+DecisionTreeAI;Goblin;FOSLAAI;Goblin;
+;FOSLAAI;Knight;

@@ -144,6 +144,8 @@ public class Observer : MonoBehaviour
             timeLeftTMP.text = "Time left: " + SecondsToMinutesFormat(timeLeft);
             yield return new WaitForSeconds(1f);
         }
+
+        GetComponent<EndGameScript>().BackToMenu();
     }
 
     private string SecondsToMinutesFormat(float timeInSeconds)

@@ -59,7 +59,6 @@ public class DecisionTreeAI : MonoBehaviour, IAI
 
         notEnoughElixir = new BinaryNode("Not Enough Elixir", NotEnoughElixir);
 
-
         // NOT LEAFS
         attackedDown = new BinaryNode("Attacked Down?", defenseDown, attackAnywhere, AttackedDownF);
 
