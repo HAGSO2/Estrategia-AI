@@ -68,8 +68,8 @@ public class OptionsManager : MonoBehaviour
 public static class OptionsSettings
 {
     public const int HUMAN = 0;
-    public const int DEEPLEARNING = 1;
-    public const int ID3 = 2;
+    public const int DECISIONTREE = 1;
+    public const int GNB = 2;
     public const int DINAMICSTATES = 3;
     public const int OSLA = 4;
     public const int FSM = 5;
