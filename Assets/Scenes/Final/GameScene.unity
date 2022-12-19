@@ -15442,7 +15442,7 @@ MonoBehaviour:
   maxHealth: 100
   _Manager: {fileID: 339811827}
   Team: 0
-  healthTMP: {fileID: 0}
+  healthTMP: {fileID: 495422625}
   isSimulator: 0
 --- !u!61 &1145372846
 BoxCollider2D:
@@ -25449,7 +25449,7 @@ MonoBehaviour:
   maxHealth: 100
   _Manager: {fileID: 339811827}
   Team: 1
-  healthTMP: {fileID: 0}
+  healthTMP: {fileID: 1324710106}
   isSimulator: 0
 --- !u!61 &2128104934
 BoxCollider2D:
