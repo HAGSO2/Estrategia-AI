@@ -180,6 +180,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elixirSystem: {fileID: 6166319402837539079}
   cardSystem: {fileID: 6166319402837539078}
+  deployCardSystem: {fileID: 6166319402837539076}
+  leftTower: {fileID: 0}
+  rightTower: {fileID: 0}
   enemyLayer: 11
   cardsByCost: []
   lowestCardCost: 0
@@ -247,6 +250,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   elixirGameObject: {fileID: 0}
+  elixirWaitTime: 1
   elixir: 6
 --- !u!114 &6166319402837539076
 MonoBehaviour:
