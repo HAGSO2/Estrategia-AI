@@ -321,7 +321,7 @@ public class DecisionTreeAI : MonoBehaviour, IAI
             timer = 0f;
             int index = think(null, 10f);
 
-            if (pos != Vector3.zero)
+            if (pos != Vector3.zero && indexToPlay != -1)
             {
                 cardSystem.PlayCardAI(index, pos, isLeftSide);
                 simpleObserver.SortCards();
