@@ -25655,7 +25655,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7133917423770361737, guid: d0f4fa5dffb566b429699d8c373be0fd, type: 3}
       propertyPath: maxTime
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7245323704781771169, guid: d0f4fa5dffb566b429699d8c373be0fd, type: 3}
       propertyPath: m_RootOrder
@@ -25871,6 +25871,10 @@ PrefabInstance:
       propertyPath: rightTower
       value: 
       objectReference: {fileID: 1145372845}
+    - target: {fileID: 5917555430259406672, guid: f38cb86e75c2df545b4bb6d114b704ee, type: 3}
+      propertyPath: maxTime
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6166319402837539076, guid: f38cb86e75c2df545b4bb6d114b704ee, type: 3}
       propertyPath: enemiesManager
       value: 
@@ -25937,7 +25941,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6166319402837539079, guid: f38cb86e75c2df545b4bb6d114b704ee, type: 3}
       propertyPath: elixirWaitTime
-      value: 2.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6166319402837539192, guid: f38cb86e75c2df545b4bb6d114b704ee, type: 3}
       propertyPath: m_RootOrder

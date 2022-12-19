@@ -137,8 +137,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6166319402837539192}
-  - component: {fileID: 5684621968744860817}
   - component: {fileID: 5917555430259406672}
+  - component: {fileID: 5684621968744860817}
   - component: {fileID: 6166319402837539078}
   - component: {fileID: 6166319402837539079}
   - component: {fileID: 6166319402837539076}
@@ -166,6 +166,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5917555430259406672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6166319402837539077}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10e0ab965e7ec464c8f49e2c3dfe5986, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cardSystem: {fileID: 6166319402837539078}
+  simpleObserver: {fileID: 5684621968744860817}
+  upAttackTransform: {fileID: 1578865578162787755}
+  upDefenseTransform: {fileID: 7162576550034938828}
+  downAttackTransform: {fileID: 7172107572454069224}
+  downDefenseTransform: {fileID: 3209510968564650687}
+  isLeftSide: 1
+  maxTime: 1
 --- !u!114 &5684621968744860817
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -188,26 +208,6 @@ MonoBehaviour:
   lowestCardCost: 0
   terminal: 0
   playedCardName: 
---- !u!114 &5917555430259406672
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6166319402837539077}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10e0ab965e7ec464c8f49e2c3dfe5986, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cardSystem: {fileID: 6166319402837539078}
-  simpleObserver: {fileID: 5684621968744860817}
-  upAttackTransform: {fileID: 1578865578162787755}
-  upDefenseTransform: {fileID: 7162576550034938828}
-  downAttackTransform: {fileID: 7172107572454069224}
-  downDefenseTransform: {fileID: 3209510968564650687}
-  isLeftSide: 1
-  maxTime: 1
 --- !u!114 &6166319402837539078
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -266,8 +266,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elixirSystem: {fileID: 6166319402837539079}
   enemiesManager: {fileID: 0}
-  _player1TroopsParent: {fileID: 0}
-  _player2TroopsParent: {fileID: 0}
+  _playerTroopsParent: {fileID: 0}
 --- !u!61 &2539297325344101147
 BoxCollider2D:
   m_ObjectHideFlags: 0
