@@ -173,6 +173,7 @@ MonoBehaviour:
   Team: 0
   doStart: 0
   manualManager: {fileID: 0}
+  simulatedMultiplier: 1
 --- !u!114 &6861284595649499384
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -263,7 +264,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 0.8773585, g: 0.5090335, b: 0.5090335, a: 1}
+  m_Color: {r: 0.8784314, g: 0.8489455, b: 0.50980395, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

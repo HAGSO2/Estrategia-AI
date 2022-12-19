@@ -9541,6 +9541,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LeftPlayer
       objectReference: {fileID: 0}
+    - target: {fileID: 3193646538401605077, guid: a1696c39a69b8b74b8804ff861702fb4, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3193646538401605080, guid: a1696c39a69b8b74b8804ff861702fb4, type: 3}
       propertyPath: enemiesManager
       value: 
@@ -14601,7 +14605,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 420ed7640831ea34d8f865aa83e91bed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 0
+  health: 100
   maxHealth: 0
   _Manager: {fileID: 339811827}
   Team: 0
@@ -24056,7 +24060,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 420ed7640831ea34d8f865aa83e91bed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 0
+  health: 100
   maxHealth: 0
   _Manager: {fileID: 339811827}
   Team: 1
@@ -24330,6 +24334,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 173839422}
     m_Modifications:
+    - target: {fileID: 1578865578162787755, guid: f38cb86e75c2df545b4bb6d114b704ee, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.12
+      objectReference: {fileID: 0}
     - target: {fileID: 6166319402837539076, guid: f38cb86e75c2df545b4bb6d114b704ee, type: 3}
       propertyPath: enemiesManager
       value: 
@@ -24353,27 +24361,27 @@ PrefabInstance:
     - target: {fileID: 6166319402837539078, guid: f38cb86e75c2df545b4bb6d114b704ee, type: 3}
       propertyPath: initialDeck.Array.data[0]
       value: 
-      objectReference: {fileID: 1877544362}
+      objectReference: {fileID: 1914977082}
     - target: {fileID: 6166319402837539078, guid: f38cb86e75c2df545b4bb6d114b704ee, type: 3}
       propertyPath: initialDeck.Array.data[1]
       value: 
-      objectReference: {fileID: 1877544361}
+      objectReference: {fileID: 1914977081}
     - target: {fileID: 6166319402837539078, guid: f38cb86e75c2df545b4bb6d114b704ee, type: 3}
       propertyPath: initialDeck.Array.data[2]
       value: 
-      objectReference: {fileID: 1877544360}
+      objectReference: {fileID: 1914977080}
     - target: {fileID: 6166319402837539078, guid: f38cb86e75c2df545b4bb6d114b704ee, type: 3}
       propertyPath: initialDeck.Array.data[3]
       value: 
-      objectReference: {fileID: 1877544359}
+      objectReference: {fileID: 1914977079}
     - target: {fileID: 6166319402837539078, guid: f38cb86e75c2df545b4bb6d114b704ee, type: 3}
       propertyPath: initialDeck.Array.data[4]
       value: 
-      objectReference: {fileID: 1877544358}
+      objectReference: {fileID: 1914977078}
     - target: {fileID: 6166319402837539078, guid: f38cb86e75c2df545b4bb6d114b704ee, type: 3}
       propertyPath: initialDeck.Array.data[5]
       value: 
-      objectReference: {fileID: 1877544357}
+      objectReference: {fileID: 1914977077}
     - target: {fileID: 6166319402837539192, guid: f38cb86e75c2df545b4bb6d114b704ee, type: 3}
       propertyPath: m_RootOrder
       value: 0

@@ -23,7 +23,7 @@ public class CardSystem : MonoBehaviour
 
     bool isAI;
 
-    private void Start()
+    private void Awake()
     {
         if (cardPositions.Length == 0)
             isAI = true;

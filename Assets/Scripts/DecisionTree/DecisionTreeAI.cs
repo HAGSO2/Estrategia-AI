@@ -311,7 +311,7 @@ public class DecisionTreeAI : MonoBehaviour, IAI
     ///////////////////////////////////////////////////////////////////////////////////////////////////////
 
     float timer = 0f;
-    public float maxTime = 1f;
+    public float maxTime;
     void Update()
     {
         // Revisar el notTerminal, cuando cambia??
@@ -325,10 +325,6 @@ public class DecisionTreeAI : MonoBehaviour, IAI
             {
                 cardSystem.PlayCardAI(index, pos, isLeftSide);
                 simpleObserver.SortCards();
-            }
-            else
-            {
-                Debug.Log("Poco elixir: " + simpleObserver.ActualElixir() + " < " + (simpleObserver.lowestCardCost + 1));
             }
         }
     }
